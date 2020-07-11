@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+
+     <head>
+         <meta charset="utf-8">
+         <title> Let Us C </title>
+		 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		 <link rel= "stylesheet" href="../../css/style2.css"  />
+
+     </head>
+	 
+  <body>
+  
+       <!-- HEADER DE LA PAGE -->
+	   
+      <header>
+  	                   <h1 id="titre_site"> <a href="../monsite.html">Let Us Code </a></h1>
+	 </header>
+	  
+	  		
+<main>	   
+		
+      <div id="chapitre1">		
+	  
+			 
+			 		<!-- AFFICHER LE SCORE -->
+		             <div id="myModal" >
+
+						  <!-- Modal content -->
+						  <div id="modal-content">
+						    <span id="close">&times;</span>
+						    <p id="msg"></p>
+						  </div>
+					 </div>
+		
+
+
+	 
+              <fieldset>
+                                <legend>Quiz</legend>
+			 <form id="myForm">
+ 
+                <ol>
+				  <li>        <h3> Question 1 </h3> 
+				
+  				            <!-- QT1 -->
+                     <label for="question1"> Quelle est l’extension standard pour les fichiers contenant du code JavaScript ? </label> <br><br>
+					 
+
+                     <input type="radio" id="q11"  name="question1" value="1" checked> <label for="q11" name="question1v" > .javascript </label><br>
+					 <input type="radio" id="q12"  name="question1" value="2" > <label for="q12" name="question1v" > .html </label> <br>
+					 <input type="radio" id="q13"  name="question1" value="3" > <label for="q13" name="question1v"> .js</label> <br>
+
+				</li>
+				
+				            
+                <li>        
+				           <h3> Question 2 </h3> 
+				
+  				            <!-- QT2 -->
+                     <label for="question2"> Quel type suivant n’est pas l’un des types de bases du langage JavaScript ?</label> <br><br>
+					 
+                     <input type="radio" id="q21"  name="question2" value="1" checked>  <label for="q21"  name="question2v" > Nombre </label><br>
+					 <input type="radio" id="q22"  name="question2" value="2" >  <label for="q22" name="question2v" > Entier </label><br>	 
+					 <input type="radio" id="q23"  name="question2" value="3" >  <label for="q23" name="question2v" > Chaîne </label><br>
+					 <input type="radio" id="q24"  name="question2" value="4" >  <label for="q24" name="question2v" > Booléen  </label><br>
+
+				</li>
+				
+				 
+                <li>        
+				           <h3> Question 3 </h3> 
+				
+  				            <!-- QT3 -->
+                     <label for="question3"> Lorsque le nombre de tours de boucle n’est pas prévisible à l’avance, quelle type de boucle est-il préférable de choisir ? </label> <br><br>
+					 
+                     <input type="radio" id="q31"  name="question3" value="1" checked>  <label for="q31" name="question3v" >  Choisir une boucle while </label><br>
+					 <input type="radio" id="q32"  name="question3" value="2" ><label for="q32" name="question3v"  > Choisir une boucle for </label><br>
+					 <input type="radio" id="q33"  name="question3" value="3" ><label for="q33" name="question3v"  > Choisir un while ou un for, peu importe.</label><br>
+
+				</li>
+				
+				<li>        
+				           <h3> Question 4 </h3> 
+				
+  				            <!-- QT4 -->
+				
+                     <label for="question4"> Si une variable a pour rôle de stocker le montant total d’une facture, quel nom doit-on lui donner pour être conforme à la norme camelCase ?</label> <br>
+					 
+                           <select id="question4">
+                                     <option value="total_facture">  total_facture </option>
+                                     <option value="totalfacture" > totalfacture  </option>
+                                     <option value="TotalFacture" > TotalFacture </option>
+                                     <option value="totalFacture"> totalFacture  </option>
+      
+                           </select><div  id="Vrai"   > totalFacture </div>  <div id="Faux" ></div>
+						   <br>
+									
+
+				</li>
+				
+				
+			  <li>        
+				           <h3> Question 5</h3> 
+				
+  				            <!-- QT7 -->
+				
+                     <label for="question5"> Quels seront les résultats affichés si l’utilisateur saisit la valeur 10 ?</label> <br>
+					 
+					 <p> Quels seront les résultats affichés si l’utilisateur saisit la valeur 10 ? <p>
+					 <code>
+					 if (x <= 10) {<br>
+                                if (x >= 5) { 
+                                            console.log("A");
+                                            }<br>
+                                            console.log("B");<br>
+                                     else {
+                                            console.log("C");
+                                         }<br>
+                                 }
+					 </code><br><br>
+                                    <input type="checkbox" id="q51"  name="question5" value ="1" checked ><label for="q51" name="question5v" >   “B et C”</label><br>
+								    <input type="checkbox" id="q52"  name="question5" value ="2"> <label for="q52" name="question5v" >  “B”</label><br>
+								    <input type="checkbox" id="q53"  name="question5" value ="3"> <label for="q53" name="question5v" > “C” </label><br>
+                                    <input type="checkbox" id="q54"  name="question5" value ="4"> <label for="q54" name="question5v" > “A”</label><br>
+
+				</li>
+                          		 
+	</ol>
+	
+</form>
+
+        <div id="buttn">
+            <input type="submit" id="b1" value="Valider" OnClick="traiter()"></input>
+            <input type="reset"  id="b2" value="Annuler"></input>	
+		</div>	
+		
+                 
+  </fieldset>
+	
+</div>
+</main>
+
+	 <footer >
+	 
+	 	     Copyright &copy; 2018 <a href="#"><span class="email">LetUsCode.com</span></a>
+	
+	</footer>	
+		 
+		 
+<script>
+		 
+		 function traiter()
+{ 
+
+          var score=0;
+		
+		
+				//************************************ QT 1**************************************************/
+	     // RECUPERER REPONSE
+         var reponse = document.getElementsByName("question1"); 
+		 var values =  document.getElementsByName("question1v"); 
+		 
+		 //changer la color de bonne rep au vert 
+		 values[2].style.color='green';
+		 
+		
+		 for (var i = 0; i < reponse.length; i++)
+		   { 
+		   
+		        if(reponse[i].checked)
+				    { 
+					    if(reponse[i].value == "3")
+					      {  // La bonne reponse 
+				               score++;
+						
+						   } else{ 
+						 	 
+                                    //mauvaise reponse
+					   
+					              // changer la color de mauvaise rep au rouge
+                                     values[i].style.color='red';
+						         }				
+					   }
+				 }
+				 
+				 
+				 
+	//************************************ QT 2**************************************************/
+		
+			     // RECUPERER REPONSE
+         var reponse = document.getElementsByName("question2"); 
+		 var values =  document.getElementsByName("question2v"); 
+		 
+		 //changer la color de bonne rep au vert 
+		 values[1].style.color='green';
+		 
+		 for (var i = 0; i < reponse.length; i++)
+		   { 
+		   
+		        if(reponse[i].checked)
+				    { 
+					    if(reponse[i].value == "2")
+					      {  // La bonne reponse 
+				               score++;
+						
+						   } else{ 
+						 	 
+                                    //mauvaise reponse
+					   
+					               // changer la color de mauvaise rep au rouge
+                                      values[i].style.color='red';
+						         }
+				
+					   }
+				 }
+				 
+		
+				 
+	//************************************ QT 3 **************************************************/
+		
+			     // RECUPERER REPONSE
+         var reponse = document.getElementsByName("question3"); 
+		 var values =  document.getElementsByName("question3v"); 
+			 
+		 //changer la color de bonne rep au vert 
+		 values[0].style.color='green';
+		 
+		 for (var i = 0; i < reponse.length; i++)
+		   { 
+		   
+		        if(reponse[i].checked)
+				    { 
+					    if(reponse[i].value == "1")
+					      {  // La bonne reponse 
+				               score++;
+						
+						   } else{ 
+						 	 
+                                    //mauvaise reponse
+					   
+					               // changer la color de mauvaise rep au rouge
+                                      values[i].style.color='red';
+						         }
+				
+					   }
+				 }
+		
+
+	//************************************ QT 4 **************************************************/
+                              <!-- // RECUPERER REPONSE -->
+				    var v = document.getElementById("question4");
+					
+					//changer la color de bonne rep au vert
+				    document.getElementById('Vrai').style.display='inline';
+					
+					if(v.value == "totalFacture")
+					 {
+					      score++;
+					 }
+					 else
+					 
+					 {
+					   document.getElementById("Faux").innerHTML=v.value;
+					   document.getElementById('Faux').style.display='inline';
+					 }
+
+		//************************************ QT 5 **************************************************/ 
+		
+			     // RECUPERER REPONSE
+         var reponse = document.getElementsByName("question5"); 
+		 var values =  document.getElementsByName("question5v"); 
+		
+		 <!-- //changer la color de bonne rep au vert  -->
+		 values[1].style.color='green';
+		 values[3].style.color='green';
+		 
+		 var b=true;
+
+	    for (var i = 0; i < values.length; i++)
+		   {  
+                if(reponse[i].checked)
+				    { 
+					    if((reponse[i].value != "2")&&(reponse[i].value != "4"))
+					      { 
+				                  //mauvaise reponse
+				
+					               // changer la color de mauvaise rep au rouge
+                                   values[i].style.color='red';
+								   b=false;
+						
+						   } 
+				
+					   }
+				 }
+		
+			     // RECUPERER REPONSE
+       
+				 
+				 if(b){
+ 				        // La bonne reponse  
+				           score++;
+					  }
+					
+					
+					
+					//CACHER LES BUTTOONS
+				    document.getElementById('buttn').style.display ='none';
+				
+					// récupérer le div contenant le message
+					var modal = document.getElementById('myModal');
+
+					// récupérer le bouton qui ouvre le message
+					var btn = document.getElementById("buttn");
+
+					// récupérer l'élément  <span> qui ferme le message
+					var span = document.getElementById("close");
+
+					// quand l'utilisateur clique sur valider le score apparaît 
+
+					  modal.style.display = "block";
+
+
+					// quand l'utilisateur clique sur <span> (x), le message se ferme
+					span.onclick = function() {
+					  modal.style.display = "none";
+					
+					}
+					//afficher le message (score)
+					document.getElementById("msg").innerHTML="Votre score est "+score+"/5";
+				}
+</script>
+</body> 
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+     <head>
+         <meta charset="utf-8">
+         <title> Let Us Code </title>
+		 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		 <link rel= "stylesheet" href="../../../css/style.css"  />
+     </head>
+	 
+  <body>
+  
+       <!-- HEADER DE LA PAGE -->
+	   
+      <header>
+  	                   <h1 id="titre_site"> <a href="#">Let Us Code </a></h1>
+	 </header>
+	  
+	  		 <!-- liste des chapitre -->	   
+		   <nav id="nav1">
+				<ul>
+					<li >
+						<a href="../../monsite.html" class="bouton"><span>Home</span></a>
+					</li>
+					<li >
+						<a href="#" class="bouton"><span>Cours</span></a>
+						<ul>
+							<li><a href="../../c/chapitres/chapitre1.html">langage C</a>	</li>
+							 
+							<li ><a href="../../java/chapitres/chapitre1.html">Java</a></li>
+
+							<li><a href="../../javascript/chapitres/chapitre1.html">JavaScript</a></li>
+
+							<li><a href="../../python/chapitres/chapitre1.html">Python</a></li>
+							<li><a href="../../quiz.html">Quiz</a></li>
+						</ul>
+					</li>
+					<li >
+						<a href="../../about.html" class="bouton"><span>About</span></a>
+						
+					</li>
+					<li >
+						<a href="../../contact.html" class="bouton"><span>Contact</span></a>
+					</li>
+				</ul>
+			</nav>
+		
+		<!-- liste des chapitre (menu vertical-->
+		
+		<main>
+			<section>
+				<nav id="nav2">			
+			<div id="div1">
+			 <a href = "chapitre1.html" ><button>Chapitre 1</button></a>
+			 <!-- afficher les sous-titres du chapitre actuel -->
+			  
+			   </div>
+			  <div id="div2">
+			  	
+			  <a href = "chapitre2.html" ><button>Chapitre 2</button></a>
+			  <div id="div22">
+			  <a href = "#part1" > &#9830;un minimum de code</a>
+			  
+			  </div>
+			</div>
+			  <div id="div3">
+			   <a href = "chapitre3.html" ><button>chapitre 3</button></a>
+			</div>
+			<div id="div4">
+			   <a href = "chapitre4.html" ><button>chapitre 4</button></a>
+			</div>
+			<div id="div5">
+			   <a href = "../quiz.html" ><button>Quiz</button></a>
+			</div>
+		</nav>
+<section id="section1"><!-- DEBUT CHAPITRE 1 -->
+		
+      <div id="chapitre1">		
+	  
+	  
+	         <!-- HEADER CHAPITRE 1-->
+	   
+	    <header>
+ 			    <a id="chapitre1"> <h1> Chapitre 2 : Votre premier programme </h1> </a> 
+		</header>
+	 
+	 		 <ul id="titre_chap"> 
+	 		 	<p>On a préparé le terrain jusqu'ici, maintenant il serait bien de commencer à programmer un peu, qu'en dites-vous ? C'est justement l'objectif de ce chapitre ! À la fin de celui-ci, vous aurez réussi à créer votre premier programme !</p>
+	 		 	<p>Bon d'accord, ce programme sera en noir et blanc et ne saura que vous dire bonjour, il semblera donc complètement inutile mais ce sera votre premier ; je peux vous assurer que vous en serez fiers.</p>
+	 		 	<li><a id="part1"></a><h2>un minimum de code</h2></a>
+	 		 		<p>Pour n'importe quel programme, il faudra taper un minimum de code. Ce code ne fera rien de particulier mais il est indispensable.</p>
+	 		 		<p>C'est ce « code minimum » que nous allons découvrir maintenant. Il devrait servir de base pour la plupart de vos programmes en langage C.</p>
+	 		 		<ul>
+	 		 			<li><h3>Demandez le code minimal à votre IDE</h3>
+	 		 				<p>Selon l'IDE que vous avez choisi dans le chapitre précédent, la méthode pour créer un nouveau projet n'est pas la même. Reportez-vous à ce chapitre si vous avez oublié comment faire.</p>
+	 		 				<p>Pour rappel, sous Code::Blocks (qui est l'IDE que je vais utiliser tout au long de ce cours), il faut aller dans le menu<em>File / New / Project</em>, puis choisirConsole Applicationet sélectionner le langage C.</p>
+	 		 				<p>Code::Blocks a donc généré le minimum de code en langage C dont on a besoin. Le voici :</p>
+	 		 				<img src="../../../images/c/image1.png">
+	 		 				<p>Notez que la ligne :</p>
+	 		 				<img src="../../../images/c/image2.png">
+	 		 				<p>… peut aussi s'écrire :</p>
+	 		 				<img src="../../../images/c/image3.png">
+	 		 				<p>Les deux écritures sont possibles, mais la seconde (la compliquée) est la plus courante. J'aurai donc tendance à utiliser plutôt cette dernière dans les prochains chapitres.</p>
+							<p>En ce qui nous concerne, que l'on utilise l'une ou l'autre des écritures, ça ne changera rien pour nous. Inutile donc de s'y attarder, surtout que nous n'avons pas encore le niveau pour analyser ce que ça signifie.</p>
+							<p>Si vous êtes sous un autre IDE, copiez ce code source dans votre fichier <em>main.c</em> pour que nous ayons le même code vous et moi.</p>
+							<p>Enregistrez le tout. Oui je sais, on n'a encore rien fait, mais enregistrez quand même, c'est une bonne habitude à prendre. Normalement, vous n'avez qu'un seul fichier source appelé <em>main.c</em> (le reste, ce sont des fichiers de projet générés par votre IDE).</p>
+	 		 			</li>
+	 		 			<li><h3>Analysons le code minimal</h3>
+	 		 				<p>Ce code minimal qu'on vient de voir n'est rien d'autre que du chinois pour vous, j'imagine. Et pourtant, moi je vois là un programme console qui affiche un message à l'écran.</p>
+							<p>Il va falloir apprendre à lire tout ça !</p>
+							<p>Commençons par les deux premières lignes qui se ressemblent beaucoup :</p>
+							<img src="../../../images/c/image4.png">
+							<p>Ce sont des lignes spéciales que l'on ne voit qu'en haut des fichiers source. Ces lignes sont facilement reconnaissables car elles commencent par un dièse <em> " # "</em>. Ces lignes spéciales, on les appelle <strong> directives de préprocesseur</strong> (un nom compliqué, n'est-ce pas ?). Ce sont des lignes qui seront lues par un programme appelé préprocesseur, un programme qui se lance au début de la compilation.</p>
+							<p>Oui : comme je vous l'ai dit plus tôt, ce qu'on a vu au début n'était qu'un schéma très simplifié de la compilation. Il se passe en réalité plusieurs choses pendant une compilation. On les détaillera plus tard : pour le moment, vous avez juste besoin d'insérer ces lignes en haut de chacun de vos fichiers.</p>
+							<p>Le motincludeen anglais signifie « inclure » en français. Ces lignes demandent d'inclure des fichiers au projet, c'est-à-dire d'ajouter des fichiers pour la compilation.</p>
+							<p>Il y a deux lignes, donc deux fichiers inclus. Ces fichiers s'appellentstdio.hetstdlib.h. Ces fichiers existent déjà, des fichiers source tout prêts. On verra plus tard qu'on les appelle des bibliothèques (certains parlent aussi de librairies mais c'est un anglicisme). En gros, ces fichiers contiennent du code tout prêt qui permet d'afficher du texte à l'écran.</p>
+							<p>Sans ces fichiers, écrire du texte à l'écran aurait été mission impossible. L'ordinateur à la base ne sait rien faire, il faut tout lui dire. Vous voyez la galère dans laquelle on est !</p>
+							<p>Bref, en résumé les deux premières lignes incluent les bibliothèques qui vont nous permettre (entre autres) d'afficher du texte à l'écran assez « facilement ».</p>
+							<p>Passons à la suite. La suite, c'est tout ça :</p>
+							<img src="../../../images/c/image5.png">
+							<p>Ce que vous voyez là, c'est ce qu'on appelle <strong>une fonction</strong>. Un programme en langage C est constitué de fonctions, il ne contient quasiment que ça. Pour le moment, notre programme ne contient donc qu'une seule fonction.</p>
+							<p>Une fonction permet grosso modo de rassembler plusieurs commandes à l'ordinateur. Regroupées dans une fonction, les commandes permettent de faire quelque chose de précis. Par exemple, on peut créer une fonction <em>ouvrir_fichier</em> qui contiendra une suite d'instructions pour l'ordinateur lui expliquant comment ouvrir un fichier.</p>
+							<p>L'avantage, c'est qu'une fois la fonction écrite, vous n'aurez plus qu'à dire <em>ouvrir_fichier</em>, et votre ordinateur saura comment faire sans que vous ayez à tout répéter !</p>
+							<p>Sans rentrer dans les détails de la construction d'une fonction (il est trop tôt, on reparlera des fonctions plus tard), analysons quand même ses grandes parties. La première ligne contient le nom de la fonction, c'est le deuxième mot.</p>
+							<p>Oui : notre fonction s'appelle donc <em> main.</em> C'est un nom de fonction particulier qui signifie <em>« principal » .main</em>  est la fonction principale de votre programme, <strong>c'est toujours par la fonction main que le programme commence</strong>.</p>
+							<p>Une fonction a un début et une fin, délimités par des accolades <em>{et}</em>. Toute la fonction <em>main</em> se trouve donc entre ces accolades. Si vous avez bien suivi, notre fonctionmaincontient deux lignes :</p>
+							<img src="../../../images/c/image6.png">
+							<p>Ces lignes à l'intérieur d'une fonction ont un nom. On les appelle <strong>instructions </strong>(ça en fait du vocabulaire qu'il va falloir retenir).</p>
+							<p>Chaque instruction est une commande à l'ordinateur. Chacune de ces lignes demande à l'ordinateur de faire quelque chose de précis.</p>
+							<p>Comme je vous l'ai dit un peu plus haut, en regroupant intelligemment (c'est le travail du programmeur) les instructions dans des fonctions, on crée si on veut des « bouts de programmes tout prêts ». En utilisant les bonnes instructions, rien ne nous empêcherait donc de créer une fonction <em>ouvrir_fichier</em> comme je vous l'ai expliqué tout à l'heure, ou encore une fonction <em>avancer_personnage</em> dans un jeu vidéo, par exemple.</p>
+							<p>Un programme, ce n'est au bout du compte rien d'autre qu'une série d'instructions : « fais ceci », « fais cela ». Vous donnez des ordres à votre ordinateur et il les exécute. Du moins si vous l'avez bien dressé.</p>
+							<p>La première ligne : <em>printf("Hello world!\n");</em> demande à afficher le message<em> « Hello world! »</em> à l'écran. Quand votre programme arrivera à cette ligne, il va donc afficher un message à l'écran, puis passer à l'instruction suivante.</p>
+							<p>Passons à l'instruction suivante justement : <em>return 0;</em></p>
+							<p>Eh bien ça, en gros, ça veut dire que c'est fini (eh oui, déjà). Cette ligne indique qu'on arrive à la fin de notre fonction <em>main </em> et demande de renvoyer la valeur 0.</p>
+							<p>En fait, chaque programme une fois terminé renvoie une valeur, par exemple pour dire que tout s'est bien passé. En pratique, 0 signifie « tout s'est bien passé » et n'importe quelle autre valeur signifie « erreur ». La plupart du temps, cette valeur n'est pas vraiment utilisée, mais il faut quand même en renvoyer une.</p>
+							<p>Votre programme aurait marché sans le <em>return0</em>, mais on va dire que c'est plus propre et plus sérieux de le mettre, donc on le met.</p>
+							<p>Et voilà ! On vient de détailler un peu le fonctionnement du code minimal.</p>
+							<p>Certes, on n'a pas vraiment tout vu en profondeur, et vous devez avoir quelques questions en suspens. Soyez rassurés : toutes vos questions trouveront une réponse petit à petit. Je ne peux pas tout vous divulguer d'un coup, cela ferait trop de choses à assimiler.</p>
+							<p>Vous suivez toujours ? Si tel n'est pas le cas, rien ne presse. Ne vous forcez pas à lire la suite. Faites une pause et relisez ce début de chapitre à tête reposée. Tout ce que je viens de vous apprendre est fondamental, surtout si vous voulez être sûrs de pouvoir suivre après.</p>
+							<p>Tenez : comme je suis de bonne humeur, je vous fais un schéma qui récapitule le vocabulaire qu'on vient d'apprendre (fig. suivante).</p>
+							<img src="../../../images/c/image7.png">
+	 		 			</li>
+	 		 			<li><h3>Testons notre programme</h3>
+	 		 				<p>Tester devrait aller vite. Tout ce que vous avez à faire c'est compiler le projet, puis l'exécuter (cliquez sur l'icône <em> Build & Run</em> sous Code::Blocks).</p>
+							<p>Si vous ne l'avez pas encore fait, on vous demandera d'enregistrer les fichiers. Faites-le.</p>
+							<p>Après un temps d'attente insupportable (la compilation), votre premier programme va apparaître sous vos yeux totalement envahis de bonheur (fig. suivante).</p>
+							<img src="../../../images/c/image8.png">
+							<p>Le programme affiche « Hello world! » (sur la première ligne).Les lignes en dessous ont été générées par Code::Blocks et indiquent que le programme s'est bien exécuté et combien de temps s'est écoulé depuis le lancement.</p>
+							<p>On vous invite à appuyer sur n'importe quelle touche du clavier pour fermer la fenêtre. Votre programme s'arrête alors. Oui je sais, ce n'est pas transcendant. Mais bon, quand même ! C'est un premier programme, un instant dont vous vous souviendrez toute votre vie ! … Non ?</p>
+	 		 			</li>
+	 		 		</ul>
+	 		 	</li>
+	 		 	
+
+
+
+			</ul>		   
+		<footer id="f1">
+		
+		         Post&eacute; le <time>16 Novembre 2018</time>
+			     Par <a href="../../info.html">Bensalah kawthar,Zerrouki im&egrave;ne,Assem Sarah</a>
+		</footer>
+   </div>
+</section> <!-- FIN CHAPITRE 1 -->
+	</section>
+	 
+</main>
+
+	 <footer >
+	 
+	 	     Copyright &copy; 2018 <a href="../../monsite.html"><span>LetUsCode.com</span></a>
+	
+	</footer>	
+	
+	
+</body> 
+</html>

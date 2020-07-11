@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+
+     <head>
+         <meta charset="utf-8">
+         <title> Let Us Code </title>
+		 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		 <link rel= "stylesheet" href="../../../css/style.css"  />
+     </head>
+	 
+  <body>
+  
+       <!-- HEADER DE LA PAGE -->
+	   
+      <header>
+  	                   <h1 id="titre_site"> <a href="../../monsite.html">Let Us Code </a></h1>
+	 </header>
+	  
+	  		 <!-- liste des chapitre -->	
+	  		 <div id="diiv">   
+			   	<nav id="nav1">
+					<ul>
+						<li >
+							<a href="../../monsite.html" class="bouton"><span>Home</span></a>
+						</li>
+						<li >
+							<a href="#" class="bouton"><span>Cours</span></a>
+							<ul>
+								<li><a href="../../c/chapitres/chapitre1.html">langage C</a>	</li>
+								 
+								<li ><a href="../../java/chapitres/chapitre1.html">Java</a></li>
+
+								<li><a href="../../javascript/chapitres/chapitre1.html">JavaScript</a></li>
+
+								<li><a href="../../python/chapitres/chapitre1.html">Python</a></li>
+								<li><a href="../../quiz.html">Quiz</a></li>
+							</ul>
+						</li>
+						<li >
+							<a href="../../about.html" class="bouton"><span>About</span></a>
+						
+						</li>
+						<li >
+							<a href="../../contact.html" class="bouton"><span>Contact</span></a>
+						</li>
+					</ul>
+				</nav>
+		
+		<!-- liste des chapitre (menu vertical-->
+		
+<main>
+	<section>
+		<nav id="nav2">			
+			<div id="div1">
+				<a href = "chapitre1.html" ><button>Chapitre 1</button></a>
+			 	<!-- afficher les sous-titres du chapitre actuel -->
+			  		<div id="div11">
+			  			<a href = "#part1" > &#9830; Le langage Java </a>
+			 			 <a href = "#part2" > &#9830; Environnement Java </a>
+			 			 <a href = "#part3" > &#9830; Programmation orientée-objet</a>
+		
+			  		</div>
+			</div>
+			<div id="div2">	
+			 	<a href = "chapitre2.html" ><button>Chapitre 2</button></a>
+			</div>
+			<div id="div3">
+			    <a href = "chapitre3.html" ><button>chapitre 3</button></a>
+			</div>
+			<div id="div4">
+			    <a href = "chapitre4.html" ><button>chapitre 4</button></a>
+			</div>
+			<div id="div5">
+			    <a href = "../quiz.html" ><button>Quiz</button></a>
+			</div>
+		</nav>
+		<section id="section1"><!-- DEBUT CHAPITRE 1 -->
+		
+     	<div id="chapitre1">		
+	  
+	  
+	         <!-- HEADER CHAPITRE 1-->
+	   
+	          <header>
+ 			              <a id ="chap1"> <h1> Chapitre 1 : Présentation </h1> </a> 
+			 </header>
+	 
+	 		     <OL id="titre_chap"> 
+				
+				   <LI> 
+						
+						      <a id ="part1"> <h2> Le langage Java </h2> </a>
+
+						
+						    <p>
+						        Le langage Java est un langage généraliste de programmation synthétisant les principaux lan-gages existants lors de sa création en <strong> 1995 </strong> parSun Microsystems. Il permetune programmationorientée-objet (à l’instar de SmallTalk et, dans une moindre mesure, C++), modulaire (langageADA) et reprend une syntaxe très proche de celle du langage C.Outre son orientation objet, le langage Java a l’avantage d’êtremodulaire(on peut écrire desportions de code génériques, c-à-d utilisables par plusieurs applications),rigoureux(la plupartdes erreurs se produisent à la compilation et non à l’exécution) etportable(un même programmecompilé peut s’exécuter sur différents environnements). En contre-partie, les applications Java ontle défaut d’être plus lentes à l’exécution que des applications programmées en C par exemple.
+						   
+						    </p>
+
+				   </LI>
+				   
+				   				   
+			       <LI>
+
+                           <a id ="part2"> <h2> Environnement Java </h2></a>
+
+						   <p>
+						     Java est un langage interprété, ce qui signifie qu’un programme compilé n’est pas directementexécutable par le système d’exploitation mais il doit être interprété par un autre programme, qu’onappelle interpréteur. 
+						  </p>
+						  
+						  <p>
+						  Un programmeur Java écrit son code source, sous la forme de classes, dans des fichiers dontl’extension est.java. Ce code source est alors compilé par le compilateurjavacen un langageappelébytecodeet enregistre le résultat dans un fichier dont l’extension est.class. Le bytecodeinsi obtenu n’est pas directement utilisable. Il doit être interprété par lamachine virtuellede Javaqui transforme alors le code compilé en code machine compréhensible par le système d’exploita-tion. C’est la raison pour laquelle Java est un langage portable : le bytecode reste le même quelquesoit l’environnement d’exécution.
+						  </p>
+						  
+						  <p>
+						  En <strong> 2009 </strong>, Sun Microsystems est racheté par Oracle Corporation qui fournit dorénavant les outils de développement Java SE (StandardEdition) contenus dans leJavaDevelopmentKit(JDK).Au moment où est écrit ce livret, la dernière version stable est le JDK 7.2.
+						  </p>
+						  
+						  <OL id="titre_part2">
+						      <LI> 
+
+					
+						            <a id ="part21"> <h2>     Compilation     </h2></a>
+									
+									<p>
+									La compilation s’effectue par la commandejavacsuivie d’un ou plusieurs nom de fichierscontenant le code source de classes Java. Par exemple,javac MyProg.javacompile la classeMy-Progdont le code source est situé dans le fichierMyProg.java. La compilation nécessite souvent laprécision de certains paramètres pour s’effectuer correctement, notamment lorsque le code sourcefait référence à certaines classes situées dans d’autres répertoires que celui du code compilé. Il fautalors ajouter l’option-classpathsuivie des répertoires (séparés par un ; sous Windows et : sousUnix) des classes référencées. Par exemple :
+							        </p>
+									
+									<p> <strong> javac -classpath /prog/exos1:/cours MyProg.java </strong> </p>
+									
+									<p>
+									compilera le fichierMyProg.javasi celui-ci fait référence à d’autres classes situées dans les ré-pertoires/prog/exos1et/cours. Le résultat de cette compilation est un fichier nomméMy-Prog.classcontenant le bytecode correspondant au source compilé. Ce fichier est créé par défautdans le répertoire où la compilation s’est produite. Il est cependant fortement souhaitable de nepas mélanger les fichiers contenant le code source et ceux contenant le bytecode. Un répertoire dedestination où sera créé le fichierMyProg.classpeut être précisé par l’option-d, par exemple :
+                                    </p>
+									
+									<p> <strong> javac -d /prog/exos1 -classpath /cours MyProg.java</strong> </p>
+
+							  </LI>
+							  
+							  <LI> 
+
+					
+						            <a id ="part22"> <h2> Interprétation    </h2></a>
+									
+									<p>
+									Le bytecode obtenu par compilation ne peut être exécuté qu’à l’aide de l’interpréteur. L’exé-cution s’effectue par la commandejavasuivie du nom de la classe à exécuter (sans l’extension.class). Comme lors de la compilation, il se peut que des classes d’autres répertoires soient né-cessaires. Il faut alors utiliser l’option-classpathcomme dans l’exemple qui suit :
+									</p>
+
+									
+									<p> <strong> javac -d /prog/exos1 -classpath /cours MyProg.java </strong> </p>
+									
+							  </LI>
+							  
+						 </OL>
+			    </LI>
+						
+				   <LI>
+
+						      <a id ="part3"> <h2> Programmation orientée-objet  </h2></a>
+		
+						
+						<p>
+						Chaque langage de programmation appartient à une “famille” de langages définissant une ap-proche ou une méthodologie générale de programmation. Par exemple, le langage C est un langagede programmationprocéduralecar il suppose que le programmeur s’intéresse en priorité auxtrai-tementsque son programme devra effectuer. Un programmeur C commencera par identifier cestraitements pour écrire les fonctions qui les réalisent sur des données prises comme paramètres d’etrée
+						</p>
+						
+						<p>
+						La programmationorientée-objet(introduite par le langage SmallTalk) propose une métho-dologie centrée sur les données. Le programmeur Java va d’abord identifier un ensemble d’objets,tel que chaque objet représente un élément qui doit être utilisé ou manipulé par le programme,sous la forme d’ensembles de données. Ce n’est que dans un deuxième temps, que le program-meur va écrire les traitements,en associant chaque traitement à un objet donné . Un objet peut
+						être vu comme une entité regroupant un ensemble de données et deméthodes(l’équivalent d’unefonction en C) de traitement.
+						</p>
+						 
+			    <OL id="titre_part3">
+				   <LI>
+
+						   <a id ="part31"> <h2>     Classe      </h2></a>
+						
+						
+						<p>
+						Un objet est une variable (presque) comme les autres. Il faut notamment qu’il soit déclaréavec son type. Le type d’un objet est un type complexe (par opposition aux types primitifs entier,caractère, ...) qu’on appelle uneclasse.
+						</p>
+						
+						<p>
+						
+						Une classe regroupe un ensemble de données (qui peuvent être des variables primitives ou desobjets) et un ensemble de méthodes de traitement de ces données et/ou de données extérieures àla classe. On parle d’encapsulationpour désigner le regroupement de données dans une classe.
+						</p>
+						
+						<p>
+						Par exemple, une classeRectangleutilisée pour instancier des objets représentant des rec-tangles, encapsule 4entiers : la longueur et la largeur du rectangle ainsi que la position en abscisseet en ordonnée de l’origine du rectangle (par exemple, le coin en haut à gauche). On peut alorsimaginer que la classeRectangleimplémente une méthode permettant de déplacer le rectangle quinécessite en entrée deux entiers indiquant la distance de déplacement en abscisse et en ordonnée.L’accès aux positions de l’origine du rectangle se fait directement (i.e. sans passage de paramètre)lorsque les données sont encapsulées dans la classe où est définie la méthode. Un exemple, écriten Java, de la classeRectangleest donné ci-dessous :
+				        </p>
+						
+						<!-- INSERRER IMAGE -->
+						
+						<img src="../../../images/java/image1.jpg" alt="aucune image" />
+						
+						<p>
+						Pour écrire un programme avec un langage orienté-objet, le programmeur écrit uniquementdes classes correspondant aux objets de son système. Les traitements à effectuer sont programmésdans les méthodes de ces classes qui peuvent faire appel à des méthodes d’autres classes. En géné-ral, on définit une classe, dite “exécutable”, dont une méthode peut être appelée pour exécuter leprogramme
+				        </p>
+				
+
+			 </LI>
+			 
+			  <LI>
+
+					
+						   <a id ="part32"> <h2>     Objet      </h2></a>
+						
+						
+						<p>
+						Un objet est une instance (anglicisme signifiant « cas » ou « exemple ») d’une classe et est réfé-rencé par une variable ayant un état (ou valeur). Pour créer un objet, il est nécessaire de déclarerune variable dont le type est la classe à instancier, puis de faire appel à un constructeur de cetteclasse. L’exemple ci-dessous illustre la création d’un objet de classeCercleen Java :
+						</p>
+						
+						<p>
+						<strong> Cercle mon_rond; <br> mon_rond=newCercle(); </strong> 
+						</p>
+						
+						<p>
+						L’usage de parenthèses à l’initialisation du vecteur, montre qu’une méthode est appelée pourl’instanciation. Cette méthode est un constructeur de la classeCercle. Si le constructeur appelénécessite des paramètres d’entrée, ceux-ci doivent être précisés entre ces parenthèses (comme lorsd’un appel classique de méthode). L’instanciation d’un objet de la classeRectanglefaisant appelau constructeur donné en exemple ci-dessous pourra s’écrire :
+                        </p>
+						
+						<p>
+						<strong> Rectangle mon_rectangle=newRectangl(15,5); </strong>
+						</p>
+				<div id="remarque">
+						<p> 
+						<strong>Remarque importante :</strong> 
+						</P>
+						
+                        <p>
+						en Java, la notion de pointeur est transparente pour le programmeur.Il faut néanmoins savoir quetoute variable désignant un objet est un pointeur. Il s’ensuit alorsque le passage d’objets comme paramètres d’une méthode esttoujoursun passage par référence.A l’inverse, le passage de variables primitives comme paramètres est toujours un passage parvaleur.
+				        </p>
+			   </div>
+
+			 </LI>
+			 
+			</OL>
+			
+			<p> <strong> Si vous vous sentez prêts, alors rendez-vous dans le chapitre suivant, qui vous montrera les outils utilisés par un programmeur en Java. </strong> </p>
+
+			</LI>
+		</OL> 
+		
+		<footer id="f1">
+			Post&eacute; le 
+			<time>
+				16 Novembre 2018
+			</time>
+			Par 
+			<a href="../../info.html">Bensalah kawthar,Zerrouki im&egrave;ne,Assem Sarah</a>
+		</footer>
+   </div>
+</section> <!-- FIN CHAPITRE 1 -->
+</section>	
+	 
+</main>
+</div>
+	 <footer >
+	 
+	 	     Copyright &copy; 2018 <a href="../../monsite.html"><span>LetUsCode.com</span></a>
+	
+	</footer>	
+	
+	
+</body> 
+</html>

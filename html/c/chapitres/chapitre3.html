@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+
+     <head>
+         <meta charset="utf-8">
+         <title> Let Us Code </title>
+		 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		 <link rel= "stylesheet" href="../../../css/style.css"  />
+     </head>
+	 
+  <body>
+  
+       <!-- HEADER DE LA PAGE -->
+	   
+      <header>
+  	                   <h1 id="titre_site"> <a href="#">Let Us Code </a></h1>
+	 </header>
+	  
+	  		 <!-- liste des chapitre -->	   
+		   <nav id="nav1">
+				<ul>
+					<li >
+						<a href="../../monsite.html" class="bouton"><span>Home</span></a>
+					</li>
+					<li >
+						<a href="#" class="bouton"><span>Cours</span></a>
+						<ul>
+							<li><a href="../../c/chapitres/chapitre1.html">langage C</a>	</li>
+							 
+							<li ><a href="../../java/chapitres/chapitre1.html">Java</a></li>
+
+							<li><a href="../../javascript/chapitres/chapitre1.html">JavaScript</a></li>
+
+							<li><a href="../../python/chapitres/chapitre1.html">Python</a></li>
+							<li><a href="../../quiz.html">Quiz</a></li>
+						</ul>
+					</li>
+					<li >
+						<a href="../../about.html" class="bouton"><span>About</span></a>
+						
+					</li>
+					<li >
+						<a href="../../contact.html" class="bouton"><span>Contact</span></a>
+					</li>
+				</ul>
+			</nav>
+		
+		<!-- liste des chapitre (menu vertical-->
+		
+		<main>
+			<section>
+				<nav id="nav2">			
+			<div id="div1">
+			 <a href = "chapitre1.html" ><button>Chapitre 1</button></a>
+			 <!-- afficher les sous-titres du chapitre actuel -->
+			 
+			   </div>
+			  <div id="div2">
+			  	
+			  <a href = "chapitre2.html" ><button>Chapitre 2</button></a>
+			</div>
+			  <div id="div3">
+			   <a href = "chapitre3.html" ><button>chapitre 3</button></a>
+			    <div id="div33">
+			  <a href = "#part1" > &#9830; Les différents types de mémoire </a>
+			  <a href = "#part2" > &#9830; Déclarer une variable </a>
+			 
+			  </div>
+			</div>
+			<div id="div4">
+			   <a href = "chapitre4.html" ><button>chapitre 4</button></a>
+			</div>
+			<div id="div5">
+			   <a href = "../quiz.html" ><button>Quiz</button></a>
+			</div>
+		</nav>
+<section id="section1"><!-- DEBUT CHAPITRE 1 -->
+		
+      <div id="chapitre1">		
+	  
+	  
+	         <!-- HEADER CHAPITRE 1-->
+	   
+	    <header>
+ 			    <a id="chapitre1"> <h1> Chapitre 3 : Un monde de variables</h1> </a> 
+		</header>
+	 
+	 		 <ul id="titre_chap"> 
+	 		 	<li><a id = "part1" > <h2>Les différents types de mémoire</h2></a>
+	 		 		
+	 		 			
+	 		 				<p>Pour vous donner une idée, voici les différents types de mémoire existant dans un ordinateur, de la plus rapide à la plus lente :</p>
+	 		 				<ol>
+	 		 					<li>les registres : une mémoire ultra-rapide située directement dans le processeur ;</li>
+	 		 					<li>la mémoire cache : elle fait le lien entre les registres et la mémoire vive ;</li>
+	 		 					<li>la mémoire vive : c'est la mémoire avec laquelle nous allons travailler le plus souvent ;</li>
+	 		 					<li>le disque dur : que vous connaissez sûrement, c'est là qu'on enregistre les fichiers.</li>
+	 		 				</ol>
+	 		 				<p>Comme je vous l'ai dit, j'ai classé les mémoires de la plus rapide (les registres) à la plus lente (le disque dur). Si vous avez bien suivi, vous avez compris aussi que la mémoire la plus rapide était la plus petite, et la plus lente la plus grosse.</p>
+	 		 				<p>Les registres sont donc à peine capables de retenir quelques nombres, tandis que le disque dur peut stocker de très gros fichiers.</p>
+	 		 				<p>Que faut-il retenir dans tout ça ?...En fait, je souhaite vous situer un peu. Vous savez désormais qu'en programmation, on va surtout travailler avec la mémoire vive. On verra aussi comment lire et écrire sur le disque dur, pour lire et créer des fichiers (mais on ne le fera que plus tard). Quant à la mémoire cache et aux registres, on n'y touchera pas du tout ! C'est votre ordinateur qui s'en occupe.</p>
+	 		 				<p>Il faut ajouter une dernière chose très importante : seul le disque dur retient tout le temps les informations qu'il contient. Toutes les autres mémoires (registres, mémoire cache, mémoire vive) sont des mémoires temporaires : <strong>lorsque vous éteignez votre ordinateur, ces mémoires se vident !</strong></p>
+	 		 				<p>Heureusement, lorsque vous rallumerez l'ordinateur, votre disque dur sera toujours là pour rappeler à votre ordinateur qui il est.</p>
+	 		 			
+	 		 		
+	 		 	</li>
+	 		 	<li><a id = "part2" > <h2>Déclarer une variable</h2></a>
+	 		 		<p>Croyez-moi, cette petite introduction sur la mémoire va nous être plus utile que vous ne le pensez.</p>
+					<p>Maintenant que vous savez ce qu'il faut, on peut retourner programmer.</p>
+
+					<p>Alors une variable, c'est quoi ?</p>
+					<p>Eh bien c'est une petite information temporaire qu'on stocke dans la RAM. Tout simplement.</p>
+					<p>On dit qu'elle est « variable » car c'est une valeur qui peut changer pendant le déroulement du programme. Par exemple, notre nombre 5 de tout à l'heure (le nombre de vies restant au joueur) risque de diminuer au fil du temps. Si ce nombre atteint 0, on saura que le joueur a perdu.</p>
+
+					<p>Nos programmes, vous allez le voir, sont remplis de variables. Vous allez en voir partout, à toutes les sauces.</p>
+
+					<p>En langage C, une variable est constituée de deux choses :</p>
+					<ul>
+						<li>une valeur : c'est le nombre qu'elle stocke, par exemple 5 ;</li>
+
+						<li>un nom : c'est ce qui permet de la reconnaître. En programmant en C, on n'aura pas à retenir l'adresse mémoire (ouf !) : à la place, on va juste indiquer des noms de variables. C'est le compilateur qui fera la conversion entre le nom et l'adresse. Voilà déjà un souci de moins.</li>
+					</ul>
+					<ul>
+						<li><h3>Donner un nom à ses variables</h3>
+							<p>Enfin, et c'est très important à savoir, le langage C fait la différence entre les majuscules et les minuscules. Pour votre culture, sachez qu'on dit que c'est un langage qui « respecte la casse ».</p>
+							<p>Donc, du coup, les variableslargeur,LARGEURou encoreLArgEuRsont trois variables différentes en langage C, même si pour nous ça a l'air de signifier la même chose !</p>
+
+							<p>Voici quelques exemples de noms de variables corrects :<em>nombreDeVies, prenom, nom, numero_de_telephone, numeroDeTelephone</em>.</p>
+						</li>
+						<li><h3>Les types de variables</h3>
+							<p>Notre ordinateur, vous pourrez le constater, n'est en fait rien d'autre qu'une (très grosse) machine à calculer. Il ne sait traiter que des nombres.</p>
+
+							<p>Oui mais voilà, j'ai un scoop ! Il existe plusieurs types de nombres ! Par exemple, il y a les nombres entiers positifs :</p>
+							<ul>
+								<li>45 ;</li>
+								<li>398 ;</li>
+								<li>7650.</li>		
+							</ul>
+							<p>Mais il y a aussi des nombres décimaux, c'est-à-dire des nombres à virgule :</p>
+							<ul>
+								<li>75,909 ;</li>
+								<li>1,7741 ;</li>
+								<li>9810,7.</li>
+							</ul>
+							<p>En plus de ça, il y a aussi des nombres entiers négatifs :</p>
+							<ul>
+								<li>-87 ;</li>
+								<li>-916.</li>
+							</ul>
+							<p>… Et des nombres négatifs décimaux !</p>
+							<ul>
+								<li>-76,9 ;</li>
+								<li>-100,11.</li>
+							</ul>
+							<p>Votre pauvre ordinateur a besoin d'aide ! Lorsque vous lui demandez de stocker un nombre, vous devez dire de quel type il est. Ce n'est pas vraiment qu'il ne soit pas capable de le reconnaître tout seul, mais… ça l'aide beaucoup à s'organiser, et à faire en sorte de ne pas prendre trop de mémoire pour rien.</p>
+
+							<p>Lorsque vous créez une variable, vous allez donc devoir indiquer son type.</p>
+							<p>Voici les principaux types de variables existant en langage C :</p>
+							<table id="table1">
+							
+							             <caption><strong> Tableau 1. Types variables </strong></caption>
+ 										 <tr> <th><strong>Nom du type</strong></th><th><strong>Minimum</strong></th><th><strong>Maximum</strong></th></tr>
+    
+ 										 <tr> <td>signed char</td>    <td>-127</td>     	 <td>127</td> 	</tr>
+ 										 <tr> <td>int</td>    <td>-32 767</td>    <td>32 767</td>	</tr>
+ 										 <tr> <td>long</td>    <td>-2 147 483 647</td>  <td>2 147 483 647</td>  </tr>
+ 										 <tr> <td>float</td>    <td>-1 x1037</td> 		 <td>1 x1037</td>	</tr>
+ 										 <tr> <td>double</td>    <td>-1 x1037</td> 		 <td>1 x1037</td>	</tr>
+							</table>
+							<p>Les trois premiers types (signed char,int,long) permettent de stocker des nombres entiers : 1, 2, 3, 4…</p>
+							<p>Les deux derniers (float,double) permettent de stocker des nombres décimaux (appelés nombres flottants) : 13.8, 16.911…</p>
+
+							<p>Vous verrez que la plupart du temps on manipule des nombres entiers (tant mieux, parce que c'est plus facile à utiliser).</p>
+							<p>Ce n'est pas tout ! Pour les types entiers ( <em>signed char,int,long…</em>), il existe d'autres types ditsunsigned(non signés) qui eux ne peuvent stocker que des nombres positifs. Pour les utiliser, il suffit d'écrire le motunsigneddevant le type :</p>
+							<table id="table2">
+							            <caption><strong> Tableau 2. Types variables unsigned </strong></caption>
+ 										<tr> <td>unsigned char</td>    <td>0 à 255</td>     	</tr>
+ 										 <tr> <td>unsigned int</td>    <td>0 à 65 535</td>   </tr>
+ 										 <tr> <td>unsigned long</td>    <td>0 à 4 294 967 295</td> </tr>
+ 										 
+										</table>
+										<p>Comme vous le voyez, lesunsignedsont des types qui ont le défaut de ne pas pouvoir stocker de nombres négatifs, mais l'avantage de pouvoir stocker des nombres deux fois plus grands (<em>signed char</em> s'arrête à 127, tandis que <em>unsigned char</em> s'arrête à 255 par exemple).</p>
+										<p>Oui, mais on a créé à l'origine plusieurs types pour économiser de la mémoire. Ainsi, quand on dit à l'ordinateur qu'on a besoin d'une variable de type <em>char</em>, on prend moins d'espace en mémoire que si on avait demandé une variable de type <em>int</em>.</p>
+
+										<p>Toutefois, c'était utile surtout à l'époque où la mémoire était limitée. Aujourd'hui, nos ordinateurs ont largement assez de mémoire vive pour que ça ne soit plus vraiment un problème. Il ne sera donc pas utile de se prendre la tête pendant des heures sur le choix d'un type. Si vous ne savez pas si votre variable risque de prendre une grosse valeur, mettez <em>int(ou double pour un flottant)</em>.</p>
+
+										<p>En résumé, on fera surtout la distinction entre nombres entiers et flottants :</p>
+										<ul>
+											<li>pour un nombre entier, on utilisera le plus souvent <em>int</em>;</li>
+											<li>pour un nombre flottant, on utilisera généralement <em>double</em>.</li>
+										</ul>
+
+						</li>
+						<li><h3>Declarer une variable</h3>
+							<p>On y arrive. Maintenant, créez un nouveau projet console que vous appellerez « variables ».</p>
+							<p>On va voir comment déclarer une variable, c'est-à-dire demander à l'ordinateur la permission d'utiliser un peu de mémoire.</p>
+
+							<p>Une déclaration de variable, c'est très simple maintenant que vous savez tout ce qu'il faut. Il suffit dans l'ordre :</p>
+							<ol>
+								<li>d'indiquer le type de la variable que l'on veut créer ;</li>
+								<li>d'insérer un espace ;</li>
+								<li>d'indiquer le nom que vous voulez donner à la variable ;</li>
+								<li>et enfin, de ne pas oublier le point-virgule.</li>
+							</ol>
+							<p>Par exemple, si je veux créer ma variable <em>nombreDeVies </em> de type<em> int</em> , je dois taper la ligne suivante :</p>
+							<img src="../../../images/c/image9.png">
+							<p>Et c'est tout ! Quelques autres exemples stupides pour la forme :</p>
+							<img src="../../../images/c/image10.png">
+							<p>Bon bref, vous avez compris le principe je pense !</p>
+
+							<p>Ce qu'on fait là s'appelle une déclaration de variable (un vocabulaire à retenir). Vous devez faire les déclarations de variables au début des fonctions. Comme pour le moment on n'a qu'une seule fonction (la fonctionmain), vous allez déclarer la variable comme ceci :</p>
+							<img src="../../../images/c/image11.png">
+							<p>Si vous lancez le programme ci-dessus, vous constaterez avec stupeur… qu'il ne fait rien.</p>
+						</li>
+						<li><h3>Quelque explications</h3>
+							<p>Alors, avant que vous ne m'étrangliez en croyant que je vous mène en bateau depuis tout à l'heure, laissez-moi juste dire une chose pour ma défense.</p>
+							<p>En fait, il se passe des choses, mais vous ne les voyez pas. Lorsque le programme arrive à la ligne de la déclaration de variable, il demande bien gentiment à l'ordinateur s'il peut utiliser un peu d'espace dans la mémoire vive.</p>
+							<p>Si tout va bien, l'ordinateur répond « Oui bien sûr, fais comme chez toi ». Généralement, cela se passe sans problème. Le seul souci qu'il pourrait y avoir, c'est qu'il n'y ait plus de place en mémoire… Mais heureusement cela arrive rarement, car pour remplir toute la mémoire rien qu'avec desintil faut vraiment le vouloir !</p>
+							<p>Soyez donc sans crainte, vos variables devraient normalement être créées sans souci.</p>
+						</li>
+					</ul>
+
+	 		 	</li>
+
+	 		 </ul>		   
+		<footer id="f1">
+		
+		         Post&eacute; le <time>16 Novembre 2018</time>
+			     Par <a href="../../info.html">Bensalah kawthar,Zerrouki im&egrave;ne,Assem Sarah</a>
+		</footer>
+   </div>
+</section> <!-- FIN CHAPITRE 1 -->
+	</section>
+</main>
+
+	 <footer >
+	 
+	 	     Copyright &copy; 2018 <a href="../../monsite.html"><span>LetUsCode.com</span></a>
+	
+	</footer>	
+
+</body> 
+</html>

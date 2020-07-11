@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title> Let Us Code </title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel= "stylesheet" href="../../../css/style.css"  />
+	</head>
+	<body>
+		<!-- HEADER DE LA PAGE -->
+		<header>
+			<h1 id="titre_site"><a href="#">Let Us Code </a></h1>
+		</header>
+		<!-- liste des chapitre -->
+		<!-- liste des chapitre (menu vertical-->
+		<nav id="nav1">
+				<ul>
+					<li >
+						<a href="../../monsite.html" class="bouton"><span>Home</span></a>
+					</li>
+					<li >
+						<a href="#" class="bouton"><span>Cours</span></a>
+						<ul>
+							<li><a href="../../c/chapitres/chapitre1.html">langage C</a>	</li>
+							 
+							<li ><a href="../../java/chapitres/chapitre1.html">Java</a></li>
+
+							<li><a href="../../javascript/chapitres/chapitre1.html">JavaScript</a></li>
+
+							<li><a href="../../python/chapitres/chapitre1.html">Python</a></li>
+
+							<li><a href="../../quiz.html">Quiz</a></li>
+						</ul>
+					</li>
+					<li >
+						<a href="../../about.html" class="bouton"><span>About</span></a>
+						<ul>
+							<li><a href="#">page1</a></li>
+							<li><a href="#">page2</a></li>
+						</ul>
+					</li>
+					<li >
+						<a href="../../contact.html" class="bouton"><span>Contact</span></a>
+					</li>
+				</ul>
+			</nav>
+		
+		<!-- liste des chapitre (menu vertical-->
+		
+		<main>
+			<section>
+				<nav id="nav2">			
+			<div id="div1">
+			 <a href = "chapitre1.html" ><button>Chapitre 1</button></a>
+			 <!-- afficher les sous-titres du chapitre actuel -->
+			  <div id="div11">
+			  <a href = "#part1" > &#9830; Le langage Python </a>
+			  <a href = "#part2" > &#9830; À quoi peut servir Python ? </a>
+			  <a href = "#part3" > &#9830; Un langage de programmation interprété </a>
+			  <a href = "#part4" > &#9830; Lancer Python </a>
+			  </div>
+			   </div>
+			  <div id="div2">
+			  	
+			  <a href = "chapitre2.html" ><button>Chapitre 2</button></a>
+			</div>
+			  <div id="div3">
+			   <a href = "chapitre3.html" ><button>chapitre 3</button></a>
+			</div>
+			<div id="div4">
+			   <a href = "chapitre4.html" ><button>chapitre 4</button></a>
+			</div>
+			<div id="div5">
+			   <a href = "../quiz.html" ><button>Quiz</button></a>
+			</div>
+		</nav>
+<section id="section1">
+				<!-- DEBUT CHAPITRE 2 -->
+				<div id="chapitre2">
+					<!-- HEADER CHAPITRE 2-->
+					<header>
+						<a id ="chap2"><h1> Chapitre 2 : Le monde des variables </h1></a>
+					</header>
+					<p>
+						 nous allons commencer à approfondir un petit peu la syntaxe du langage, tout en découvrant un concept important de la programmation : les variables.Ce concept est essentiel et vous ne pouvez absolument pas faire l'impasse dessus. Mais je vous rassure, il n'y a rien de compliqué, que de l'utile et de l'agréable. 
+						<p>
+							<!-- une liste ol pour définir les sous-titres du chapitre actuel-->
+							<OL>
+								<li>
+									<a id ="part1"><h2> C'est quoi, une variable ? </h2></a>
+									<p>
+										Une variable est une donnée de votre programme, stockée dans votre ordinateur. C'est un code alpha-numérique que vous allez lier à une donnée de votre programme, afin de pouvoir l'utiliser à plusieurs reprises et faire des calculs un peu plus intéressants avec. C'est bien joli de savoir faire des opérations mais, si on ne peut pas stocker le résultat quelque part, cela devient très vite ennuyeux.Voyez la mémoire de votre ordinateur comme une grosse armoire avec plein de tiroirs. Chaque tiroir peut contenir une donnée ; certaines de ces données seront des variables de votre programme.
+									</p>
+								</li>
+								<li>
+									<sction>
+										<a id ="part2"><h2> Comment cela fonctionne-t-il ?</h2></a>
+										<p>
+											Le plus simplement du monde. Vous allez dire à Python : « je veux que, dans une variable que je nommeage, tu stockes mon âge, pour que je puisse le retenir (si j'ai la mémoire très courte), l'augmenter (à mon anniversaire) et l'afficher si besoin est ».
+										</p>
+										<p>
+											Comme je vous l'ai dit, on ne peut pas passer à côté des variables. Vous ne voyez peut-être pas encore tout l'intérêt de stocker des informations de votre programme et pourtant, si vous ne stockez rien, vous ne pouvez pratiquement rien faire.En Python, pour donner une valeur à une variable, il suffit d'écrirenom_de_la_variable = valeur.
+										</p>
+										<p>
+											Une variable doit respecter quelques règles de syntaxe incontournables :
+											<ul>
+												<li>Le nom de la variable ne peut être composé que de lettres, majuscules ou minuscules, de chiffres et du symbole souligné « _ » (appelé underscore en anglais).</li>
+												<li>Le nom de la variable ne peut pas commencer par un chiffre.</li>
+												<li>Le langage Python est sensible à la casse, ce qui signifie que des lettres majuscules et minuscules ne constituent pas la même variable (la variableAGEest différente deaGe, elle-même différente deage).</li>
+											</ul>
+											<p>
+												Au-delà de ces règles de syntaxe incontournables, il existe des conventions définies par les programmeurs eux-mêmes. L'une d'elles, que j'ai tendance à utiliser assez souvent, consiste à écrire la variable en minuscules et à remplacer les espaces éventuels par un espace souligné « _ ». Si je dois créer une variable contenant mon âge, elle se nommera doncmon_age. Une autre convention utilisée consiste à passer en majuscule le premier caractère de chaque mot, à l'exception du premier mot constituant la variable. La variable contenant mon âge se nommerait alorsmonAge.Vous pouvez utiliser la convention qui vous plaît, ou même en créer une bien à vous, mais essayez de rester cohérent et de n'utiliser qu'une seule convention d'écriture. En effet, il est essentiel de pouvoir vous repérer dans vos variables dès que vous commencez à travailler sur des programmes volumineux.Ainsi, si je veux associer mon âge à une variable, la syntaxe sera :
+											</p>
+											<img src="../../../images/python/image3.png" alt="intouvable" >
+											</img>
+											<p>
+												L'interpréteur vous affiche aussitôt trois chevrons sans aucun message. Cela signifie qu'il a bien compris et qu'il n'y a eu aucune erreur.Sachez qu'on appelle cette étape l'affectation de valeur à une variable (parfois raccourci en « affectation de variable »). On dit en effet qu'on a affecté la valeur 21 à la variablemon_age.On peut afficher la valeur de cette variable en la saisissant simplement dans l'interpréteur de commandes.
+											</p>
+											<img src="../../../images/python/image4.png" alt="intouvable" >
+											</img>
+										</li>
+										<li>
+											<sction>
+												<a id ="part3"><h2> Les types de données en Python </h2></a>
+												<p>
+													Là se trouve un concept très important, que l'on retrouve dans beaucoup de langages de programmation. Ouvrez grand vos oreilles, ou plutôt vos yeux, car vous devrez être parfaitement à l'aise avec ce concept pour continuer la lecture de ce livre. Rassurez-vous toutefois, du moment que vous êtes attentifs, il n'y a rien de compliqué à comprendre
+												</p>
+												<h2>Les nombres entiers</h2>
+												<p>
+													Le type entier se nommeinten Python (qui correspond à l'anglais « integer », c'est-à-dire entier). La forme d'un entier est un nombre sans virgule.
+												</p>
+												<img src="../../../images/python/image5.png" alt="intouvable" >
+												</img>
+												<h2>Les nombres flottants</h2>
+												<p>
+													Les flottants sont les nombres à virgule. Ils se nommentfloaten Python (ce qui signifie « flottant » en anglais). La syntaxe d'un nombre flottant est celle d'un nombre à virgule (n'oubliez pas de remplacer la virgule par un point). Si ce nombre n'a pas de partie flottante mais que vous voulez qu'il soit considéré par le système comme un flottant, vous pouvez lui ajouter une partie flottante de 0 (exemple 52.0).
+												</p>
+												<img src="../../../images/python/image6.png" alt="intouvable" >
+												</img>
+												<p>
+													Les nombres après la virgule ne sont pas infinis, puisque rien n'est infini en informatique. Mais la précision est assez importante pour travailler sur des données très fines.
+												</p>
+												<h2>Les chaînes de caractères</h2>
+												<p>
+													Heureusement, les types de données disponibles en Python ne sont pas limités aux seuls nombres, bien loin de là. Le dernier type « simple » que nous verrons dans ce chapitre est la chaîne de caractères. Ce type de donnée permet de stocker une série de lettres, pourquoi pas une phrase.On peut écrire une chaîne de caractères de différentes façons :
+													<ol>
+														<li>entre guillemets ("ceci est une chaîne de caractères") ;</li>
+														<li>entre apostrophes ('ceci est une chaîne de caractères') ;</li>
+														<li>entre triples guillemets ("""ceci est une chaîne de caractères""").</li>
+													</ol>
+													On peut, à l'instar des nombres (et de tous les types de données) stocker une chaîne de caractères dans une variable (ma_chaine = "Bonjour, la foule !")Si vous utilisez les délimiteurs simples (le guillemet ou l'apostrophe) pour encadrer une chaîne de caractères, il se pose le problème des guillemets ou apostrophes que peut contenir ladite chaîne. Par exemple, si vous tapezchaine = 'J'aime le Python!', vous obtenez le message suivant :
+												</p>
+												<img src="../../../images/python/image7.png" alt="intouvable" >
+												</img>
+												<p>
+													Ceci est dû au fait que l'apostrophe de « J'aime » est considérée par Python comme la fin de la chaîne et qu'il ne sait pas quoi faire de tout ce qui se trouve au-delà.Pour pallier ce problème, il faut échapper les apostrophes se trouvant au cœur de la chaîne. On insère ainsi un caractère anti-slash « \ » avant les apostrophes contenues dans le message.
+												</p>
+												<img src="../../../images/python/image8.png" alt="intouvable" >
+												</img>
+												<h2 id="part4">Quelques trucs et astuces pour vous faciliter la vie</h2>
+												<p>
+													Python propose un moyen simple de permuter deux variables (échanger leur valeur). Dans d'autres langages, il est nécessaire de passer par une troisième variable qui retient l'une des deux valeurs… ici c'est bien plus simple :
+												</p>
+												<img src="../../../images/python/image9.png" alt="intouvable" >
+												</img>
+												<p>
+													Comme vous le voyez, après l'exécution de la ligne 3, les variablesaetbont échangé leurs valeurs. On retrouvera cette distribution d'affectation bien plus loin.On peut aussi affecter assez simplement une même valeur à plusieurs variables :
+												</p>
+												<img src="../../../images/python/image10.png" alt="intouvable" >
+												</img>
+												<p>
+													Enfin, ce n'est pas encore d'actualité pour vous mais sachez qu'on peut couper une instruction Python, pour l'écrire sur deux lignes ou plus.
+												</p>
+												<img src="../../../images/python/image11.png" alt="intouvable" >
+												</img>
+											</li>
+										</OL>
+										<!-- FOOTER DU CHAPITRE -->
+										<footer id="f1">
+											Post&eacute; le 
+											<time>
+												16 Novembre 2018
+											</time>
+											Par 
+											<a href="../../info.html">Bensalah kawthar,Zerrouki im&egrave;ne,Assem Sarah</a>
+										</footer>
+									</div>
+								</section>
+								</section>
+								<!-- FIN CHAPITRE 2 -->
+							</main>
+							<!-- FOOTER DE LA PAGE -->
+							<footer >
+								Copyright &copy; 2018 
+								<a href="../../monsite.html"><span>LetUsCode.com</span></a>
+							</footer>
+						</script>
+					</body>
+				</html>

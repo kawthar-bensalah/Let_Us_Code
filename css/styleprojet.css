@@ -1,0 +1,373 @@
+
+/* mettre une couleur de fond pour le body */
+body
+{
+  
+background-image: linear-gradient(to left bottom, #ffffff, #dbdbdb, #dbdbdb, #dbdbdb, #dbdbdb);
+}
+
+/* aligner le header a gauche */
+header
+{
+  text-align: left;
+}
+
+/* aligner le footer a gauche + le decorer*/
+footer
+{
+  width:100%;
+  float:left;
+  font-size: 18px;
+  padding: 25px 40px;
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.5);
+  text-align: center;
+  color:black;
+}
+
+/* style pour le lien de footer*/
+footer a
+{
+  text-decoration:none;
+  color:#f71570;
+}
+
+
+/* style le footer d'article*/
+article footer
+{
+  background-color: #e6e6e6;
+   /* pour Webkit (Chrome, Safari, Android...)*/
+    /*pour Mozilla*/
+     /*pour Microsoft  */
+     /* pour Opera */
+  background-image: -moz-linear-gradient(top, #f2f2f2, #e6e6e6 100%);
+  background-image: -ms-linear-gradient(top, #f2f2f2, #e6e6e6 100%);
+  background-image: -webkit-linear-gradient(top, #f2f2f2, #e6e6e6 100%);
+  background-image: -o-linear-gradient(top, #f2f2f2, #e6e6e6 100%);
+  background-image: linear-gradient(top, #f2f2f2, #e6e6e6 100%);
+  border: 1px solid;
+  border-color: #ffffff #c9c9c9 #c9c9c9 #ffffff;
+  border-radius: 5px;
+  box-shadow: -1px 0 4px rgba(0, 0, 0, 0.1);
+  color: #333333;
+  clear: both;
+  font-size: 13px;
+  line-height: 1.8;
+  margin: 30px 0 0 -60px;
+  padding: 14px 15px;
+  text-shadow: 0 1px 0 #ffffff;
+}
+
+
+/* Colorer le header */
+#header1
+{
+  color: #FF69B4;
+  font-size:35px;
+}
+
+
+/* Colorer le lien au survol */
+a:hover
+{
+  color: #000;
+}
+
+/* Style de l'article*/
+#article1
+{
+  width:65%;
+  padding-bottom: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  float:left;
+  border-radius:15px;
+   background-image: linear-gradient(to right bottom, #f6e8f4, #f4f3f4, #f4f3f4, #f4f3f4, #f4f3f4);
+  box-shadow:3px 3px 3px #f71570;
+}
+
+/* Style de footer*/
+#fs
+{
+  margin-left: -10%;
+  text-align: left;
+  width: 50%;
+}
+
+/* Style pour l'image */
+img
+{
+  margin: 0 25px 10px -20px;
+}
+
+/* Style pour l'image au survol */
+a:hover img
+{
+  box-shadow: 0 0 8px #f71570;
+}
+
+/* mettre margin left pour l'article */
+article
+{
+  margin-left:3%;
+}
+
+/* decoration pour le titre niveau 1 et les liens */
+a,h1
+{
+  color: #f71570;
+  text-decoration: none;
+}
+
+/* les liens de site*/
+#site a
+{
+  margin-left:30%;
+ text-decoration: none;
+  color: #f71570;
+  display: inline-block;
+  font-size: 65px;
+  font-weight: 900;
+  letter-spacing: -1px;
+  text-shadow: 0 1px 0 #ffffff;
+  -webkit-transition: all 200ms ease-in-out;
+  -moz-transition: all 200ms ease-in-out;
+  -ms-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+
+
+/* styles pour les lien d site au survol*/
+#site a:hover
+{
+   /* pour Webkit (Chrome, Safari, Android...)*/
+    /*pour Mozilla*/
+     /*pour Microsoft  */
+     /* pour Opera */
+     /* scale pour agrandir la taille du site */
+  -webkit-transform: scale(0.95);
+  -moz-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  -o-transform: scale(0.95);
+  transform: scale(0.95);
+}
+
+/*margin left pour le nav*/
+nav
+{
+  margin-left: 3%;
+}
+
+/*decoration les liens de nav*/
+nav a
+{
+  text-decoration:none;
+  color:white;
+  display:block;
+}
+
+/*decoration les listes de nav (niveau 1 du menu horizontal)*/
+nav ul
+{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+
+  width:100%}
+  
+/*decoration les li de listes de nav (niveau 1 du menu horizontal)*/
+nav >ul >li 
+{
+  border-radius:12px 0 12px 0;
+  border:none;
+  font:bold 12px Verdana;
+  box-shadow:1px 1px 3px #0c0c0c;
+  display: inline-block;
+  text-decoration:none;
+  text-align: center;
+  width:8%;
+  padding: 14px 16px;
+  margin-bottom:10px;
+  margin-right:2px;
+  float:left;
+  background-color:#f71570;
+  cursor: pointer;
+  display: inline-block;
+  float:left;
+}
+
+li span
+{
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+li span:after
+{
+  content: '\00bb';/*afficher " >> " au survol*/
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+li:hover span
+{
+  padding-right: 25px;
+}
+
+li:hover span:after
+{
+  opacity: 1;
+  right: 0;
+}
+/*niveau 2 du menu horizontal*/
+li ul li 
+{
+  border-radius:12px 0 12px 0;
+  border:none;
+  font:bold 12px Verdana;
+  box-shadow:1px 1px 3px #0c0c0c;
+  text-decoration:none;
+  text-align: center;
+  width:8%;
+  padding: 14px 16px;
+  margin-bottom:10px;
+  margin-right:2px;
+  float:left;
+  background-color:#f71570;
+  cursor: pointer;
+}
+
+/*float l'image a gauche*/
+img
+{
+  float:left;
+}
+
+
+nav li ul
+{
+  position: absolute;
+}
+
+/*ne pas afficher les puces pour les listes */
+ol
+{
+  list-style:none;
+}
+
+nav li{
+float:left;/*positionner le menu horizontalement*/
+margin:auto;
+padding:0;
+background-color:black;
+}
+nav li a {
+display:block;
+
+color:white;
+/*enlever le souligné des liens de navigation*/
+text-decoration:none;
+padding:5px;
+}
+nav li a:hover {
+color:cyan;
+}
+/*ne pas afficher les sous-menus au départ*/
+nav ul li ul {  
+display:none;
+height: 50%;
+}
+nav ul li ul li{
+  margin:2px;
+}
+nav ul li ul a 
+{
+  text-align: left;
+}
+/* dès que le menu est survolé  il s'affiche*/
+nav ul li:hover ul {  
+display:block;
+}
+/*positionner les sous-menus à la verticale*/
+nav li:hover ul li {  
+float:none;
+}
+
+/*animation */
+#lol {
+  width: 80px;
+  float:right;
+  margin-right: 17%;
+  height: 80px;
+  position: relative;
+  /* changer le style de l'animation apres un certain temps */
+  /*relier le keyframe à l'animation */
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+/* le code de l'animation */
+
+@keyframes example {
+  0%  {background-image: url("../images/0.png");background-size:cover;left:0px; top:0px;}
+  /* la premiere seconde */
+  25%  {background-image:url("../images/python.png");background-size:cover; left:200px; top:0px;}
+   /* la deuxième seconde */
+  50%  {background-image:url("../images/javascript.png");background-size:cover; left:200px; top:200px;}
+   /* la troisième seconde */
+  75%  {background-image: url("../images/2.png");background-size:cover; left:0px; top:200px;}
+   /* la quatrième seconde */
+  100% {background-image:url("../images/0.png");background-size:cover;left:0px; top:0px;}
+}
+
+/* aabout */
+#imgabout
+{
+  width: 20%;
+  margin-right: 10%;
+}
+
+/*contact*/
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: pink;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+#form_div
+{
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 5%;
+}
+#subject
+{
+  height:200px;
+}
+/*responsive design*/
+@media screen  (max-width: 640px) {  { display: block; clear: both; margin: 0; } }

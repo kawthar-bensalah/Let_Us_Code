@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+
+     <head>
+         <meta charset="utf-8">
+         <title> Let Us Code </title>
+		 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		 <link rel= "stylesheet" href="../../../css/style.css"  />
+     </head>
+	 
+  <body>
+  
+       <!-- HEADER DE LA PAGE -->
+	   
+      <header>
+  	                   <h1 id="titre_site"> <a href="../../monsite.html">Let Us Code </a></h1>
+	 </header>
+	  
+	  		 <!-- liste des chapitre -->	   
+		   <nav id="nav1">
+				<ul>
+					<li >
+						<a href="../../monsite.html" class="bouton"><span>Home</span></a>
+					</li>
+					<li >
+						<a href="#" class="bouton"><span>Cours</span></a>
+						<ul>
+							<li><a href="../../c/chapitres/chapitre1.html">langage C</a>	</li>
+							 
+							<li ><a href="../../java/chapitres/chapitre1.html">Java</a></li>
+
+							<li><a href="../../javascript/chapitres/chapitre1.html">JavaScript</a></li>
+
+							<li><a href="../../python/chapitres/chapitre1.html">Python</a></li>
+							<li><a href="../../quiz.html">Quiz</a></li>
+						</ul>
+					</li>
+					<li >
+						<a href="../../about.html" class="bouton"><span>About</span></a>
+					
+					</li>
+					<li >
+						<a href="../../contact.html" class="bouton"><span>Contact</span></a>
+					</li>
+				</ul>
+			</nav>
+		
+		<!-- liste des chapitre (menu vertical-->
+		
+		<main>
+			<section>
+				<nav id="nav2">			
+			<div id="div1">
+			 <a href = "chapitre1.html" ><button>Chapitre 1</button></a>
+			 <!-- afficher les sous-titres du chapitre actuel -->
+			 
+			   </div>
+			  <div id="div2">
+			  	
+			  <a href = "chapitre2.html" ><button>Chapitre 2</button></a>
+			</div>
+			  <div id="div3">
+			   <a href = "chapitre3.html" ><button>chapitre 3</button></a> 
+			   <div id="div33">
+			  <a href = "#part1" > &#9830; La structure if… else</a>
+			  <a href = "#part2" > &#9830; La structure switch </a>
+			  <a href = "#part3" > &#9830; La condition ternaire </a>
+		
+			  </div>
+			</div>
+			<div id="div4">
+			   <a href = "chapitre4.html" ><button>chapitre 4</button></a>
+			</div>
+			<div id="div5">
+			   <a href = "../quiz.html" ><button>Quiz</button></a>
+			</div>
+		</nav>
+<section id="section1"><!-- DEBUT CHAPITRE 3 -->
+		
+      <div id="chapitre1">		
+	  
+	  
+	         <!-- HEADER CHAPITRE 3-->
+	   
+	          <header>
+ 			              <a id ="chap3"> <h1> Chapitre 3 : Les conditions </h1> </a> 
+			 </header>
+	 
+	 		    <OL id="titre_chap"> 
+				
+				   <LI> 
+				       
+						
+						<p>
+        						Nous abordons ici l'un des chapitres les plus importants : les conditions sont une autre notion fondamentale de la programmation. En effet, ce qui va être développé ici s'applique à énormément de langages de programmation, et pas seulement à Java.
+						</p>
+						
+						<p>
+						
+						Dans une classe, la lecture et l'exécution se font de façon séquentielle, c'est-à-dire ligne par ligne. Avec les conditions, nous allons pouvoir gérer différents cas de figure sans pour autant lire tout le code. Vous vous rendrez vite compte que tous vos projets ne sont que des enchaînements et des imbrications de conditions et de boucles (notion que l'on abordera au chapitre suivant).
+						</p>
+						
+						<p> Assez de belles paroles ! Entrons tout de suite dans le vif du sujet. </p>
+						
+						
+         
+				 </LI>
+				 
+				 <LI>
+				       
+						      <a id ="part1"> <h2> La structure if… else </h2> </a>
+
+						
+						    <p>
+						        Avant de pouvoir créer et évaluer des conditions, vous devez savoir que pour y parvenir, nous allons utiliser ce qu'on appelle des « opérateurs logiques ». Ceux-ci sont surtout utilisés lors de conditions (si [test] alors [faire ceci]) pour évaluer différents cas possibles. Voici les différents opérateurs à connaître :
+							</p>
+							
+							
+							  <ol>
+							     <li> « == » : permet de tester l'égalité.
+                                 <li> « != » : permet de tester l’inégalité. 
+								 <li> « < » : strictement inférieur.
+								 <li> « <= » : inférieur ou égal.
+								 <li> « > » : strictement supérieur.
+								 <li> « >= » : supérieur ou égal.
+								 <li> « && » : l'opérateur ET. Il permet de préciser une condition
+								 <li> « || » : le OU. Même combat que le précédent.
+								 <li> «  ? : » : l'opérateur ternaire. Pour celui-ci, vous comprendrez mieux avec un exemple qui sera donné vers la fin de ce chapitre.
+								 
+						      </ol>
+							
+							 
+							
+							<p>
+							    Comme je vous l'ai dit dans le chapitre précédent, les opérations en Java sont soumises à des priorités. Tous ces opérateurs se plient à cette règle, de la même manière que les opérateurs arithmétiques…
+							</p>
+							<p>
+							Imaginons un programme qui demande à un utilisateur d'entrer un nombre entier relatif (qui peut être soit négatif, soit nul, soit positif). Les structures conditionnelles vont nous permettre de gérer ces trois cas de figure. La structure de ces conditions ressemble à ça :
+							</p>
+							
+							<img src="../../../images/java/image17.jpg" alt="aucune image" />
+							
+							<p>Cela peut se traduire par « si… sinon… ». </p>
+							
+							<p>
+							Le résultat de l'expression évaluée par l'instruction if sera un boolean, donc soit true, soit false. La portion de code du bloc if ne sera exécutée que si la condition est remplie. Dans le cas contraire, c'est le bloc de l'instruction else qui le sera. Mettons notre petit exemple en pratique :
+							</p>
+							
+							
+							<img src="../../../images/java/image18.jpg" alt="aucune image" />
+							
+							<p>
+							Essayez ce petit code, et vous verrez comment il fonctionne. Dans ce cas, notre classe affiche « le nombre est positif ». Expliquons un peu ce qui se passe.
+							</p>
+							
+							<ul>
+							    <li>Dans un premier temps, la condition du if est testée : elle dit « si i est strictement inférieur à 0 alors fais ça ».
+								<li>Dans un second temps, vu que la condition précédente est fausse, le programme exécute le else.
+							</ul>
+							
+							<div id="remarque">
+							
+							<p> <B> Remarque : </B> </p>
+							
+							<p>Attends un peu ! Lorsque tu nous as présenté la structure des conditions, tu as mis des accolades et là, tu n'en mets pas. Pourquoi ?<p>
+							
+							</div>
+							
+							<p>
+							Bien observé. En fait, les accolades sont présentes dans la structure « normale » des conditions, mais lorsque le code à l'intérieur de l'une d'entre elles n'est composé que d'une seule ligne, les accolades deviennent facultatives.
+							</p>
+							
+							<p>
+							Comme nous avons l'esprit perfectionniste, nous voulons que notre programme affiche « le nombre est nul » lorsque i est égal à 0 ; nous allons donc ajouter une condition. Comment faire ? La condition du if est remplie si le nombre est strictement négatif, ce qui n'est pas le cas ici puisque nous allons le mettre à 0. Le code contenu dans la clause else est donc exécuté si le nombre est égal ou strictement supérieur à 0. Il nous suffit d'ajouter une condition à l'intérieur de la clause else, comme ceci :
+							</p>
+							
+							<img src="../../../images/java/image19.jpg" alt="aucune image" />
+							
+							<p> 
+							Maintenant que vous avez tout compris, je vais vous présenter une autre façon d'écrire ce code, avec le même résultat : on ajoute juste un petit « sinon si… ».
+							</p>
+							
+							<img src="../../../images/java/image20.jpg" alt="aucune image" />
+							
+							<p>
+							ci, je vais très fortement insister sur un point : regardez l'affichage du code et remarquez le petit décalage entre le test et le code à exécuter. On appelle cela l'indentation !
+							</p>
+							
+							<p>
+							Pour vous repérer dans vos futurs programmes, cela sera très utile. Imaginez deux secondes que vous avez un programme de 700 lignes avec 150 conditions, et que tout est écrit le long du bord gauche. Il sera difficile de distinguer les tests du code. Vous n'êtes pas obligés de le faire, mais je vous assure que vous y viendrez.
+						    </p>
+							
+							
+							<OL id="titre_part1">
+						      <LI> 
+						          
+					
+						            <a id ="part12"> <h2>  Les conditions multiples   </h2></a>
+									
+									<p>
+									Derrière ce nom barbare se cachent simplement plusieurs tests dans une instruction if (ou else if). Nous allons maintenant utiliser les opérateurs logiques que nous avons vus au début en vérifiant si un nombre donné appartient à un intervalle connu. Par exemple, on va vérifier si un entier est compris entre 50 et 100.
+									</p>
+									<img src="../../../images/java/image21.jpg" alt="aucune image" />
+							
+									<p>						
+									Nous avons utilisé l'opérateur &&. La condition de notre if est devenue : « si i est inférieur à 100 ET supérieur à 50 ».
+									</p>
+									
+									
+								<div id= "remarque2">
+								    <p> <B> Remarque : </B> </p>
+									<p>
+									Avec l'opérateur « && », la clause est remplie si et seulement si les conditions la constituant sont toutes remplies ; si l'une des conditions n'est pas vérifiée, la clause sera considérée comme fausse.
+									</p>
+								</div>
+
+								<p>
+								Cet opérateur vous initie à la notion d'intersection d'ensembles. Ici, nous avons deux conditions qui définissent un ensemble chacune :
+								</p>
+								
+								<ul>
+								  <li> i < 100 définit l'ensemble des nombres inférieurs à 100 ;
+								  <li> i > 50 définit l'ensemble des nombres supérieurs à 50.
+								</ul>
+								
+								<p>
+								L'opérateur « && » permet de faire l'intersection de ces ensembles. La condition regroupe donc les nombres qui appartiennent à ces deux ensembles, c’est-à-dire les nombres de 51 à 99 inclus. Réfléchissez bien à l'intervalle que vous voulez définir. Voyez ce code :
+								</p>
+								
+								<img src="../../../images/java/image22.jpg" alt="aucune image" />
+								
+								<p>
+								Ici, la condition ne sera jamais remplie, car je ne connais aucun nombre qui soit à la fois plus petit et plus grand que 100 ! Reprenez le code précédent et remplacez l'opérateur « && » par « || » (petit rappel, il s'agit du OU). À l'exécution du programme et après plusieurs tests de valeur pour i, vous pourrez vous apercevoir que tous les nombres remplissent cette condition, sauf 100.
+								</p>
+								
+								
+								
+							  
+							  </LI>
+							</ol>
+							
+					
+				   </LI>
+				   
+				   				   
+			       <LI>
+				     
+                           <a id ="part2"> <h2> La structure switch </h2></a>
+
+						    <p>
+						    Le switch est surtout utilisé lorsque nous voulons des conditions « à la carte ». Prenons l'exemple d'une interrogation comportant deux questions : pour chacune d'elles, on peut obtenir uniquement 0 ou 10 points, ce qui nous donne au final trois notes et donc trois appréciations possibles, comme ceci :
+							</p>
+							
+							<ul>
+							
+							  <li>0/20 : tu peux revoir ce chapitre, petit Zéro !
+							  <li>10/20 : je crois que tu as compris l'essentiel ! Viens relire ce chapitre à l'occasion.
+							  <li>20/20 : bravo !
+							 </ul>
+							 
+							 <p>
+							     Dans ce genre de cas, on utilise un switch pour éviter des else if à répétition et pour alléger un peu le code. Je vais vous montrer comment se construit une instruction switch ; puis nous allons l'utiliser tout de suite après.
+							 </p>
+							
+							<p> <B> Syntaxe </B> </p>
+						  
+						    <img src="../../../images/java/image23.jpg" alt="aucune image" />
+							
+							<p>
+							Voici les opérations qu'effectue cette expression :
+							</p>
+							
+							<ul>
+							  <li>La classe évalue l'expression figurant après le switch (ici /*Variable*/).
+							  <li>Si la première languette (case /*Valeur possible de la variable*/:) correspond à la valeur de /*Variable*/, l'instruction figurant dans celle-ci sera exécutée.
+							  <li>Sinon, on passe à la languette suivante, et ainsi de suite.
+							  <li>Si aucun des cas ne correspond, la classe va exécuter ce qui se trouve dans l'instruction default:/*Action*/;. Voyez ceci comme une sécurité.
+							</ul>
+					
+							<p>
+							Notez bien la présence de l'instruction break;. Elle permet de sortir du switch si une languette correspond. Pour mieux juger de l'utilité de cette instruction, enlevez tous les break; et compilez votre programme. Vous verrez le résultat… Voici un exemple de switch que vous pouvez essayer :
+							</p>
+							 
+							 <img src="../../../images/java/image24.jpg" alt="aucune image" />
+							
+							
+						<div id="remarque3">
+							
+                            <p> <B> Remarque : </B> </p>
+							<p>
+							Je n'ai écrit qu'une ligne de code par instruction case, mais rien ne vous empêche d'en mettre plusieurs.
+							</p>
+						</div>
+						
+						<p>
+						Si vous avez essayé ce programme en supprimant l'instruction break;, vous avez dû vous rendre compte que le switch exécute le code contenu dans le case 10:, mais aussi dans tous ceux qui suivent ! L'instruction break; permet de sortir de l'opération en cours. Dans notre cas, on sort de l'instruction switch, mais nous verrons une autre utilité à break; dans le chapitre suivant.
+						</p>
+						
+						<p>
+						Depuis la version 7 de Java, l'instruction switch accepte les objets de type String en paramètre. De ce fait, cette instruction est donc valide :
+						</p>
+						
+						<img src="../../../images/java/image27.jpg" alt="aucune image" />
+						
+				
+			    </LI>
+				
+				  <LI>
+				    
+                           <a id ="part3"> <h2> La condition ternaire </h2></a>
+
+						    <p>
+						    Les conditions ternaires sont assez complexes et relativement peu utilisées. Je vous les présente ici à titre indicatif. La particularité de ces conditions réside dans le fait que trois opérandes (c'est-à-dire des variables ou des constantes) sont mis en jeu, mais aussi que ces conditions sont employées pour affecter des données à une variable. Voici à quoi ressemble la structure de ce type de condition :
+							</p>
+							
+							  <img src="../../../images/java/image28.jpg" alt="aucune image" />
+							  
+							 <p>
+							    Décortiquons ce qu'il se passe :
+							 </p>
+							  
+							  
+							<ul>
+							
+							  <li>Nous cherchons à affecter une valeur à notre variable max, mais de l'autre côté de l'opérateur d'affectation se trouve une condition ternaire…
+							  <li>
+                              Ce qui se trouve entre les parenthèses est évalué : x est-il plus petit que y ? Donc, deux cas de figure se profilent à l'horizon :
+							       <ul>
+								    <li>si la condition renvoie true (vrai), qu'elle est vérifiée, la valeur qui se trouve après le ? sera affectée ;
+									<li>sinon, la valeur se trouvant après le symbole: sera affectée.
+								   </ul>
+                          
+							 <li>L'affectation est effective : vous pouvez utiliser votre variable max.
+							 </ul>
+							 
+							 <p> Vous pouvez également faire des calculs (par exemple) avant d'affecter les valeurs :</p>
+							 
+							 <img src="../../../images/java/image29.jpg" alt="aucune image" />
+							 
+							 <p> N'oubliez pas que la valeur que vous allez affecter à votre variable doit être du même type que votre variable. Sachez aussi que rien ne vous empêche d'insérer une condition ternaire dans une autre condition ternaire :</p>
+							 
+							 <img src="../../../images/java/image30.jpg" alt="aucune image" />
+							 
+							 <ul>
+							   <li>Les conditions vous permettent de n'exécuter que certains morceaux de code.
+							   <li>Il existe plusieurs sortes de structures conditionnelles :
+							      <ul>
+								     <li>la structure if... elseif... else ;
+									 <li>la structure switch... case... default ;
+									 <li>la structure  ? :.
+							   	  </ul>
+							   <li>Si un bloc d'instructions contient plus d'une ligne, vous devez l'entourer d'accolades afin de bien en délimiter le début et la fin.
+							   <li>Pour pouvoir mettre une condition en place, vous devez comparer des variables à l'aide d'opérateurs logiques.
+							   <li>Vous pouvez mettre autant de comparaisons renvoyant un boolean que vous le souhaitez dans une condition.
+							   <li>Pour la structure switch, pensez à mettre les instructions break; si vous ne souhaitez exécuter qu'un seul bloc case.
+							 </ul>
+							 
+
+			    </LI>
+		</OL> 
+		
+				<footer id="f1">
+					Post&eacute; le 
+					<time>
+						16 Novembre 2018
+					</time>
+					Par 
+					<a href="../../info.html">Bensalah kawthar,Zerrouki im&egrave;ne,Assem Sarah</a>
+				</footer>
+			</div>
+		</section>
+	</section>
+		<!-- FIN CHAPITRE 3 -->
+	</main>
+
+	 <footer >
+	 
+	 	     Copyright &copy; 2018 <a href="../../monsite.html"><span>LetUsCode.com</span></a>
+	
+	</footer>	
+	
+	
+</body> 
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+     <head>
+         <meta charset="utf-8">
+         <title> Let Us Code </title>
+		 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		 <link rel= "stylesheet" href="../../../css/style.css"  />
+     </head>
+	 
+  <body>
+  
+       <!-- HEADER DE LA PAGE -->
+	   
+      <header>
+  	                   <h1 id="titre_site"> <a href="../../monsite.html">Let Us Code </a></h1>
+	 </header>
+	  
+	  		 <!-- liste des chapitre -->	
+	  		 <div id="diiv">   
+			   	<nav id="nav1">
+					<ul>
+						<li >
+							<a href="../../monsite.html" class="bouton"><span>Home</span></a>
+						</li>
+						<li >
+							<a href="#" class="bouton"><span>Cours</span></a>
+							<ul>
+								<li><a href="../../c/chapitres/chapitre1.html">langage C</a>	</li>
+								 
+								<li ><a href="../../java/chapitres/chapitre1.html">Java</a></li>
+
+								<li><a href="../../javascript/chapitres/chapitre1.html">JavaScript</a></li>
+
+								<li><a href="../../python/chapitres/chapitre1.html">Python</a></li>
+								<li><a href="../../quiz.html">Quiz</a></li>
+							</ul>
+						</li>
+						<li >
+							<a href="../../about.html" class="bouton"><span>About</span></a>
+						
+						</li>
+						<li >
+							<a href="../../contact.html" class="bouton"><span>Contact</span></a>
+						</li>
+					</ul>
+				</nav>
+		
+		<!-- liste des chapitre (menu vertical-->
+		
+		<main>
+			<section>
+				<nav id="nav2">			
+			<div id="div1">
+			 <a href = "chapitre1.html" ><button>Chapitre 1</button></a>
+			 <!-- afficher les sous-titres du chapitre actuel -->
+			
+			   </div>
+			  <div id="div2">
+			  	
+			  <a href = "chapitre2.html" ><button>Chapitre 2</button></a>
+			</div>
+			  <div id="div3">
+			   <a href = "chapitre3.html" ><button>chapitre 3</button></a>
+			     <div id="div33">
+			  <a href = "#part1" > &#9830; La notion de variable </a>
+			  <a href = "#part2" > &#9830; La notion d'expression </a>
+			  <a href = "#part3" > &#9830; Conversions de type </a>
+			  <a href = "#part4" > &#9830; Interactions avec l'utilisateur</a>
+			  </div>
+			</div>
+			<div id="div4">
+			   <a href = "chapitre4.html" ><button>chapitre 4</button></a>
+			</div>
+			<div id="div5">
+			   <a href = "../quiz.html" ><button>Quiz</button></a>
+			</div>
+		</nav>
+<div id="section1"><!-- DEBUT CHAPITRE 2 -->
+		
+      <div id="chapitre1">
+      	<!-- HEADER CHAPITRE 2-->
+	   
+	          <header>
+ 			              <a id ="chapitre3"> <h1> Chapitre 3 :Jouez avec les variables  </h1> </a> 
+			 </header>
+			 <ul id="titre_chap">
+			 	<li><a id ="part1"><h2>La notion de variable</h2></a>
+			 		<ul>
+			 			<li><h3>Rôle des variables</h3>
+			 				<p>Un programme informatique mémorise des données en utilisant des variables. Une <strong>variable</strong> est une zone de stockage d'information. On peut l'imaginer comme une boîte dans laquelle on range des choses. </p>
+			 			</li>
+			 			<li><h3>Propriétés d'une variable</h3>
+			 				<p>Une variable possède trois grandes propriétés :</p>
+			 				<ul>
+			 					<li>Son <strong>nom</strong>, qui permet de l'identifier. Un nom de variable peut contenir des lettres majuscules ou minuscules, des chiffres (sauf en première position) et certains caractères comme le dollar <strong>($)</strong>  ou le tiret bas, appelé underscore <strong>(_)</strong>.</li>
+			 					<li>Sa <strong>valeur</strong>, qui est la donnée actuellement mémorisée dans cette variable.</li>
+			 					<li>Son <strong>type</strong>, qui détermine le rôle et les opérations applicables à cette variable. </li>
+			 				</ul>
+			 			</li>
+			 			<li><h3>Déclarer une variable</h3>
+			 				<p>Avant de pouvoir stocker des informations dans une variable, il faut la créer. Cette opération s'appelle la <strong>déclaration</strong> de la variable. Au niveau de l'ordinateur, déclarer une variable déclenche la réservation d'une zone de la mémoire attribuée à cette variable. Le programme peut ensuite lire ou écrire des données dans cette zone mémoire en manipulant la variable.</p>
+			 				<p>Voici un exemple de code qui déclare une variable puis affiche sa valeur.</p>
+			 			    <img src="../../../images/JavaScript/image5.png" alt="aucune image" />
+			 			    <p>En JavaScript, on déclare une variable à l'aide du mot-clé <strong>let</strong> suivi du nom de la variable. Dans cet exemple, la variable créée se nomme <strong>a</strong>.</p>
+
+			 			</li>
+			 			<li><h3>Affecter une valeur à une variable</h3>
+			 				<p>Au cours du déroulement du programme, la valeur stockée dans une variable peut changer. Pour donner une nouvelle valeur à une variable, on utilise l'opérateur=, appelé <strong>opérateur d'affectation</strong>.</p>
+			 				 <img src="../../../images/JavaScript/image6.png" alt="aucune image" />
+			 				 <p>La valeur de la variable a été modifiée par l'opération d'affectation. La ligne  <strong>a = 3.14 </strong> se lit <em>"a reçoit la valeur 3,14"</em>.</p>
+			 				 <p>On peut également combiner déclaration et affectation d'une valeur en une seule ligne. Il est cependant important de bien distinguer leurs rôles respectifs. Le programme ci-dessous est équivalent au précédent.</p>
+			 				 <img src="../../../images/JavaScript/image7.png"  alt="aucune image" />
+			 			</li>
+			 			<li><h3>Déclarer une variable constante</h3>
+			 				<p>Si la valeur initiale d'une variable ne changera jamais au cours de l'exécution du programme, cette variable est ce qu'on appelle une <strong>constante</strong>. Il vaut alors mieux la déclarer avec le mot-clé  <strong> const </strong>  plutôt qu'avec  <strong>let</strong>. Cela rend le programme plus facile à comprendre, et cela permet aussi de détecter des erreurs.</p>
+			 				<img src="../../../images/JavaScript/image8.png"  alt="aucune image" />
+			 			</li>
+			 			<li><h3>Incrémenter une variable de type nombre</h3>
+			 				<p>Il est également possible d'augmenter ou de diminuer la valeur d'un nombre avec les opérateurs <strong>+=</strong> et <strong>++</strong>. Ce dernier est appelé <strong>opérateur d'incrémentation</strong>, car il permet d'incrémenter (augmenter de 1) la valeur d'une variable.</p>
+			 				<img src="../../../images/JavaScript/image9.png"  alt="aucune image" />
+			 			</li>
+			 			<li><h3>Portée d'une variable</h3>
+			 				<p>On appelle <strong>portée</strong> (scope) d'une variable la portion du code source dans laquelle cette variable est visible et donc utilisable. Les variables déclarées avec  <strong>let</strong>  et  <strong>const</strong>  ont une portée de type <strong>bloc</strong> : elles ne sont visibles qu'au sein du bloc de code dans lequel elles sont déclarées (ainsi que dans tous les sous-blocs éventuels).</p>
+			 				<p>En JavaScript et dans de nombreux autres langages, <strong>un bloc de code </strong> est délimité par une paire d'accolades ouvrante et fermante. Un programme JavaScript correspond par défaut à un unique bloc de code</p>
+			 				<img src="../../../images/JavaScript/image10.png"  alt="aucune image" />
+			 			</li>
+			 		</ul>
+			 	</li>
+			 	<li><a id ="part2"><h2>La notion d'expression</h2></a>
+			 		<p>Une <strong>expression</strong> est un morceau de code qui produit une valeur. On crée une expression en combinant des variables, des valeurs et des opérateurs. Toute expression produit une valeur et correspond à un certain type. Le calcul de la valeur d'une expression s'appelle l'évaluation. Lors de <strong>l'évaluation</strong> d'une expression, les variables sont remplacées par leur valeur.</p>
+			 		<img src="../../../images/JavaScript/image11.png"  alt="aucune image" />
+			 		<p>Une expression peut comporter des parenthèses qui modifient la priorité des opérations lors de l'évaluation. En l'absence de parenthèses, la priorité des opérateurs est la même qu'en mathématiques.</p>
+			 		<img src="../../../images/JavaScript/image12.png"  alt="aucune image" />
+			 		<p>Le langage JavaScript permet d'inclure des expressions dans une chaîne de caractères lorsque cette chaîne est délimitée par une paire d'accents graves seuls ou backticks <em>(  `...`  )</em>. Une telle chaîne est appelée <strong>un modèle de libellé</strong> ou template literal. A l'intérieur, les expressions sont indiquées par la syntaxe  <em>${expression}</em>.</p>
+			 		<p>On utilise souvent cette possibilité pour créer des chaînes intégrant des valeurs de variables.</p>
+			 		<img src="../../../images/JavaScript/image13.png"  alt="aucune image" />
+
+
+			 	</li>
+			 	<li><a id ="part3"><h2>Conversions de type</h2></a>
+			 		<p>L'évaluation d'une expression peut entraîner des conversions de type. Ces conversions sont dites<strong> implicites </strong>: elles sont faites automatiquement, sans intervention du programmeur. Par exemple, l'utilisation de l'opérateur <em>"+"</em> entre une valeur de type chaîne et une valeur de type nombre provoque la concaténation des deux valeurs dans un résultat de type chaîne.</p>
+			 		<img src="../../../images/JavaScript/image14.png"  alt="aucune image" />
+			 		<p>Le langage JavaScript est extrêmement tolérant au niveau des conversions de type. Cependant, il arrive qu'aucune conversion ne soit possible. En cas d'échec de la conversion d'un nombre, la valeur du résultat est <em>NaN (Not a Number)</em>.</p>
+			 		<img src="../../../images/JavaScript/image15.png"  alt="aucune image" />
+			 		<p>Il arrive parfois que l'on souhaite forcer la conversion d'une valeur dans un autre type. On parle alors de conversion <strong>explicite</strong>. Pour cela, JavaScript dispose des instructions <em>Number()</em> et<em> String()</em> qui convertissent respectivement en un nombre et une chaîne la valeur placée entre parenthèses.</p>
+			 		<img src="../../../images/JavaScript/image16.png"  alt="aucune image" />
+
+			 	</li>
+			 	<li><a id ="part4"><h2>Interactions avec l'utilisateur</h2></a>
+			 		<ul>
+			 			<li><h3>Saisie et affichage d'informations</h3>
+			 				<p>Maintenant que nous savons utiliser des variables, nous pouvons écrire des programmes qui échangent des informations avec l'utilisateur.</p>
+			 				<img src="../../../images/JavaScript/image17.png"  alt="aucune image" />
+			 				<p>La première ligne affiche une boîte de dialogue permettant de saisir un message</p>
+			 				<img  id="dialogue1" src="../../../images/JavaScript/image18.png"  alt="aucune image" />
+			 				<p>Cette boîte est le résultat de l'exécution de l'instruction <em>prompt("Entrez votre prénom :")</em>. </p>
+			 				<p>La valeur saisie dans la première boîte de dialogue est stockée dans une variable de type chaîne nommée <em>prenom</em>. Ensuite, l'instruction <em>alert()</em> déclenché l'affichage de la seconde boîte, contenant le résultat de la concaténation de la chaîne <em>"Bonjour"</em> avec la valeur de la variable <em>prenom.</em> </p>
+			 				<img id="dialogue2" src="../../../images/JavaScript/image19.png"  alt="aucune image" />
+
+			 			</li>
+			 			<li><h3>Saisie d'un nombre</h3>
+			 				<p>Quel que soit le texte saisi, l'instruction <em> prompt() </em> renvoie toujours une valeur de type chaîne. Il faudra penser à convertir cette valeur avec l'instruction <em>Number()</em> si vous souhaitez ensuite la comparer à d'autres nombres ou l'utiliser dans des expressions mathématiques.</p>
+			 				<img src="../../../images/JavaScript/image20.png"  alt="aucune image" />
+			 				<p>Il est possible de combiner les deux opérations (saisie et conversion) en une seule ligne de code, pour un résultat identique :</p>
+			 				<img src="../../../images/JavaScript/image21.png"  alt="aucune image" />
+			 				<p>Ici, le résultat de la saisie utilisateur est directement converti en une valeur de type nombre par l'instruction <em>Number()</em> et affecté à la variable <em>nb</em>.</p>
+			 				
+			 			</li>
+			 			<li><h3>Affichage de plusieurs informations</h3>
+			 				<p>Nous avons vu dans le précédent chapitre que l'instruction JavaScript  <em>console.log() </em> permet d'afficher une information. Il est possible de l'utiliser pour afficher plusieurs valeurs simultanément, en les séparant par des virgules.</p>
+			 				<img src="../../../images/JavaScript/image22.png"  alt="aucune image" />
+			 			</li>
+			 		</ul>
+			 	</li>
+			 </ul>
+		<footer id="f1">
+		
+		         Post&eacute; le <time>16 Novembre 2018</time>
+			     Par <a href="../../info.html">Bensalah kawthar,Zerrouki im&egrave;ne,Assem Sarah</a>
+		</footer>
+      	</div>
+</section> <!-- FIN CHAPITRE 2 -->
+	
+	</div> 
+</main>
+
+	 <footer >
+	 
+	 	     Copyright &copy; 2018 <a href="../../monsite.html"><span class="email">LetUsCode.com</span></a>
+	
+	</footer>
+</section>	
+</body> 
+</html>

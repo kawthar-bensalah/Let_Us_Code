@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+
+     <head>
+         <meta charset="utf-8">
+         <title> Let Us Code </title>
+		 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		 <link rel= "stylesheet" href="../../../css/style.css"  />
+     </head>
+	 
+  <body>
+  
+       <!-- HEADER DE LA PAGE -->
+	   
+      <header>
+  	                   <h1 id="titre_site"> <a href="../../monsite.html">Let Us Code </a></h1>
+	 </header>
+	  
+	  		 <!-- liste des chapitre -->	
+	  		 <div id="diiv">   
+			   	<nav id="nav1">
+					<ul>
+						<li >
+							<a href="../../monsite.html" class="bouton"><span>Home</span></a>
+						</li>
+						<li >
+							<a href="#" class="bouton"><span>Cours</span></a>
+							<ul>
+								<li><a href="../../c/chapitres/chapitre1.html">langage C</a>	</li>
+								 
+								<li ><a href="../../java/chapitres/chapitre1.html">Java</a></li>
+
+								<li><a href="../../javascript/chapitres/chapitre1.html">JavaScript</a></li>
+
+								<li><a href="../../python/chapitres/chapitre1.html">Python</a></li>
+								<li><a href="../../quiz.html">Quiz</a></li>
+							</ul>
+						</li>
+						<li >
+							<a href="../../about.html" class="bouton"><span>About</span></a>
+						
+						</li>
+						<li >
+							<a href="../../contact.html" class="bouton"><span>Contact</span></a>
+						</li>
+					</ul>
+				</nav>
+		
+		<!-- liste des chapitre (menu vertical-->
+		
+		<main>
+			<section>
+				<nav id="nav2">			
+			<div id="div1">
+			 <a href = "chapitre1.html" ><button>Chapitre 1</button></a>
+			 <!-- afficher les sous-titres du chapitre actuel -->
+			 
+			   </div>
+			  <div id="div2">
+			  	
+			  <a href = "chapitre2.html" ><button>Chapitre 2</button></a>
+			   <div id="div22">
+			  <a href = "#part1" > &#9830; Un premier programme</a>
+			  <a href = "#part2" > &#9830; Valeurs et types</a>
+			  <a href = "#part3" > &#9830; Structure d'un pragramme </a>
+			  
+			  </div>
+			</div>
+			  <div id="div3">
+			   <a href = "chapitre3.html" ><button>chapitre 3</button></a>
+			</div>
+			<div id="div4">
+			   <a href = "chapitre4.html" ><button>chapitre 4</button></a>
+			</div>
+			<div id="div5">
+			   <a href = "../quiz.html" ><button>Quiz</button></a>
+			</div>
+		</nav>
+<div id="section1"><!-- DEBUT CHAPITRE 2 -->
+		
+      <div id="chapitre1">		
+	  
+	  
+	         <!-- HEADER CHAPITRE 2-->
+	   
+	          <header>
+ 			              <a id ="chapitre2"> <h1> Chapitre 2 : Commencez à coder  </h1> </a> 
+			 </header>
+	 
+	 		     <ul id="titre_chap"> 
+				
+				   <LI> 
+						
+				       
+						      <a id ="part1"> <h2> Un premier programme</h2> </a>
+
+						
+						    <p>
+						        C'est le moment de faire vos premiers pas avec JavaScript ! Voici votre tout premier programme.
+						    </p>
+							
+								<!-- INSERRER IMAGE -->
+						
+						        <img src="../../../images/JavaScript/image3.png" alt="aucune image" />
+						
+						
+							<p>
+							   Afficher un texte à l'écran (le fameux Hello World bien connu des programmeurs) est souvent la première chose que l'on apprend à faire lorsqu'on découvre un nouveau langage. Vous venez de franchir cette première étape !
+							</p>
+						
+					</li>
+						      <LI> 
+						         
+					
+						            <a id ="part2"> <h2>  Valeurs et types  </h2></a>
+									
+									<p>
+									Une <strong> valeur</strong> est un morceau d'information utilisé dans un programme informatique. Les valeurs existent sous différentes formes, appelées des types. Le<strong> type </strong>d'une valeur détermine son rôle et les opérations qui lui sont applicables. 
+									</p>
+									<p>
+									Chaque langage informatique dispose d'une panoplie de types qui lui est propre. Nous allons étudier deux des principaux types disponibles en JavaScript.
+									<p>
+									<ul>
+										<li>
+										<h3> type nombre</h3>
+											<p>Une valeur de type nombre (<strong>number</strong> ) représente une valeur numérique, autrement dit une quantité. Comme en mathématiques, on distingue les valeurs entières (ou <strong>entiers</strong>) 0, 1, 2, 3... et les valeurs réelles (ou <strong>réels</strong>) auxquelles on ajoute des chiffres après la virgule pour plus de précision.</p>
+
+										
+										<p>Les nombres servent essentiellement à compter. Nous pouvons appliquer à des valeurs de type nombre les mêmes opérations qu'en mathématiques. Ces opérations produisent un résultat lui aussi de type nombre. Les principales opérations applicables sont rassemblées dans le tableau suivant.</p>
+										<table id="table1">
+ 										 <tr> <th><strong>Opérateur</strong></th><th><strong>Rôle</strong></th></tr>
+    
+ 										 <tr> <td>+</td>    <td>Addition</td>     	</tr>
+ 										 <tr> <td>-</td>    <td>Soustraction</td>   </tr>
+ 										 <tr> <td>*</td>    <td>Multiplication</td> </tr>
+ 										 <tr> <td>/</td>    <td>Division</td> 		</tr>
+										</table>
+										</li>
+										<li>
+										<h3> type chaîne</h3>
+										<p>Une valeur de type<strong> chaîne de caractères </strong>(en abrégé chaîne, ou encore string en anglais) représente un texte. Ces valeurs sont délimitées par une paire de guillemets doubles :<em>"Ceci est une chaîne"</em>.</p>
+										
+										<p>Pour inclure dans une chaîne certains caractères spéciaux, on utilise le caractère\ (qui se prononce "antislash" ou "backslash" en anglais) qui donne un sens particulier au caractère suivant. Par exemple,<strong>\n</strong> permet d'ajouter un retour à la ligne dans une chaîne.</p>
+										<p>On ne peut pas additionner ou soustraire des valeurs de type chaîne comme on peut le faire avec des nombres. En revanche, l'opérateur <strong>+</strong> peut être appliqué à deux valeurs de type chaîne. Son résultat est la jointure de ces deux chaînes, appelée concaténation. Par exemple,<strong>"Bon"+"jour"</strong> produit le résultat  <strong>"Bonjour"</strong>.</p>
+										</li>
+									</ul>
+									
+	                                
+									
+							   
+							  </LI>
+							  
+							 <LI> 
+						          
+					
+						            <a id ="part3"> <h2> Structure d'un pragramme </h2></a>
+									
+									<p>
+									Nous avons précédemment défini un programme informatique comme étant une liste d'ordres indiquant à un ordinateur ce qu'il doit faire. Ces ordres sont écrits sous forme de texte dans un ou plusieurs fichiers et forment ce qu'on appelle le <strong>code source</strong> du programme. Les lignes de texte dans un fichier de code source s'appellent des <strong>lignes de code</strong>. 
+									
+									<ul>
+										<li><h3>Insctruction</h3>
+											<p>Chaque ordre inclus dans un programme est appelée une <strong>instruction</strong>. Une instruction est délimitée par un <strong>point virgule</strong>. Un programme est constitué d'une suite d'instructions. </p>
+											
+										</li>
+										<li><h3>Déroulement de l'execution</h3>
+											<p>Lorsqu'un programme est exécuté, les instructions qui le composent sont "lues" les unes après les autres. Chaque instruction produit un résultat, et c'est la combinaison de ces résultats individuels qui produit le résultat final du programme.</p>
+										</li>
+										<li><h3>Commentaires</h3>
+											<p>Par défaut, chaque ligne de texte dans les fichiers source d'un programme est considérée comme une instruction à exécuter. Il est possible d'exclure certaines lignes de l'exécution en les préfixant par une double barre oblique <strong>//</strong>. Ce faisant, on transforme ces lignes en <strong>commentaires</strong>.</p>
+											<p>Les commentaires servent à donner des informations sur le programme et sont destinés au programmeur, non à la machine.</p>
+											
+											<img src="../../../images/JavaScript/image4.png" alt="aucune image" />
+											
+										</li>
+									</ul>	
+							   
+							  </LI>
+							  
+							  
+		</ul> 
+		
+		<footer id="f1">
+		
+		         Post&eacute; le <time>16 Novembre 2018</time>
+			     Par <a href="../../info.html">Bensalah kawthar,Zerrouki im&egrave;ne,Assem Sarah</a>
+		</footer>
+   </div>
+</section> <!-- FIN CHAPITRE 2 -->
+</div>
+	 
+</main>
+
+	 <footer >
+	 
+	 	     Copyright &copy; 2018 <a href="../../monsite.html"><span>LetUsCode.com</span></a>
+	
+	</footer>	
+
+
+	
+</section>		
+</body> 
+</html>

@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+
+     <head>
+         <meta charset="utf-8">
+         <title> Let Us C </title>
+		 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		 <link rel= "stylesheet" href="../../css/style2.css"  />
+
+     </head>
+	 
+  <body>
+  
+       <!-- HEADER DE LA PAGE -->
+	   
+      <header>
+  	                   <h1 id="titre_site"> <a href="../monsite.html">Let Us Code </a></h1>
+	 </header>
+	  
+	  	
+<main>	   
+ 
+
+		
+      <div id="chapitre1">		
+	  
+			 
+			 		<!-- AFFICHER LE SCORE -->
+		             <div id="myModal" >
+
+						  <!-- Modal content -->
+						  <div id="modal-content">
+						    <span id="close">&times;</span>
+						    <p id="msg"></p>
+						  </div>
+					 </div>
+		
+
+
+	 
+              <fieldset>
+                                <legend>Quiz</legend>
+		 <form id="myForm">
+ 
+                <ol>
+				  <li>        <h3> Question 1 </h3> 
+				
+  				            <!-- QT1 -->
+                     <label for="question1"> Quelle est la différence entre entrer une variable dans l'interpréteur interactif et utiliser la fonction print ?</label> <br><br>
+					 
+
+                     <input type="radio" id="q11"  name="question1" value="1" checked> <label for="q11" name="question1v" > Aucune </label><br>
+					 <input type="radio" id="q12"  name="question1" value="2" > <label for="q12" name="question1v" > Dans l'interpréteur interactif, toutes les variables apparaissent entourées de guillemets. </label> <br>
+					 <input type="radio" id="q13"  name="question1" value="3" > <label for="q13" name="question1v"> La fonction print est dédiée à l'affichage, l'interpréteur au débuggage. </label> <br>
+
+				</li>
+				
+				            <!-- QT2 -->
+                <li>        
+				           <h3> Question 2 </h3> 
+				
+  				            <!-- QT2 -->
+                     <label for="question2"> De quoi doit être composée une condition au minimum ? </label> <br><br>
+					 
+                     <input type="radio" id="q21"  name="question2" value="1" checked>  <label for="q21"  name="question2v" >D'un bloc if </label><br>
+					 <input type="radio" id="q22"  name="question2" value="2" >  <label for="q22" name="question2v" > D'un bloc if et elif</label><br>	 
+					 <input type="radio" id="q23"  name="question2" value="3" >  <label for="q23" name="question2v" >D'un bloc if et else </label><br>
+
+				</li>
+				
+				 
+                <li>        
+				           <h3> Question 3 </h3> 
+				
+  				            <!-- QT3 -->
+                     <label for="question3"> Considérant le prédicat combiné ci-dessous, dans quel cas sera-t-il True (vrai) ? </label> <br>
+					 <p> predicat_a and predicat_b <p> <br>
+					 
+                     <input type="radio" id="q31"  name="question3" value="1" checked>  <label for="q31" name="question3v"  >  predicat_a est vrai, peu importe predicat_b. </label><br>
+					 <input type="radio" id="q32"  name="question3" value="2" ><label for="q32" name="question3v"  > predicat_b est vrai, peu importe predicat_a. </label><br>
+					 <input type="radio" id="q33"  name="question3" value="3" ><label for="q33" name="question3v"  >L'un d'eux est vrai, peu importe l'autre. </label><br>
+					 <input type="radio" id="q34"  name="question3" value="4" ><label for="q34" name="question3v" > predicat_a et predicat_b sont tous deux vrais.</label><br>
+
+				</li>
+				
+				<li>        
+				           <h3> Question 4 </h3> 
+				
+  				            <!-- QT4 -->
+				
+                     <label for="question4"> Sachant la définition de fonction ci-dessous, quel est l'appel INVALIDE parmi les choix suivants ?</label> <br>
+					 
+					 <p> def table(nombre, maximum=10): <p> 
+                           <select id="question4">
+                                     <option value="table(5, 20)">  table(5, 20) </option>
+                                     <option value="table(12, maximum=5)" > table(12, maximum=5) </option>
+                                     <option value="table(8)" > table(8) </option>
+                                     <option value="table(7, entier=30)"> table(7, entier=30) </option>
+									 <option value="table(maximum=15, nombre=4)"> table(maximum=15, nombre=4) </option>
+                           </select>  <div  id="Vrai"   > table(maximum=15,nombre=4) </div>  <div id="Faux" ></div>
+		
+							<br>		
+
+				</li>
+				
+			  <li>        
+				           <h3> Question 5</h3> 
+				
+  				            <!-- QT7 -->
+				
+                     <label for="question5"> Quelle est la variable de type str (chaîne de caractères) parmi les choix suivants ?  </label> <br><br>
+					 
+                                   <input type="checkbox" id="q51"  name="question5" value ="1" checked ><label for="q51" name="question5v" >  3 </label><br>
+								   <input type="checkbox" id="q52"  name="question5" value ="2"> <label for="q52" name="question5v" > "sar85" </label><br>
+								   <input type="checkbox" id="q53"  name="question5" value ="3"> <label for="q53" name="question5v" > "3.1"  </label><br>
+                                   <input type="checkbox" id="q54"  name="question5" value ="4"> <label for="q54" name="question5v" > 3.1 </label><br>
+
+				</li>
+                          
+				
+		
+
+               
+				
+				 
+	</ol>
+</form>
+
+        <div id="buttn">
+            <input type="submit" id="b1" value="Valider" OnClick="traiter()"></input>
+            <button type="reset"  id="b2" value="Reset">Annuler</button>	
+		</div>	
+		
+                 
+  </fieldset>
+	
+</div>
+</main>
+
+	 <footer >
+	 
+	 	     Copyright &copy; 2018 <a href="#"><span class="email">LetUsCode.com</span></a>
+	
+	</footer>	
+
+		 
+		 
+<script>
+		 
+		 function traiter()
+{ 
+
+          var score=0;
+		
+		
+		//************************************ QT 1**************************************************/
+	     // RECUPERER REPONSE
+         var reponse = document.getElementsByName("question1"); 
+		 var values =  document.getElementsByName("question1v"); 
+		 
+		 //changer la color de bonne rep au vert 
+		 values[2].style.color='green';
+		 
+		
+		 for (var i = 0; i < reponse.length; i++)
+		   { 
+		   
+		        if(reponse[i].checked)
+				    { 
+					    if(reponse[i].value == "3")
+					      {  // La bonne reponse 
+				               score++;
+						
+						   } else{ 
+						 	 
+                                    //mauvaise reponse
+					   
+					              // changer la color de mauvaise rep au rouge
+                                     values[i].style.color='red';
+						         }				
+					   }
+				 }
+				 
+				 
+		//************************************ QT 2**************************************************/
+		
+			     // RECUPERER REPONSE
+         var reponse = document.getElementsByName("question2"); 
+		 var values =  document.getElementsByName("question2v"); 
+		 
+		 //changer la color de bonne rep au vert 
+		 values[0].style.color='green';
+		 
+		 for (var i = 0; i < reponse.length; i++)
+		   { 
+		   
+		        if(reponse[i].checked)
+				    { 
+					    if(reponse[i].value == "1")
+					      {  // La bonne reponse 
+				               score++;
+						
+						   } else{ 
+						 	 
+                                    //mauvaise reponse
+					   
+					               // changer la color de mauvaise rep au rouge
+                                      values[i].style.color='red';
+						         }
+				
+					   }
+				 }
+				 
+	//************************************ QT 3 **************************************************/
+		
+			     // RECUPERER REPONSE
+         var reponse = document.getElementsByName("question3"); 
+		 var values =  document.getElementsByName("question3v"); 
+			 
+		 //changer la color de bonne rep au vert 
+		 values[3].style.color='green';
+		 
+		 for (var i = 0; i < reponse.length; i++)
+		   { 
+		   
+		        if(reponse[i].checked)
+				    { 
+					    if(reponse[i].value == "4")
+					      {  // La bonne reponse 
+				               score++;
+						
+						   } else{ 
+						 	 
+                                    //mauvaise reponse
+					   
+					               // changer la color de mauvaise rep au rouge
+                                      values[i].style.color='red';
+						         }
+				
+					   }
+				 }
+				
+		//************************************ QT 4 **************************************************/
+                              <!-- // RECUPERER REPONSE -->
+				    var v = document.getElementById("question4");
+					
+					//changer la color de bonne rep au vert
+				    document.getElementById('Vrai').style.display='inline';
+					
+					if(v.value == "table(maximum=15, nombre=4)")
+					 {
+					      score++;
+					 }
+					 else
+					 
+					 {
+					   document.getElementById("Faux").innerHTML=v.value;
+					   document.getElementById('Faux').style.display='inline';
+					 }
+
+		//************************************ QT 5 **************************************************/ 
+		
+			     // RECUPERER REPONSE
+         var reponse = document.getElementsByName("question5"); 
+		 var values =  document.getElementsByName("question5v"); 
+		
+		 <!-- //changer la color de bonne rep au vert  -->
+		 values[1].style.color='green';
+		 values[2].style.color='green';
+		 
+		 var b=true;
+
+	for (var i = 0; i < values.length; i++)
+		   {  
+                if(reponse[i].checked)
+				    { 
+					    if((reponse[i].value != "2")&&(reponse[i].value != "3"))
+					      { 
+				                  //mauvaise reponse
+				
+					               // changer la color de mauvaise rep au rouge
+                                   values[i].style.color='red';
+								   b=false;
+						
+						   } 
+				
+					   }
+				 }
+				 
+				 if(b){
+ 				        // La bonne reponse  
+				           score++;
+					  }
+					
+					
+			//CACHER LES BUTTOONS
+				    document.getElementById('buttn').style.display ='none';
+				
+					// récupérer le div contenant le message
+					var modal = document.getElementById('myModal');
+
+					// récupérer le bouton qui ouvre le message
+					var btn = document.getElementById("buttn");
+
+					// récupérer l'élément  <span> qui ferme le message
+					var span = document.getElementById("close");
+
+					// quand l'utilisateur clique sur valider le score apparaît 
+
+					  modal.style.display = "block";
+
+
+					// quand l'utilisateur clique sur <span> (x), le message se ferme
+					span.onclick = function() {
+					  modal.style.display = "none";
+					
+					}
+					//afficher le message (score)
+					document.getElementById("msg").innerHTML="Votre score est "+score+"/5";
+				}
+
+</script>
+</body> 
+</html>

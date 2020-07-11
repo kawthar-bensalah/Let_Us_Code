@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+
+     <head>
+         <meta charset="utf-8">
+         <title> Let Us Code </title>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel= "stylesheet" href="../../../css/style.css"  />
+     </head>
+   
+  <body>
+  
+       <!-- HEADER DE LA PAGE -->
+     
+      <header>
+                       <h1 id="titre_site"> <a href="../../monsite.html">Let Us Code </a></h1>
+   </header>
+    
+         <!-- liste des chapitre -->  
+         <div id="diiv">   
+          <nav id="nav1">
+          <ul>
+            <li >
+              <a href="../../monsite.html" class="bouton"><span>Home</span></a>
+            </li>
+            <li >
+              <a href="#" class="bouton"><span>Cours</span></a>
+              <ul>
+                <li><a href="../../c/chapitres/chapitre1.html">langage C</a>  </li>
+                 
+                <li ><a href="../../java/chapitres/chapitre1.html">Java</a></li>
+
+                <li><a href="../../javascript/chapitres/chapitre1.html">JavaScript</a></li>
+
+                <li><a href="../../python/chapitres/chapitre1.html">Python</a></li>
+                <li><a href="../../quiz.html">Quiz</a></li>
+              </ul>
+            </li>
+            <li >
+              <a href="../../about.html" class="bouton"><span>About</span></a>
+            
+            </li>
+            <li >
+              <a href="../../contact.html" class="bouton"><span>Contact</span></a>
+            </li>
+          </ul>
+        </nav>
+    
+    
+    <!-- liste des chapitre (menu vertical-->
+    
+    <main>
+      <section>
+        <nav id="nav2">     
+      <div id="div1">
+       <a href = "chapitre1.html" ><button>Chapitre 1</button></a>
+       <!-- afficher les sous-titres du chapitre actuel -->
+        
+         </div>
+        <div id="div2">
+          
+        <a href = "chapitre2.html" ><button>Chapitre 2</button></a>
+      </div>
+        <div id="div3">
+         <a href = "chapitre3.html" ><button>chapitre 3</button></a>
+      </div>
+      <div id="div4">
+         <a href = "chapitre4.html" ><button>chapitre 4</button></a>
+         <div id="div44">
+        <a href = "#part1" > &#9830; Exprimer une condition </a>
+        <a href = "#part2" > &#9830; Exprimer une alternative </a>
+        <a href = "#part3" > &#9830; Créer des conditions composées </a>
+      
+        </div>
+      </div>
+      <div id="div5">
+         <a href = "../quiz.html" ><button>Quiz</button></a>
+      </div>
+    </nav>
+<div id="section1"><!-- DEBUT CHAPITRE 4-->
+    
+      <div id="chapitre1">
+        <!-- HEADER CHAPITRE 4-->
+     
+            <header>
+                    <a id ="chapitre4"> <h1> Chapitre 4 :Ajoutez des conditions  </h1> </a> 
+            </header>
+       <ul id="titre_chap">
+        <li> <a id ="part1"><h2>Exprimer une condition</h2></a>
+          <p>Imaginons qu'on souhaite écrire un programme qui fasse saisir un nombre à l'utilisateur, puis qui affiche un message si ce nombre est positif. Voici l'algorithme correspondant.</p>
+          <img src="../../../images/JavaScript/image23.png">
+          <p>L'affichage du message ne doit avoir lieu que si le nombre est positif : on dit qu'il est soumis à une condition.</p>
+          <ul>
+            <li><h3>Instruction if</h3>
+              <p>Voici comment ce programme se traduit en JavaScript.</p>
+              <img src="../../../images/JavaScript/image24.png">
+              <p>Vous venez de découvrir comment soumettre l'exécution d'une partie d'un programme à une condition grâce à l'instruction JavaScript <em>if</em>. La syntaxe de cette instruction est la suivante.</p>
+              <img src="../../../images/JavaScript/image25.png">
+              <p>La paire d'accolades ouvrante et fermante délimite ce que l'on appelle <strong>un bloc de code</strong> associé à l'instruction <em>if</em>. Cette instruction représente un test. On peut la traduire par l'ordre suivant : <em>"Si la condition est vraie, alors exécute les instructions contenues dans le bloc de code"</em>.</p>
+              <p>La condition est toujours placée entre parenthèses après le <em>if</em>. Les instructions du bloc de code associé sont décalées vers la droite par rapport au <em>if</em>. Cette pratique est appelée <strong>l'indentation</strong> et permet de rendre les programmes bien plus lisibles. A mesure que vos programmes deviendront plus complexes (avec des <em>if</em> et d'autres instructions étudiées plus loin), leur indentation deviendra essentielle pour faciliter leur lisibilité. Quelle que soit la valeur d'indentation choisie (entre 2 et 4 espaces), il est indispensable de toujours bien indenter son code !</p>
+            </li>
+            <li><h3>La notion de condition</h3>
+              <p>Une <strong>condition</strong> est une expression dont l'évaluation produit une valeur soit vraie, soit fausse : on parle de valeur <strong>booléenne</strong>.</p>
+              <p> Nous avons déjà étudié les types <strong>nombre</strong> et <strong>chaîne</strong> : le type <strong>booléen</strong> fait également partie des types supportés par le langage JavaScript. Ce type n'a que deux valeurs possibles :true <em>(vrai)</em> etfalse <em>(faux)</em>.</p>
+              <img src="../../../images/JavaScript/image26.png">
+              <p>Toute expression produisant une valeur booléenne (donc soit vraie, soit fausse) peut être utilisée comme condition dans une instruction <em>if</em>. Si la valeur de cette expression est <em>true</em>, le bloc de code associé au <em>if</em> sera exécuté.</p>
+              <p>On peut créer des expressions booléennes en utilisant les opérateurs de comparaison regroupés dans le tableau suivant.</p>
+              <table id="table1">
+			  
+			         <caption><strong> Tableau 1. Les opérateurs </strong></caption>
+                     <tr> <th><strong>Opérateur</strong></th><th><strong>Signification</strong></th></tr>
+    
+                     <tr> <td>===</td>    <td>Egal à</td>       </tr>
+                     <tr> <td>!==</td>    <td>Différent de </td>   </tr>
+                     <tr> <td><</td>    <td>Inférieur à</td> </tr>
+                     <tr> <td><=</td>    <td>Inférieur ou egal à</td>     </tr>
+                     <tr> <td>></td>    <td>Supérieur à</td>     </tr>
+                     <tr> <td>>=</td>    <td>Supérieur ou egal à</td>     </tr>
+                    </table>
+            </li>
+          </ul>
+        </li>
+        <li> <a id ="part2"><h2>Exprimer une alternative</h2></a>
+          <p>Dans un programme, on souhaite fréquemment agir différemment selon que la condition soit vraie ou fausse.</p>
+          <ul>
+            <li><h3>L'instruction else</h3>
+              <p>Enrichissons notre programme d'exemple pour qu'il affiche un message adapté au nombre saisi par l'utilisateur.</p>
+              <img src="../../../images/JavaScript/image27.png">
+              <p>Une <strong>alternative</strong> s'exprime en JavaScript grâce à l'instructionelse associée à unif. Voici sa syntaxe.</p>
+              <img src="../../../images/JavaScript/image28.png">
+              <p>On peut traduire une instruction <em>if/else </em> comme ceci : "Si la condition est vraie, alors exécute les instructions du bloc de code associé au <em>if</em>, sinon exécute celles du bloc de code associé au <em>else</em>".</p>
+              <p>L'instruction <em>if/else</em> permet de créer un <strong>branchement logique </strong> à l'intérieur d'un programme. Pendant l'exécution, les instructions exécutées seront différentes selon la valeur de la condition. Un seul des deux blocs de code sera pris en compte.</p>
+            </li>
+            <li><h3>Imbriquer des conditions</h3>
+              <p>Notre programme d'exemple peut encore être enrichi pour afficher un message spécifique si le nombre saisi est nul. Pour cela, le code doit être modifié de la manière suivante.</p>
+              <img src="../../../images/JavaScript/image29.png">
+              <p>C'est maintenant qu'il faut faire appel à votre sens logique pour le comprendre. Si le premier bloc <em>else</em> est exécuté, c'est que le nombre saisi est soit négatif, soit nul, puisque la condition <em>(nombre > 0)</em> du premier <em>if</em> n'a dans ce cas pas été vérifiée. A l'intérieur de ce bloc <em>else</em>, on vérifie si le nombre est strictement négatif avec la condition <em>(nombre < 0)</em>. Si cette condition est fausse, alors le nombre est forcément égal à 0.</p>
+              <p>Il est possible de représenter graphiquement l'exécution du programme précédent au moyen d'un <strong>diagramme de flux</strong> qui montre les différents cheminements possibles selon la valeur du nombre saisi.</p>
+              <img src="../../../images/JavaScript/image30.png">
+              <p>On rencontre fréquemment le cas particulier où la seule instruction d'un blocelse est un <em>if</em> (le <em>else</em> éventuellement associé à ce <em>if</em> ne compte pas comme une seconde instruction). Dans ce cas, il est possible d'écrire ce <em>if </em> sur la même ligne que le premier <em>else</em>, sans accolades ni indentation. Ainsi, notre programme d'exemple peut être réécrit de la manière suivante.</p>
+              <img src="../../../images/JavaScript/image31.png">
+            </li>
+          </ul>
+
+
+        </li>
+        <li> <a id ="part3"><h2>Créer des conditions composées</h2></a>
+          <ul>
+            <li><h3>L'opérateur logique ET</h3>
+              <p>Supposons qu'on souhaite vérifier qu'un nombre est compris entre 0 et 100. Cela signifie que le nombre doit être à la fois supérieur à 0 et inférieur à 100. La condition "nombre compris entre 0 et 100" peut s'exprimer sous la forme de deux sous-conditions "nombre supérieur ou égal à 0" et "nombre inférieur ou égal à 100". Il faut que l'une ET l'autre de ces sous-conditions soient vérifiées.</p>
+              <p>La traduction en JavaScript de cette condition donne le résultat suivant.</p>
+              <img src="../../../images/JavaScript/image32.png">
+              <p>L'opérateur <em>&& </em> (ET logique) s'applique à deux valeurs de type booléen. Son résultat est la valeur <em>true</em> uniquement si les deux valeurs auxquelles il s'applique valent <em> true</em>.</p>
+              <img src="../../../images/JavaScript/image33.png">
+              <p>Le résultat ci-dessus constitue ce qu'on appelle la <strong>table de vérité</strong> de l'opérateur &&</p>
+            </li>
+            <li><h3>L'opérateur logique OU</h3>
+              <p>Imaginons maintenant qu'on souhaite vérifier qu'un nombre est en dehors de l'intervalle [0, 100]. Pour satisfaire à cette condition, ce nombre doit être inférieur à 0 OU supérieur à 100.</p>
+              <p>Traduit en JavaScript, cet exemple donne le résultat suivant.</p>
+              <img src="../../../images/JavaScript/image34.png">
+              <p>L'opérateur <strong> || </strong> (OU logique) s'applique à deux valeurs de type booléen. Son résultat est la valeur <em>true</em> si au moins une des deux valeurs auxquelles il s'applique vaut <em>true</em> . Voici la table de vérité de l'opérateur <strong>|| </strong>.</p>
+              <img src="../../../images/JavaScript/image35.png">
+            </li>
+            <li><h3>L'opérateur logique NON</h3>
+              <p>Il existe un troisième opérateur logique qui permet d'inverser la valeur d'une condition : l'opérateur NON. Il s'écrit en JavaScript sous la forme d'un point d'exclamation <strong>(!)</strong>.</p>
+              <img src="../../../images/JavaScript/image36.png">
+              <p>Voici la table de vérité de cet opérateur.</p>
+              <img src="../../../images/JavaScript/image37.png">
+            </li>
+          </ul>
+
+        </li>
+        
+       </ul>
+    <footer id="f1">
+    
+             Post&eacute; le <time>16 Novembre 2018</time>
+           Par <a href="../../info.html">Bensalah kawthar,Zerrouki im&egrave;ne,Assem Sarah</a>
+    </footer>
+        </div>
+</section> <!-- FIN CHAPITRE 2 -->
+  
+   </div>
+</main>
+
+   <footer >
+   
+         Copyright &copy; 2018 <a href="../../monsite.html"><span class="email">LetUsCode.com</span></a>
+  
+  </footer> 
+   </section> 
+</body> 
+</html>

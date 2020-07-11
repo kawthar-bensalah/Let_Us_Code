@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html>
+
+     <head>
+         <meta charset="utf-8">
+         <title> Let Us C </title>
+		 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		 <link rel= "stylesheet" href="../css/style2.css"  />
+
+     </head>
+	 
+  <body>
+  
+       <!-- HEADER DE LA PAGE -->
+	   
+      <header>
+  	                   <h1 id="titre_site"> <a href="monsite.html">Let Us Code </a></h1>
+	 </header>
+	  
+	  		
+<main>	   
+
+
+      <div id="chapitre1">		
+	  
+			 
+			 		<!-- AFFICHER LE SCORE -->
+		             <div id="myModal" >
+
+						  <!-- Modal content -->
+						  <div id="modal-content">
+						    <span id="close">&times;</span>
+						    <p id="msg"></p>
+						  </div>
+					 </div>
+		
+
+	 
+              <fieldset>
+                                <legend>Quiz</legend>
+  <form id="myForm">
+  
+                <ol>
+				  <li>        <h3> Question 1 </h3> 
+				
+  				            <!-- QT1 -->
+                     <label for="question1"> Quel est l'avantage de la boucle for sur la boucle while ?</label> <br><br>
+					 
+
+                     <input type="radio" id="q11"  name="question1" value="1" checked> <label for="q11" name="question1v" > Elle est préférable pour parcourir des séquences. </label><br>
+					 <input type="radio" id="q12"  name="question1" value="2" > <label for="q12" name="question1v" > Elle est plus utile pour vérifier une condition. </label> <br>
+					 <input type="radio" id="q13"  name="question1" value="3" > <label for="q13" name="question1v">  C'est l'unique façon de parcourir des séquences. </label> <br>
+
+				</li>
+				
+				            
+                <li>        
+				           <h3> Question 2 </h3> 
+				
+  				            <!-- QT2 -->
+                     <label for="question2"> Quelle est la différence entre le mot-clé break et continue ? </label> <br><br>
+					 
+                     <input type="radio" id="q21"  name="question2" value="1" checked>  <label for="q21"  name="question2v" > Les deux mot-clés font exactement la même chose en interrompant la boucle immédiatement.</label><br>
+					 <input type="radio" id="q22"  name="question2" value="2" >  <label for="q22" name="question2v" > continue interrompt la boucle immédiatement alors que break passe au prochain tour de boucle.</label><br>	 
+					 <input type="radio" id="q23"  name="question2" value="3" >  <label for="q23" name="question2v" > break interrompt la boucle immédiatement alors que continue passe au prochain tour de boucle.</label><br>
+
+
+				</li>
+				
+				 
+                <li>        
+				           <h3> Question 3 </h3> 
+				
+  				            <!-- QT3 -->
+                     <label for="question3"> Comment Python identifie-t-il les instructions formant un bloc (par exemple à l'intérieur d'une condition) ? </label> <br><br>
+					 
+                     <input type="radio" id="q31"  name="question3" value="1" checked>  <label for="q31" name="question3v"  >  Grâce aux deux points en début de bloc </label><br>
+					 <input type="radio" id="q32"  name="question3" value="2" ><label for="q32" name="question3v">  Grâce à l'indentation </label><br>
+					 <input type="radio" id="q33"  name="question3" value="3" ><label for="q33" name="question3v">  Grâce aux accolades ({}) entourant le bloc</label><br>
+
+				</li>
+				
+				<li>        
+				           <h3> Question 4 </h3> 
+				
+  				            <!-- QT4 -->
+				
+                     <label for="question4"> Dans Java la classe TreeMap est utilisée pour implémenter quelle interface de collection ?</label> <br>
+					 
+                           <select id="question4">
+                                     <option value="List ">  List </option>
+                                     <option value="Set" > Set </option>
+                                     <option value="Map" > Map </option>
+                                     <option value="SortedSet">  SortedSet </option>
+      
+                           </select><div  id="Vrai"   > SortedSet </div>  <div id="Faux" ></div>
+		
+							<br>		
+									
+
+				</li>
+				
+				
+			  <li>        
+				           <h3> Question 5</h3> 
+				
+  				            <!-- QT5 -->
+				
+                     <label for="question5"> Quel est le nombre d’octets occupé par une variable de type long ? </label> <br><br>
+					 
+                                   <input type="checkbox" id="q51"  name="question5" value ="1" checked ><label for="q51" name="question5v" > Dépend du compilateur</label><br>
+								   <input type="checkbox" id="q52"  name="question5" value ="2"> <label for="q52" name="question5v" >8 </label><br>
+								   <input type="checkbox" id="q53"  name="question5" value ="3"> <label for="q53" name="question5v" > 4 </label><br>
+                                   <input type="checkbox" id="q54"  name="question5" value ="4"> <label for="q54" name="question5v" >2</label><br>
+
+				</li>
+				
+				
+				<li>        
+				           <h3> Question 6 </h3> 
+				
+  				            <!-- QT6 -->
+				
+                     <label for="question6"> En C la fonction qui permet d'afficher du texte dans la console ?</label> <br>
+					 
+                           <select id="question6">
+                                     <option value="scanf">scanf</option>
+                                     <option value="printf" > printf </option>
+                                     <option value="cout" > cout </option>
+      
+                           </select><div  id="Vrai2"   > printf </div>  <div id="Faux2" ></div>
+		
+							<br>		
+									
+
+				</li>
+				
+				 <li>        
+				           <h3> Question 7 </h3> 
+				
+  				            <!-- QT7 -->
+                     <label for="question7"> Les fonctions d'entrée/sortie standard sont contenues dans la bibliothèque ? </label> <br><br>
+					 
+                     <input type="radio" id="q71"  name="question7" value="1" checked>  <label for="q71"  name="question7v" > stdio.h </label><br>
+					 <input type="radio" id="q72"  name="question7" value="2" >  <label for="q72" name="question7v" > stdlib.h </label><br>	 
+					 <input type="radio" id="q73"  name="question7" value="3" >  <label for="q73" name="question7v" > windows.h</label><br>
+
+
+				</li>
+				
+				 <li>        
+				           <h3> Question 8 </h3> 
+				
+  				            <!-- QT8 -->
+                     <label for="question8"> Comment acceder a la console JavaScript en IE ? </label> <br><br>
+					 
+                     <input type="radio" id="q81"  name="question8" value="1" checked>  <label for="q81"  name="question8v" >en ajoutant un pulgin</label><br>
+					 <input type="radio" id="q82"  name="question8" value="2" >  <label for="q82" name="question8v" > C'est impossible </label><br>	 
+					 <input type="radio" id="q83"  name="question8" value="3" >  <label for="q83" name="question8v" > menu Outils/Outils de developpement</label><br>
+
+
+				</li>
+				
+				 <li>        
+				           <h3> Question 9 </h3> 
+				
+  				            <!-- QT9 -->
+                     <label for="question9"> Comment lire le jour du mois dans une date avec Js ? ? </label> <br><br>
+					 
+                     <input type="radio" id="q91"  name="question9" value="1" checked>  <label for="q91"  name="question9v" > getDay() </label><br>
+					 <input type="radio" id="q92"  name="question9" value="2" >  <label for="q92" name="question9v" > getDate() </label><br>	 
+					 <input type="radio" id="q93"  name="question9" value="3" >  <label for="q93" name="question9v" > Date.parse()</label><br>
+
+
+				</li>
+				
+				 <li>        
+				           <h3> Question 10 </h3> 
+				
+  				            <!-- QT10 -->
+                     <label for="question10"> Quel est le langage  le plus utilisé?</label> <br><br>
+					 
+                     <input type="radio" id="q101"  name="question10" value="1" checked>  <label for="q101"  name="question10v" > python</label><br>
+					 <input type="radio" id="q102"  name="question10" value="2" >  <label for="q102" name="question10v" > Java</label><br>	 
+					 <input type="radio" id="q103"  name="question10" value="3" >  <label for="q103" name="question10v" > Javascript</label><br>
+
+
+				</li>
+                          			 
+	</ol>
+</form>
+
+        <div id="buttn">
+            <input type="submit" id="b1" value="Valider" OnClick="traiter()"></input>
+            <input type="reset"  id="b2" value="Annuler"></input>	
+		</div>	
+		
+                 
+  </fieldset>
+	
+</div>
+</main>
+
+	 <footer >
+	 
+	 	     Copyright &copy; 2018 <a href="#"><span class="email">LetUsCode.com</span></a>
+	
+	</footer>	
+
+		 <!-- <script src="../js/script.js" type="text/javascript"></script> -->
+		 
+<script>
+		 
+function traiter()
+{ 
+
+          var score=0;
+		
+		
+		//************************************ QT 1**************************************************/
+	     // RECUPERER REPONSE
+         var reponse = document.getElementsByName("question1"); 
+		 var values =  document.getElementsByName("question1v"); 
+		 
+		 //changer la color de bonne rep au vert 
+		 values[0].style.color='green';
+		 
+		
+		 for (var i = 0; i < reponse.length; i++)
+		   { 
+		   
+		        if(reponse[i].checked)
+				    { 
+					    if(reponse[i].value == "1")
+					      {  // La bonne reponse 
+				               score++;
+						
+						   } else{ 
+						 	 
+                                    //mauvaise reponse
+					   
+					              // changer la color de mauvaise rep au rouge
+                                     values[i].style.color='red';
+						         }				
+					   }
+				 }
+				 
+				 
+		//************************************ QT 2**************************************************/
+		
+			     // RECUPERER REPONSE
+         var reponse = document.getElementsByName("question2"); 
+		 var values =  document.getElementsByName("question2v"); 
+		 
+		 //changer la color de bonne rep au vert 
+		 values[2].style.color='green';
+		 
+		 for (var i = 0; i < reponse.length; i++)
+		   { 
+		   
+		        if(reponse[i].checked)
+				    { 
+					    if(reponse[i].value == "3")
+					      {  // La bonne reponse 
+				               score++;
+						
+						   } else{ 
+						 	 
+                                    //mauvaise reponse
+					   
+					               // changer la color de mauvaise rep au rouge
+                                      values[i].style.color='red';
+						         }
+				
+					   }
+				 }
+				 
+	//************************************ QT 3 **************************************************/
+		
+			     // RECUPERER REPONSE
+         var reponse = document.getElementsByName("question3"); 
+		 var values =  document.getElementsByName("question3v"); 
+			 
+		 //changer la color de bonne rep au vert 
+		 values[1].style.color='green';
+		 
+		 for (var i = 0; i < reponse.length; i++)
+		   { 
+		   
+		        if(reponse[i].checked)
+				    { 
+					    if(reponse[i].value == "2")
+					      {  // La bonne reponse 
+				               score++;
+						
+						   } else{ 
+						 	 
+                                    //mauvaise reponse
+					   
+					               // changer la color de mauvaise rep au rouge
+                                      values[i].style.color='red';
+						         }
+				
+					   }
+				 }
+				
+		//************************************ QT 4 **************************************************/
+                              <!-- // RECUPERER REPONSE -->
+				    var v = document.getElementById("question4");
+					
+					//changer la color de bonne rep au vert
+				    document.getElementById('Vrai').style.display='inline';
+					
+					if(v.value == "SortedSet")
+					 {
+					      score++;
+					 }
+					 else
+					 
+					 {
+					   document.getElementById("Faux").innerHTML=v.value;
+					   document.getElementById('Faux').style.display='inline';
+					 }
+
+		//************************************ QT 5 **************************************************/ 
+		
+			     // RECUPERER REPONSE
+         var reponse = document.getElementsByName("question5"); 
+		 var values =  document.getElementsByName("question5v"); 
+		
+		 <!-- //changer la color de bonne rep au vert  -->
+		 values[1].style.color='green';
+		 
+		 var b=true;
+
+	for (var i = 0; i < values.length; i++)
+		   {  
+                if(reponse[i].checked)
+				    { 
+					    if(reponse[i].value != "2")
+					      { 
+				                  //mauvaise reponse
+				
+					               // changer la color de mauvaise rep au rouge
+                                   values[i].style.color='red';
+								   b=false;
+						
+						   } 
+				
+					   }
+				 }
+				 
+				 if(b){
+ 				        // La bonne reponse  
+				           score++;
+					  }
+					  
+		//************************************ QT 6 **************************************************/
+                              <!-- // RECUPERER REPONSE -->
+				    var v = document.getElementById("question6");
+					
+					//changer la color de bonne rep au vert
+				    document.getElementById('Vrai2').style.display='inline';
+					
+					if(v.value == "printf")
+					 {
+					      score++;
+					 }
+					 else
+					 
+					 {
+					   document.getElementById("Faux2").innerHTML=v.value;
+					   document.getElementById('Faux2').style.display='inline';
+					 }
+
+   //************************************ QT 7**************************************************/
+	     // RECUPERER REPONSE
+         var reponse = document.getElementsByName("question7"); 
+		 var values =  document.getElementsByName("question7v"); 
+		 
+		 //changer la color de bonne rep au vert 
+		 values[0].style.color='green';
+		 
+		
+		 for (var i = 0; i < reponse.length; i++)
+		   { 
+		   
+		        if(reponse[i].checked)
+				    { 
+					    if(reponse[i].value == "1")
+					      {  // La bonne reponse 
+				               score++;
+						
+						   } else{ 
+						 	 
+                                    //mauvaise reponse
+					   
+					              // changer la color de mauvaise rep au rouge
+                                     values[i].style.color='red';
+						         }				
+					   }
+				 }
+
+   //************************************ QT 8**************************************************/
+	     // RECUPERER REPONSE
+         var reponse = document.getElementsByName("question8"); 
+		 var values =  document.getElementsByName("question8v"); 
+		 
+		 //changer la color de bonne rep au vert 
+		 values[2].style.color='green';
+		 
+		
+		 for (var i = 0; i < reponse.length; i++)
+		   { 
+		   
+		        if(reponse[i].checked)
+				    { 
+					    if(reponse[i].value == "3")
+					      {  // La bonne reponse 
+				               score++;
+						
+						   } else{ 
+						 	 
+                                    //mauvaise reponse
+					   
+					              // changer la color de mauvaise rep au rouge
+                                     values[i].style.color='red';
+						         }				
+					   }
+				 }
+
+   //************************************ QT 9**************************************************/
+	     // RECUPERER REPONSE
+         var reponse = document.getElementsByName("question9"); 
+		 var values =  document.getElementsByName("question9v"); 
+		 
+		 //changer la color de bonne rep au vert 
+		 values[1].style.color='green';
+		 
+		
+		 for (var i = 0; i < reponse.length; i++)
+		   { 
+		   
+		        if(reponse[i].checked)
+				    { 
+					    if(reponse[i].value == "2")
+					      {  // La bonne reponse 
+				               score++;
+						
+						   } else{ 
+						 	 
+                                    //mauvaise reponse
+					   
+					              // changer la color de mauvaise rep au rouge
+                                     values[i].style.color='red';
+						         }				
+					   }
+				 }	
+   //************************************ QT 10 **************************************************/
+	     // RECUPERER REPONSE
+         var reponse = document.getElementsByName("question10"); 
+		 var values =  document.getElementsByName("question10v"); 
+		 
+		 //changer la color de bonne rep au vert 
+		 values[2].style.color='green';
+		 
+		
+		 for (var i = 0; i < reponse.length; i++)
+		   { 
+		   
+		        if(reponse[i].checked)
+				    { 
+					    if(reponse[i].value == "3")
+					      {  // La bonne reponse 
+				               score++;
+						
+						   } else{ 
+						 	 
+                                    //mauvaise reponse
+					   
+					              // changer la color de mauvaise rep au rouge
+                                     values[i].style.color='red';
+						         }				
+					   }
+				 }					 
+									 
+					
+			//CACHER LES BUTTOONS
+				    document.getElementById('buttn').style.display ='none';
+				
+					// récupérer le div contenant le message
+					var modal = document.getElementById('myModal');
+
+					// récupérer le bouton qui ouvre le message
+					var btn = document.getElementById("buttn");
+
+					// récupérer l'élément  <span> qui ferme le message
+					var span = document.getElementById("close");
+
+					// quand l'utilisateur clique sur valider le score apparaît 
+
+					  modal.style.display = "block";
+
+
+					// quand l'utilisateur clique sur <span> (x), le message se ferme
+					span.onclick = function() {
+					  modal.style.display = "none";
+					}
+					
+					//afficher le message (score)
+					document.getElementById("msg").innerHTML="Votre score est "+score+"/10";
+				}
+
+</script>
+</body> 
+</html>

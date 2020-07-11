@@ -1,0 +1,414 @@
+
+
+/* body margin et background */
+body{
+  margin:0;
+background-image: linear-gradient(to left bottom, #ffffff, #dbdbdb, #dbdbdb, #dbdbdb, #dbdbdb);
+}
+
+  /* colorer + donner un shadow le titre de site et le menu vertical du chapitre */
+#titre_site,#nav2 li{
+  color: #f71570;
+  font-size: 25px;
+  font-weight: 900;
+  letter-spacing: -1px;
+  text-shadow: 0 1px 0 #ffffff;
+  margin-left: 6%;
+  text-decoration: none;
+
+}
+
+/* titre et liens du menu vertical */
+#titre_site a,#nav2 a {
+  text-decoration: none;
+  color: #f71570;
+  display: inline-block;
+  font-size: 48px;
+  font-weight: 900;
+  letter-spacing: -1px;
+  text-shadow: 0 1px 0 #ffffff;
+  /* pour Webkit (Chrome, Safari, Android...)*/
+  -webkit-transition: all 200ms ease-in-out;
+  /*pour Mozilla*/
+  -moz-transition: all 200ms ease-in-out;
+   /*pour Microsoft  */
+  -ms-transition: all 200ms ease-in-out;
+  /* pour Opera */
+  -o-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+/* taille et largeur des liens du menu vertical */
+#nav2 a { 
+    font-size:20px;
+    font-weight: 20px; 
+    text-decoration: none;
+  }
+  
+  /* liste du menu vertical */
+#nav2 li {list-style: none;  
+}
+/* effet au survol des lien du menu vertical et titre */
+#titre_site a:hover,#nav2 a:hover {
+   /* pour Webkit (Chrome, Safari, Android...)*/
+    /*pour Mozilla*/
+     /*pour Microsoft  */
+     /* pour Opera */
+  -webkit-transform: scale(0.95);
+  -moz-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  -o-transform: scale(0.95);
+  transform: scale(0.95);
+}
+
+/*positionner le header et le footer et lui donner de couleur de tt la page  */
+header {
+	width:100%;
+    color: #f71570; 
+	float:left;
+}
+ /* possitionner le #nav2igateur(menu) a droite f(float) et lui donner une taille de 20% */
+#nav2{
+	 width:15%;
+     float:right;	 
+}
+
+/* style du #section1 */
+#section1{
+    
+	margin-top:4%;
+	margin-left:2%;
+	border-color:#D3D3D3;
+	width:75%;
+	float:left;
+   background-image: linear-gradient(to right bottom, #f6e8f4, #f4f3f4, #f4f3f4, #f4f3f4, #f4f3f4); 
+      border-radius: 10px;
+    padding: 40px;
+	box-shadow: 0 2px 3px 0 #f71570;
+    /*****************************************************************************/
+}
+
+/*colorer ls headeer de section  */
+section header{
+	 
+	  color: #f71570;
+}
+
+
+/*colorer le footer de section  */
+#f1{
+  	 background-color: #e6e6e6;
+      /* pour Webkit (Chrome, Safari, Android...)*/
+    /*pour Mozilla*/
+     /*pour Microsoft  */
+     /* pour Opera */
+     background-image: -moz-linear-gradient(top, #f2f2f2, #e6e6e6 100%);
+     background-image: -ms-linear-gradient(top, #f2f2f2, #e6e6e6 100%);
+     background-image: -webkit-linear-gradient(top, #f2f2f2, #e6e6e6 100%);
+     background-image: -o-linear-gradient(top, #f2f2f2, #e6e6e6 100%);
+     background-image: linear-gradient(top, #f2f2f2, #e6e6e6 100%);
+     border: 1px solid;
+     border-color: #ffffff #c9c9c9 #c9c9c9 #ffffff;
+     border-radius: 5px;
+     box-shadow: -1px 0 4px rgba(0, 0, 0, 0.1);
+     color: #333333;
+     clear: both;
+     font-size: 13px;
+     line-height: 1.8;
+     margin: 30px 0 0 -60px;
+     padding: 14px 15px;
+     text-shadow: 0 1px 0 #ffffff;
+	 margin-left: -5%;
+     text-align: left;
+     width: 50%;
+}
+
+
+/* positionner section */
+section{
+    width:100%;
+	float:left;
+	
+}
+
+/* ne pas afficher les puces dans les listes*/
+#titre_chap,#titre_part1,#titre_part2,#titre_part3{
+	
+	list-style-type: none;
+}
+/*decoration du header */
+section h1{
+    font-family: "Merriweather", Georgia, serif;
+	border-bottom: 4px double #ededed;
+    padding-bottom: 8px;
+}
+
+/*decoration pour les titres de niveau H2*/
+h2{
+	font-family: "Merriweather", Georgia, serif;
+	 color: #f71570;
+}
+/*decoration pour la section ibriquée dans la section principal*/ 
+  section section{
+	   width:100%;
+	   float:left;
+  }
+/** pour le footer de la page **/
+
+  footer {
+	  
+	  width:100%;
+	  float:left;
+      font-size: 18px;
+      padding: 25px 40px;
+      text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.5);
+      text-align: center;
+	  color:black;
+
+  }
+  
+
+  footer a{
+	  text-decoration:none;
+	  color:#f71570;
+  }
+  
+  
+  /** pour positionner les images **/
+  
+  img{
+    width: 70%;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	
+  }
+  #dialogue1{
+    width: 30%;
+  }
+  #dialogue2{
+    width: 50%;
+  }
+   #table1,#table2,td,th{
+    background: #e9e9e9;
+    width: 30%;
+    border:2px solid pink;
+    border-collapse: collapse;
+    padding: 10px 10px 10px 10px;
+  }
+  /*positionner les tableaux*/
+  #table1,#table2{
+	      margin-left: auto;
+          margin-right: auto;
+  }
+  
+th{
+  color:white;
+  background-color: pink;
+}
+  
+  /** decorer remarque **/
+  
+  #remarque,#att,#remarque2,#important{
+	  
+	  background-color:#FFE4E1;
+	  box-shadow: 0 2px 3px 0 #f71570;
+  }
+/* menu vertical */
+/*les divs contenant les boutons */
+#div1,#div2,#div3,#div4,#div5 {
+  margin-left: 20%;
+  position: relative;
+  display: inline-block;
+}
+/* les boutons du menu vertical */
+#div1 button,#div2 button,#div3 button,#div4 button,#div5 button
+{   
+    color:white;
+    width: 110px;
+    height: 60px;
+    line-height: 50px;
+    border-radius: 120px;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: bold;
+    background-image: linear-gradient(#fed6e3 0%, #ffaaaa 100%);
+    text-shadow: 1px 1px 1px rgba(245, 255, 255, 0.66);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.28);
+}
+ol 
+{
+  list-style-type: none;
+}
+/* les sous-menus du menu vertical */
+#div11,#div22,#div33,#div44,#div55{
+  border-radius: 10px;
+  margin-left: -65%;
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 180%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+#div11 a,#div22 a,#div33 a,#div44 a,#div55 a
+{
+  font-size:15px;
+}
+/* faire apparaitre les sous menu los du survol des boutons*/
+#div1:hover #div11 {
+  display: block;
+
+}
+#div2:hover #div22 {
+  display: block;
+
+}
+#div3:hover #div33 {
+  display: block;
+
+}
+#div4:hover #div44 {
+  display: block;
+
+}
+#div5:hover #div55 {
+  display: block;
+
+}
+
+
+/* menu horizontale*/
+li span
+{
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+li span:after
+{
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+li:hover span
+{
+  padding-right: 25px;
+}
+
+li:hover span:after
+{
+  opacity: 1;
+  right: 0;
+}
+
+#nav1
+{
+  margin-left: 3%;
+}
+/*tout les liens du nav*/
+#nav1 a
+{
+  text-decoration:none;
+  color:white;
+  display:block;
+}
+/*niveau 1 du menu*/
+#nav1 ul
+{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+
+  width:100%}
+  
+
+#nav1 >ul >li 
+{
+  border-radius:12px 0 12px 0;
+  border:none;
+  font:bold 12px Verdana;
+  box-shadow:1px 1px 3px #0c0c0c;
+  display: inline-block;
+  text-decoration:none;
+  text-align: center;
+  width:8%;
+  padding: 14px 16px;
+  margin-bottom:10px;
+  margin-right:2px;
+  float:left;
+  background-color:#f71570;
+  cursor: pointer;
+  display: inline-block;
+  float:left;
+}
+
+
+
+#nav1 li ul
+{
+  position: absolute;
+}
+
+
+#nav1 li{
+float:left;/*positionner le menu horizontalement*/
+margin:auto;
+padding:0;
+background-color:black;
+}
+#nav1 li a {
+display:block;
+
+color:white;
+/*enlever le souligné des liens de navigation*/
+text-decoration:none;
+padding:5px;
+}
+#nav1 li a:hover {
+color:cyan;
+}
+/*ne pas afficher les sous-menus au départ*/
+#nav1 ul li ul {  
+display:none;
+height: 50%;
+}
+#nav1 ul li ul li{
+  margin:2px;
+}
+#nav1 ul li ul a 
+{
+  text-align: left;
+}
+/* dès que le menu est survolé  il s'affiche*/
+#nav1 ul li:hover ul {  
+display:block;
+}
+/*positionner les sous-menus à la verticale*/
+#nav1 li:hover ul li {  
+float:none;
+}
+#nav1 li ul li 
+{
+  border-radius:12px 0 12px 0;
+  border:none;
+  font:bold 12px Verdana;
+  box-shadow:1px 1px 3px #0c0c0c;
+  text-decoration:none;
+  text-align: center;
+  width:8%;
+  padding: 14px 16px;
+  margin-bottom:10px;
+  margin-right:2px;
+  float:left;
+  background-color:#f71570;
+  cursor: pointer;
+}
+/*responsive design*/
+@media screen  (max-width: 640px) {  { display: block; clear: both; margin: 0; } }

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+
+     <head>
+         <meta charset="utf-8">
+         <title> Let Us Code </title>
+		 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		 <link rel= "stylesheet" href="../../../css/style.css"  />
+     </head>
+	 
+  <body>
+  
+       <!-- HEADER DE LA PAGE -->
+	   
+      <header>
+  	                   <h1 id="titre_site"> <a href="../../monsite.html">Let Us Code </a></h1>
+	 </header>
+	  
+	  		 <!-- liste des chapitre -->	   
+		  <nav id="nav1">
+				<ul>
+					<li >
+						<a href="../../monsite.html" class="bouton"><span>Home</span></a>
+					</li>
+					<li >
+						<a href="#" class="bouton"><span>Cours</span></a>
+						<ul>
+							<li><a href="../../c/chapitres/chapitre1.html">langage C</a>	</li>
+							 
+							<li ><a href="../../java/chapitres/chapitre1.html">Java</a></li>
+
+							<li><a href="../../javascript/chapitres/chapitre1.html">JavaScript</a></li>
+
+							<li><a href="../../python/chapitres/chapitre1.html">Python</a></li>
+							<li><a href="../../quiz.html">Quiz</a></li>
+						</ul>
+					</li>
+					<li >
+						<a href="../../about.html" class="bouton"><span>About</span></a>
+					
+					</li>
+					<li >
+						<a href="../../contact.html" class="bouton"><span>Contact</span></a>
+					</li>
+				</ul>
+			</nav>
+		
+		<!-- liste des chapitre (menu vertical-->
+		
+		<main>
+			<section>
+				<nav id="nav2">			
+			<div id="div1">
+			 <a href = "chapitre1.html" ><button>Chapitre 1</button></a>
+			 <!-- afficher les sous-titres du chapitre actuel -->
+			  
+			   </div>
+			  <div id="div2">
+			  	
+			  <a href = "chapitre2.html" ><button>Chapitre 2</button></a>
+			</div>
+			  <div id="div3">
+			   <a href = "chapitre3.html" ><button>chapitre 3</button></a>
+			</div>
+			<div id="div4">
+			   <a href = "chapitre4.html" ><button>chapitre 4</button></a>
+			   <div id="div44">
+			  <a href = "#part1" > &#9830; La boucle while </a>
+			  <a href = "#part2" > &#9830; La boucle do… while </a>
+			  <a href = "#part3" > &#9830; La boucle for </a>
+			
+			  </div>
+			</div>
+			<div id="div5">
+			   <a href = "../quiz.html" ><button>Quiz</button></a>
+			</div>
+		</nav>
+<section id="section1"><!-- DEBUT CHAPITRE 4 -->
+		
+      <div id="chapitre1">		
+	  
+	  
+	         <!-- HEADER CHAPITRE 4-->
+	   
+	          <header>
+ 			              <a id ="chap4"> <h1> Chapitre 4 : Les boucles</h1> </a> 
+			 </header>
+	 
+	 		     <OL id="titre_chap"> 
+				
+				   <LI> 
+	
+						
+						
+						<p>
+        						Le rôle des boucles est de répéter un certain nombre de fois les mêmes opérations. Tous les programmes, ou presque, ont besoin de ce type de fonctionnalité. Nous utiliserons les boucles pour permettre à un programme de recommencer depuis le début, pour attendre une action précise de l'utilisateur, parcourir une série de données, etc.
+						</p>
+						
+						<p>
+						
+						Une boucle s'exécute tant qu'une condition est remplie. Nous réutiliserons donc des notions du chapitre précédent !
+						</p>
+						
+						
+	
+				 </LI>
+				 
+				 <LI>
+			
+						      <a id ="part1"> <h2> La boucle while</h2> </a>
+
+						
+						    <p>
+						        Pour décortiquer précisément ce qui se passe dans une boucle, nous allons voir comment elle se construit ! Une boucle commence par une déclaration : ici while. Cela veut dire, à peu de chose près, « tant que ». Puis nous avons une condition : c'est elle qui permet à la boucle de s'arrêter. Une boucle n'est utile que lorsque nous pouvons la contrôler, et donc lui faire répéter une instruction un certain nombre de fois. C'est à ça que servent les conditions. Ensuite nous avons une ou plusieurs instructions : c'est ce que va répéter notre boucle (il peut même y avoir des boucles dans une boucle !
+							</p>
+							
+							<img src="../../../images/java/image31.jpg" alt="aucune image" />
+							
+							<p>
+							Nous allons travailler sur un exemple concret mais d'abord, réfléchissons à « comment notre boucle va travailler ». Pour cela, il faut déterminer notre exemple.
+							</p>
+							
+							<img src="../../../images/java/image32.jpg" alt="aucune image" />
+
+							<p>
+							Vous avez dû cligner des yeux en lisant reponse = sc.nextLine().charAt(0);. Rappelez-vous comment on récupère un char avec l'objet Scanner : nous devons récupérer un objet String et ensuite prendre le premier caractère de celui-ci ! Eh bien cette syntaxe est une contraction de ce que je vous avais fait voir auparavant.
+							</p>
+							
+							<p>
+							Détaillons un peu ce qu'il se passe. Dans un premier temps, nous avons déclaré et initialisé nos variables. Ensuite, la boucle évalue la condition qui nous dit : tant que la variable reponse contient « O », on exécute la boucle. Celle-ci contient bien le caractère « O », donc nous entrons dans la boucle. Puis l'exécution des instructions suivant l'ordre dans lequel elles apparaissent dans la boucle a lieu. À la fin, c'est-à-dire à l'accolade fermante de la boucle, le compilateur nous ramène au début de la boucle.
+							</p>
+							
+						<div id="remarque">
+							
+                            <p> <strong> Remarque : </strong> </p>
+							<p>
+							Cette boucle n'est exécutée que lorsque la condition est remplie : ici, nous avons initialisé la variable reponse à « O » pour que la boucle s'exécute. Si nous ne l'avions pas fait, nous n'y serions jamais entrés. Normal, puisque nous testons la condition avant d'entrer dans la boucle !
+							</p>
+						</div>
+						
+						<p>
+						Voilà. C'est pas mal, mais il faudrait forcer l'utilisateur à ne taper que « O » ou « N ». Comment faire ? C'est très simple : avec une boucle ! Il suffit de forcer l'utilisateur à entrer soit « N » soit « O » avec un while ! Attention, il nous faudra réinitialiser la variable reponse à « ' ' » (caractère vide). Il faudra donc répéter la phase « Voulez-vous réessayer ? » tant que la réponse donnée n'est pas « O » ou « N ».
+						</p>
+						
+						</p>
+						Voici notre programme dans son intégralité :
+						</p>
+						
+							<img src="../../../images/java/image33.jpg" alt="aucune image" />
+							
+					      <p>
+					      Attention à écrire correctement vos conditions et à bien vérifier vos variables dans vos while, et dans toutes vos boucles en général. Sinon c'est le drame ! Essayez d'exécuter le programme précédent sans la réinitialisation de la variable reponse, et vous verrez le résultat ! On n'entre jamais dans la deuxième boucle, car reponse = 'O' (puisque initialisée ainsi au début du programme). Là, vous ne pourrez jamais changer sa valeur… Le programme ne s'arrêtera donc jamais ! On appelle ça une « boucle infinie ». En voici un autre exemple.
+					      </p>
+						  
+						  <img src="../../../images/java/image34.jpg" alt="aucune image" />
+						  
+						  <p> Si vous lancez ce programme, vous allez voir une quantité astronomique de « coucou 1 fois !! ». Nous aurions dû ajouter une instruction dans le bloc d'instructions de notre while pour changer la valeur de a à chaque tour de boucle, comme ceci : </p>
+						  <img src="../../../images/java/image35.jpg" alt="aucune image" />
+
+							<p>
+							Une petite astuce : lorsque vous n'avez qu'une instruction dans votre boucle, vous pouvez enlever les accolades, car elles deviennent superflues, tout comme pour les instructions if, else if ou else.
+							</p>
+							
+
+				   </LI>
+				   
+				   				   
+			       <LI>
+
+                           <a id ="part2"> <h2> La boucle do… while</h2></a>
+
+						    <p>
+						    Puisque je viens de vous expliquer comment fonctionne une boucle while, je ne vais pas vraiment m'attarder sur la boucle do… while. En effet, ces deux boucles ne sont pas cousines, mais plutôt sœurs. Leur fonctionnement est identique à deux détails près.
+							</p>
+							
+						     <img src="../../../images/java/image36.jpg" alt="aucune image" />
+							 
+							 <p> <strong> Première différence </strong> </p>
+
+                              <p>
+							      La boucle do… while s'exécutera au moins une fois, contrairement à sa sœur. C'est-à-dire que la phase de test de la condition se fait à la fin, car la condition se met après le while.
+				             </p>
+							 
+							 <p> <strong> Deuxième différence </strong> </p>
+
+                             <p>
+                             C'est une différence de syntaxe, qui se situe après la condition du while. Vous voyez la différence ? Oui ? Non ? Il y a un « ;» après le while. C'est tout ! Ne l'oubliez cependant pas, sinon le programme ne compilera pas.
+                             </p>
+							  
+							  <p>
+							  Mis à part ces deux éléments, ces boucles fonctionnent exactement de la même manière. D'ailleurs, refaisons notre programme précédent avec une boucle do… while.
+				              </p>
+							  
+							   <img src="../../../images/java/image37.jpg" alt="aucune image" />
+							   
+							  <p>
+							  Vous voyez donc que ce code ressemble beaucoup à celui utilisé avec la boucle while, mais il comporte une petite subtilité : ici, plus besoin de réinitialiser la variable reponse, puisque de toute manière, la boucle s'exécutera au moins une fois !
+							  </p>
+
+			    </LI>
+				
+				  <LI>
+	
+                           <a id ="part3"> <h2> La boucle for</h2></a>
+
+						    <p>
+						    Cette boucle est un peu particulière puisqu'elle prend tous ses attributs dans sa condition et agit en conséquence. Je m'explique : jusqu'ici, nous avions fait des boucles avec :
+							</p>
+							
+							<ul>
+							
+							  <li>déclaration d'une variable avant la boucle ;
+							  <li>initialisation de cette variable ;
+							  <li>incrémentation de celle-ci dans la boucle.
+							  
+							 </ul>
+							 
+							 <p> Eh bien on met tout ça dans la condition de la boucle for, et c'est tout. Il existe une autre syntaxe pour la boucle for depuis le JDK 1.5. Nous la verrons lorsque nous aborderons les tableaux. Mais je sais bien qu'un long discours ne vaut pas un exemple, alors voici une boucle for sous vos yeux ébahis :</p>
+							 
+							 <img src="../../../images/java/image38.jpg" alt="aucune image" />
+							 
+							 <p> Ce qui donne la figure suivante :</p>
+							 
+							 <img src="../../../images/java/image39.jpg" alt="aucune image" />
+							 
+							<p>
+							Vous aurez sûrement remarqué la présence des « ; » dans la condition pour la séparation des champs. Ne les oubliez surtout pas, sinon le programme ne compilera pas.
+							</p>
+							
+							<p>
+							Nous pouvons aussi inverser le sens de la boucle, c'est-à-dire qu'au lieu de partir de 0 pour aller à 10, nous allons commencer à 10 pour atteindre 0 :
+							<p>
+							
+							<img src="../../../images/java/image40.jpg" alt="aucune image" />
+							 
+							 <p> On obtient la figure suivante..</p>
+							 
+							 <img src="../../../images/java/image41.jpg" alt="aucune image" />
+							 
+							 <p>
+							 Pour simplifier, la boucle for est un peu le condensé d'une boucle while dont le nombre de tours se détermine via un incrément. Nous avons un nombre de départ, une condition qui doit être remplie pour exécuter une nouvelle fois la boucle et une instruction de fin de boucle qui incrémente notre nombre de départ. Remarquez que rien ne nous empêche de cumuler les déclarations, les conditions et les instructions de fin de boucle :
+							 </p>
+							 
+							 <img src="../../../images/java/image42.jpg" alt="aucune image" />
+							 
+							 <p>
+							 Ici, cette boucle n'effectuera que deux tours puisque la condition (i < 10 && j < 6) est remplie dès le deuxième tour, la variable j commençant à 2 et étant incrémentée de deux à chaque tour de boucle.
+							 </p>
+							 
+							 							 
+							 <ul>
+							   <li>Les boucles vous permettent simplement d'effectuer des tâches répétitives.
+							   <li>Il existe plusieurs sortes de boucles :
+							      <ul>
+								     <li>la boucle while(condition){…} évalue la condition puis exécute éventuellement un tour de boucle (ou plus) ;
+									 <li>la boucle do{…}while(condition); fonctionne exactement comme la précédente, mais effectue un tour de boucle quoi qu'il arrive ;
+									 <li>la boucle for permet d'initialiser un compteur, une condition et un incrément dans sa déclaration afin de répéter un morceau de code un nombre limité de fois.
+							   	  </ul>
+							   <li>Tout comme les conditions, si une boucle contient plus d'une ligne de code à exécuter, vous devez l'entourer d'accolades afin de bien en délimiter le début et la fin
+							 </ul>		 
+	
+			    </LI>
+		</OL> 
+		
+		<footer id="f1">
+			Post&eacute; le 
+			<time>
+				16 Novembre 2018
+			</time>
+			Par 
+			<a href="../../info.html">Bensalah kawthar,Zerrouki im&egrave;ne,Assem Sarah</a>
+		</footer>
+		
+   </div>
+</section> <!-- FIN CHAPITRE 4 -->
+</section>	
+	 
+</main>
+
+	 <footer >
+	 
+	 	     Copyright &copy; 2018 <a href="../../monsite.html"><span >LetUsCode.com</span></a>
+	
+	</footer>	
+
+	
+	
+</body> 
+</html>

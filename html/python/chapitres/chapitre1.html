@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title> Let Us Code </title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel= "stylesheet" href="../../../css/style.css"  />
+	</head>
+	<body>
+		
+		<!-- HEADER DE LA PAGE -->
+		<header>
+			<h1 id="titre_site"><a href="#">Let Us Code </a></h1>
+		</header>
+		<nav id="nav1">
+				<ul>
+					<li >
+						<a href="../../monsite.html" class="bouton"><span>Home</span></a>
+					</li>
+					<li >
+						<a href="#" class="bouton"><span>Cours</span></a>
+						<ul>
+							<li><a href="../../c/chapitres/chapitre1.html">langage C</a>	</li>
+							 
+							<li ><a href="../../java/chapitres/chapitre1.html">Java</a></li>
+
+							<li><a href="../../javascript/chapitres/chapitre1.html">JavaScript</a></li>
+
+							<li><a href="../../python/chapitres/chapitre1.html">Python</a></li>
+
+							<li><a href="../../quiz.html">Quiz</a></li>
+						</ul>
+					</li>
+					<li >
+						<a href="../../about.html" class="bouton"><span>About</span></a>
+					
+					</li>
+					<li >
+						<a href="../../contact.html" class="bouton"><span>Contact</span></a>
+					</li>
+				</ul>
+			</nav>
+		
+		<!-- liste des chapitre (menu vertical-->
+		
+		<main>
+			<section>
+				<nav id="nav2">			
+			<div id="div1">
+			 <a href = "chapitre1.html" ><button>Chapitre 1</button></a>
+			 <!-- afficher les sous-titres du chapitre actuel -->
+			  <div id="div11">
+			  <a href = "#part1" > &#9830; Le langage Python </a>
+			  <a href = "#part2" > &#9830; À quoi peut servir Python ? </a>
+			  <a href = "#part3" > &#9830; Un langage de programmation interprété </a>
+			  <a href = "#part4" > &#9830; Lancer Python </a>
+			  </div>
+			   </div>
+			  <div id="div2">
+			  	
+			  <a href = "chapitre2.html" ><button>Chapitre 2</button></a>
+			</div>
+			  <div id="div3">
+			   <a href = "chapitre3.html" ><button>chapitre 3</button></a>
+			</div>
+			<div id="div4">
+			   <a href = "chapitre4.html" ><button>chapitre 4</button></a>
+			</div>
+			<div id="div5">
+			   <a href = "../quiz.html" ><button>Quiz</button></a>
+			</div>
+		</nav>
+<section id="section1">
+				<!-- DEBUT CHAPITRE 1 -->
+				<div>
+					<!-- HEADER CHAPITRE 1-->
+					<header>
+						<a id ="chap1"><h1> Chapitre 1 : Présentation </h1></a>
+					</header>
+					<!-- une liste ol pour définir les sous-titres du chapitre actuel-->
+					<OL>
+						<LI>
+							<a id ="part1"><h2> Le langage Python </h2></a>
+							<p>
+								Python est un langage de programmation. Il est l'un des langages de programmation les plus intéressants du moment. Facile à apprendre, python est souvent utilisé en exemple lors de l'apprentissage de la programmation. Vous trouverez sur ce site des cours / tuto informatiques qui vous enseigneront les bases pour la compréhension de ce langage. Pour les développeurs plus expérimentés le site vous indiquera quelques astuces pour vos projets.
+							</p>
+						</LI>
+						<LI>
+							<a id ="part2"><h2> À quoi peut servir Python ? </h2></a>
+							<p>
+								Python est un langage puissant, à la fois facile à apprendre et riche en possibilités. Dès l'instant où vous l'installez sur votre ordinateur, vous disposez de nombreuses fonctionnalités intégrées au langage que nous allons découvrir tout au long de ce livre.
+							</p>
+							<p>
+								Il est, en outre, très facile d'étendre les fonctionnalités existantes, comme nous allons le voir. Ainsi, il existe ce qu'on appelle des bibliothèques qui aident le développeur à travailler sur des projets particuliers. Plusieurs bibliothèques peuvent ainsi être installées pour, par exemple, développer des interfaces graphiques en Python.Concrètement, voilà ce qu'on peut faire avec Python :
+							</p>
+							<ul>
+								<li>de petits programmes très simples, appelés scripts, chargés d'une mission très précise sur votre ordinateur ;</li>
+								<li>des programmes complets, comme des jeux, des suites bureautiques, des logiciels multimédias, des clients de messagerie…</li>
+								<li>des projets très complexes, comme des progiciels (ensemble de plusieurs logiciels pouvant fonctionner ensemble, principalement utilisés dans le monde professionnel).</li>
+							</ul>
+						</p>
+						<p>
+							Voici quelques-unes des fonctionnalités offertes par Python et ses bibliothèques :
+							<ul>
+								<li>créer des interfaces graphiques ;</li>
+								<li>faire circuler des informations au travers d'un réseau ;</li>
+								<li>dialoguer d'une façon avancée avec votre système d'exploitation ;</li>
+							</ul>
+						</p>
+						<p>
+							Bien entendu, vous n'allez pas apprendre à faire tout cela en quelques minutes. Mais ce cours vous donnera des bases suffisamment larges pour développer des projets qui pourront devenir, par la suite, assez importants.
+						</p>
+					</LI>
+					<LI>
+						<a id ="part3"><h2> Un langage de programmation interprété  </h2></a>
+						<p>
+							Eh oui, vous allez devoir patienter encore un peu car il me reste deux ou trois choses à vous expliquer, et je suis persuadé qu'il est important de connaître un minimum ces détails qui peuvent sembler peu pratiques de prime abord.
+						</p>
+						<p>
+							Python est un langage de programmation interprété, c'est-à-dire que les instructions que vous lui envoyez sont « transcrites » en langage machine au fur et à mesure de leur lecture. D'autres langages (comme le C / C++) sont appelés « langages compilés » car, avant de pouvoir les exécuter, un logiciel spécialisé se charge de transformer le code du programme en langage machine. On appelle cette étape la « compilation ». À chaque modification du code, il faut rappeler une étape de compilation.
+						</p>
+						<p>
+							Les avantages d'un langage interprété sont la simplicité (on ne passe pas par une étape de compilation avant d'exécuter son programme) et la portabilité (un langage tel que Python est censé fonctionner aussi bien sous Windows que sous Linux ou Mac OS, et on ne devrait avoir à effectuer aucun changement dans le code pour le passer d'un système à l'autre). Cela ne veut pas dire que les langages compilés ne sont pas portables, loin de là ! Mais on doit utiliser des compilateurs différents et, d'un système à l'autre, certaines instructions ne sont pas compatibles, voire se comportent différemment.
+						</p>
+						<p>
+							En contrepartie, un langage compilé se révélera bien plus rapide qu'un langage interprété (la traduction à la volée de votre programme ralentit l'exécution), bien que cette différence tende à se faire de moins en moins sentir au fil des améliorations. De plus, il faudra installer Python sur le système d'exploitation que vous utilisez pour que l'ordinateur puisse comprendre votre code.
+						</p>
+					</LI>
+					<LI>
+						<a id ="part4"><h2>Lancer Python</h2></a>
+						<p>
+							Ouf ! Voilà qui est fait !Bon, en théorie, on commence à utiliser Python dès le prochain chapitre mais, pour que vous soyez un peu récompensés de votre installation exemplaire, voici les différents moyens d'accéder à la ligne de commande Python que nous allons tout particulièrement étudier dans les prochains chapitres.
+						</p>
+						<p>
+							<strong>Sous Windows</strong>
+						</p>
+						<p>
+							Vous avez plusieurs façons d'accéder à la ligne de commande Python, la plus évidente consistant à passer par les menus 
+							<strong>
+								Démarrer>
+								Tous les programmes>
+								Python 3.4>
+								Python (Command Line)
+							</strong>
+							. Si tout se passe bien, vous devriez obtenir une magnifique console (figure suivante). Il se peut que les informations affichées dans la vôtre ne soient pas les mêmes, mais ne vous en inquiétez pas.
+						</p>
+						<img src="../../../images/python/image1.png" alt="intouvable" >
+						</img>
+						<p>
+							<strong>Sous Linux</strong>
+						</p>
+						<p>
+							Lorsque vous l'avez installé sur votre système, Python a créé un lien vers l'interpréteur sous la forme python3.X (le X étant le numéro de la version installée).Si, par exemple, vous avez installé Python 3.4, vous pouvez y accéder grâce à la commande :
+						</p>
+						<img src="../../../images/python/image2.png" alt="intouvable" >
+						</img>
+						<p>
+							<strong>Sous Mac OS X</strong>
+						</p>
+						<p>
+							Cherchez un dossierPythondans le dossierApplications. Pour lancer Python,ouvrez l'applicationIDLEde ce dossier. Vous êtes prêts à passer au concret !
+						</p>
+					</LI>
+				</OL>
+				<p>
+					<strong>
+						 Si vous vous sentez prêts, alors rendez-vous dans le chapitre suivant, qui vous montrera les outils utilisés par un programmeur en Python. 
+					</strong>
+				</p>
+			</LI>
+		</OL>
+		<!-- FOOTER DU CHAPITRE -->
+		<footer id="f1">
+			Post&eacute; le 
+			<time>
+				16 Novembre 2018
+			</time>
+			Par 
+			<a href="../../info.html">Bensalah kawthar,Zerrouki im&egrave;ne,Assem Sarah</a>
+		</footer>
+	</div>
+</section>
+</section>
+<!-- FIN CHAPITRE 1 -->
+</main>
+<!-- footer de la page -->
+<footer >Copyright &copy; 2018
+<a href="../../monsite.html"><span >LetUsCode.com</span></a>
+</footer>
+</script>
+</body>
+</html>

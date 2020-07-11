@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+     <head>
+         <meta charset="utf-8">
+         <title> Let Us Code </title>
+		 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		 <link rel= "stylesheet" href="../../../css/style.css"  />
+     </head>
+	 
+  <body>
+  
+       <!-- HEADER DE LA PAGE -->
+	   
+      <header>
+  	                   <h1 id="titre_site"> <a href="#">Let Us Code </a></h1>
+	 </header>
+	  
+	  		 <!-- liste des chapitre -->	   
+		  <!-- liste des chapitre (menu vertical-->
+		<nav id="nav1">
+				<ul>
+					<li >
+						<a href="../../monsite.html" class="bouton"><span>Home</span></a>
+					</li>
+					<li >
+						<a href="#" class="bouton"><span>Cours</span></a>
+						<ul>
+							<li><a href="../../c/chapitres/chapitre1.html">langage C</a>	</li>
+							 
+							<li ><a href="../../java/chapitres/chapitre1.html">Java</a></li>
+
+							<li><a href="../../javascript/chapitres/chapitre1.html">JavaScript</a></li>
+
+							<li><a href="../../python/chapitres/chapitre1.html">Python</a></li>
+
+							<li><a href="../../quiz.html">Quiz</a></li>
+						</ul>
+					</li>
+					<li >
+						<a href="../../about.html" class="bouton"><span>About</span></a>
+						<ul>
+							<li><a href="#">page1</a></li>
+							<li><a href="#">page2</a></li>
+						</ul>
+					</li>
+					<li >
+						<a href="../../contact.html" class="bouton"><span>Contact</span></a>
+					</li>
+				</ul>
+			</nav>
+		
+		<!-- liste des chapitre (menu vertical-->
+		
+		<main>
+			<section>
+				<nav id="nav2">			
+			<div id="div1">
+			 <a href = "chapitre1.html" ><button>Chapitre 1</button></a>
+			 <!-- afficher les sous-titres du chapitre actuel -->
+			  <div id="div11">
+			  <a href = "#part1" > &#9830; Le langage Python </a>
+			  <a href = "#part2" > &#9830; À quoi peut servir Python ? </a>
+			  <a href = "#part3" > &#9830; Un langage de programmation interprété </a>
+			  <a href = "#part4" > &#9830; Lancer Python </a>
+			  </div>
+			   </div>
+			  <div id="div2">
+			  	
+			  <a href = "chapitre2.html" ><button>Chapitre 2</button></a>
+			</div>
+			  <div id="div3">
+			   <a href = "chapitre3.html" ><button>chapitre 3</button></a>
+			</div>
+			<div id="div4">
+			   <a href = "chapitre4.html" ><button>chapitre 4</button></a>
+			</div>
+			<div id="div5">
+			   <a href = "../quiz.html" ><button>Quiz</button></a>
+			</div>
+		</nav>
+<section id="section1">
+		
+      <div id="chapitre1">		
+	  
+	  
+	         <!-- HEADER CHAPITRE 1-->
+	   
+	          <header>
+ 			              <a id ="chap1"> <h1> Chapitre 4 : Les boucles </h1> </a> 
+			 </header>
+	 
+	 		     <OL id="titre_chap"> 
+				   <LI> 				      
+						      <a id ="part1"> <h2> Les boucle.. C'est quoi ? </h2> </a>
+						
+						    <p>
+					        Les boucles sont un concept nouveau pour vous. Elles vont vous permettre de répéter une certaine opération autant de fois que nécessaire. Le concept risque de vous sembler un peu théorique car les applications pratiques présentées dans ce chapitre ne vous paraîtront probablement pas très intéressantes. Toutefois, il est impératif que cette notion soit comprise avant que vous ne passiez à la suite. Viendra vite le moment où vous aurez du mal à écrire une application sans boucle.
+                            En outre, les boucles peuvent permettre de parcourir certaines séquences comme les chaînes de caractères pour, par exemple, en extraire chaque caractère.
+					   
+						    </p>				  
+				   </LI>				   				   
+			       <LI>
+                          <a id ="part2"> <h2> La boucle while</h2></a>
+                           <p>
+							La boucle que je vais présenter se retrouve dans la plupart des autres langages de programmation et porte le même nom. Elle permet de répéter un bloc d'instructions tant qu'une condition est vraie (whilesignifie « tant que » en anglais). J'espère que le concept de bloc d'instructions est clair pour vous, sinon je vous renvoie au chapitre précédent.
+
+							La syntaxe dewhileest :
+                         
+						   </p>
+						  
+						        <img src="../../../images/python/image24.png" alt="intouvable" ></img>
+						        <p>Vous devriez reconnaître la forme d'un bloc d'instructions, du moins je l'espère.</p>
+				   
+			    </LI>
+						
+				   <LI>
+						      <a id ="part3"> <h2> La boucle for  </h2></a>
+		
+						
+						<p>
+							
+						Comme je l'ai dit précédemment, on retrouve l'instructionwhiledans la plupart des autres langages. Dans le C++ ou le Java, on retrouve également des instructionsformais qui n'ont pas le même sens. C'est assez particulier et c'est le point sur lequel je risque de manquer d'exemples dans l'immédiat, toute son utilité se révélant au chapitre sur les listes. Notez que, si vous avez fait du Perl ou du PHP, vous pouvez retrouver les bouclesforsous un mot-clé assez proche :foreach.
+
+						L'instructionfortravaille sur des séquences. Elle est en fait spécialisée dans le parcours d'une séquence de plusieurs données. Nous n'avons pas vu (et nous ne verrons pas tout de suite) ces séquences assez particulières mais très répandues, même si elles peuvent se révéler complexes. Toutefois, il en existe un type que nous avons rencontré depuis quelque temps déjà : les chaînes de caractères.
+
+						Les chaînes de caractères sont des séquences… de caractères ! Vous pouvez parcourir une chaîne de caractères (ce qui est également possible avecwhilemais nous verrons plus tard comment). Pour l'instant, intéressons-nous àfor.
+
+						L'instructionforse construit ainsi 
+						</p>
+
+						  <img src="../../../images/python/image25.png" alt="intouvable" ></img>
+						<p>elementest une variable créée par lefor, ce n'est pas à vous de l'instancier. Elle prend successivement chacune des valeurs figurant dans la séquence parcourue.
+						Ce n'est pas très clair ? Alors, comme d'habitude, tout s'éclaire avec le code !</p>
+						 <img src="../../../images/python/image26.png" alt="intouvable" ></img>
+						 <p>Ce qui nous donne le résultat suivant :</p>
+						  <img src="../../../images/python/image27.png" alt="intouvable" ></img>			
+			 </LI>
+			  <LI>				
+						   <a id ="part4"> <h2>  Un petit bonus : les mots-clés break et continue    </h2></a>				
+						
+						<p>
+
+						Je vais ici vous montrer deux nouveaux mots-clés,breaketcontinue. Vous ne les utiliserez peut-être pas beaucoup mais vous devez au moins savoir qu'ils existent… et à quoi ils servent.
+						</p>
+						<strong>Le mot-clébreak</strong>
+						<p>
+						Le mot-clé break permet tout simplement d'interrompre une boucle. Il est souvent utilisé dans une forme de boucle que je n'approuve pas trop :
+											</p>	
+			<img src="../../../images/python/image28.png" alt="intouvable" ></img>
+		<p>	La bouclewhilea pour condition1, c'est-à-dire une condition qui sera toujours vraie. Autrement dit, en regardant la ligne duwhile, on pense à une boucle infinie. En pratique, on demande à l'utilisateur de taper une lettre (un 'Q' pour quitter). Tant que l'utilisateur ne saisit pas cette lettre, le programme lui redemande de taper une lettre. Quand il tape 'Q', le programme afficheFin de la boucleet la boucle s'arrête grâce au mot-clébreak.</p>
+						<p>
+						Ce mot-clé permet d'arrêter une boucle quelle que soit la condition de la boucle. Python sort immédiatement de la boucle et exécute le code qui suit la boucle, s'il y en a.</p>
+						<p>
+
+						C'est un exemple un peu simpliste mais vous pouvez voir l'idée d'ensemble. Dans ce cas-là et, à mon sens, dans la plupart des cas oùbreakest utilisé, on pourrait s'en sortir en précisant une véritable condition à la ligne duwhile. Par exemple, pourquoi ne pas créer un booléen qui sera vrai tout au long de la boucle et faux quand la boucle doit s'arrêter ? Ou bien tester directement silettre != « Q »dans lewhile?</p>
+						<p>
+
+						Parfois,breakest véritablement utile et fait gagner du temps. Mais ne l'utilisez pas à outrance, préférez une boucle avec une condition claire plutôt qu'un bloc d'instructions avec unbreak, qui sera plus dur à appréhender d'un seul coup d'œil.</p>
+
+						<strong>Le mot-clécontinue</strong>
+						<p>
+						Le mot-clécontinuepermet de… continuer une boucle, en repartant directement à la ligne duwhileoufor. Un petit exemple s'impose, je pense : </p>
+						<img src="../../../images/python/image29.png" alt="intouvable" ></img>
+						<p>Voici le résultat :</p>
+						<img src="../../../images/python/image30.png" alt="intouvable" ></img>
+						<p>Comme vous le voyez, tous les trois tours de boucle,is'incrémente de 4. Arrivé au mot-clécontinue, Python n'exécute pas la fin du bloc mais revient au début de la boucle en testant à nouveau la condition duwhile. Autrement dit, quand Python arrive à la ligne 6, il saute à la ligne 2 sans exécuter les lignes 7 et 8. Au nouveau tour de boucle, Python reprend l'exécution normale de la boucle (continuen'ignore la fin du bloc que pour le tour de boucle courant).
+						</p>
+						<p>
+						Mon exemple ne démontre pas de manière éclatante l'utilité decontinue. Les rares fois où j'utilise ce mot-clé, c'est par exemple pour supprimer des éléments d'une liste, mais nous n'avons pas encore vu les listes. L'essentiel, pour l'instant, c'est que vous vous souveniez de ces deux mots-clés et que vous sachiez ce qu'ils font, si vous les rencontrez au détour d'une instruction. Personnellement, je n'utilise pas très souvent ces mots-clés mais c'est aussi une question de goût.</p>
+									</LI>
+		</OL> 		
+		<footer id="f1">	
+		         Post&eacute; le <time>16 Novembre 2018</time>
+			     Par <a href="../../info.html">Bensalah kawthar,Zerrouki im&egrave;ne,Assem Sarah</a>
+		</footer>
+   </div>
+</section>
+</section> <!-- FIN CHAPITRE 4 -->	
+</main>
+	 <footer >	 
+	 	     Copyright &copy; 2018 <a href="../../monsite.html"><span>LetUsCode.com</span></a>	
+	</footer>	
+</script>
+	
+	
+</body> 
+</html>

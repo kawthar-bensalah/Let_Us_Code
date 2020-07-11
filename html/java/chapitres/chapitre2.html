@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+
+     <head>
+         <meta charset="utf-8">
+         <title> Let Us Code </title>
+		 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		 <link rel= "stylesheet" href="../../../css/style.css"  />
+     </head>
+	 
+  <body>
+  
+       <!-- HEADER DE LA PAGE -->
+	   
+      <header>
+  	                   <h1 id="titre_site"> <a href="../../monsite.html">Let Us Code </a></h1>
+	 </header>
+	  
+	  		 <!-- liste des chapitre -->	   
+		  <nav id="nav1">
+				<ul>
+					<li >
+						<a href="../../monsite.html" class="bouton"><span>Home</span></a>
+					</li>
+					<li >
+						<a href="#" class="bouton"><span>Cours</span></a>
+						<ul>
+							<li><a href="../../c/chapitres/chapitre1.html">langage C</a>	</li>
+							 
+							<li ><a href="../../java/chapitres/chapitre1.html">Java</a></li>
+
+							<li><a href="../../javascript/chapitres/chapitre1.html">JavaScript</a></li>
+
+							<li><a href="../../python/chapitres/chapitre1.html">Python</a></li>
+							<li><a href="../../quiz.html">Quiz</a></li>
+						</ul>
+					</li>
+					<li >
+						<a href="../../about.html" class="bouton"><span>About</span></a>
+					
+					</li>
+					<li >
+						<a href="../../contact.html" class="bouton"><span>Contact</span></a>
+					</li>
+				</ul>
+			</nav>
+		
+		<!-- liste des chapitre (menu vertical-->
+		
+		<main>
+			<section>
+				<nav id="nav2">			
+			<div id="div1">
+			 <a href = "chapitre1.html" ><button>Chapitre 1</button></a>
+			 <!-- afficher les sous-titres du chapitre actuel -->
+			  
+			   </div>
+			  <div id="div2">
+			  	
+			  <a href = "chapitre2.html" ><button>Chapitre 2</button></a>
+			  <div id="div22">
+			  <a href = "#part1" > &#9830; Les différents types de variables</a>
+			  <a href = "#part2" > &#9830; Les opérateurs arithmétiques</a>
+			  
+			  </div>
+			</div>
+			  <div id="div3">
+			   <a href = "chapitre3.html" ><button>chapitre 3</button></a>
+			</div>
+			<div id="div4">
+			   <a href = "chapitre4.html" ><button>chapitre 4</button></a>
+			</div>
+			<div id="div5">
+			   <a href = "../quiz.html" ><button>Quiz</button></a>
+			</div>
+		</nav>
+<section id="section1"><!-- DEBUT CHAPITRE 2 -->
+		
+      <div id="chapitre1">		
+	  
+	  
+	         <!-- HEADER CHAPITRE 2-->
+	   
+	          <header>
+ 			              <a id ="chap2"> <h1> Chapitre 2 : Les variables et les opérateurs </h1> </a> 
+			 </header>
+	 
+	 		     <OL id="titre_chap"> 
+				
+				   <LI> 
+						
+
+						      <a id ="part1"> <h2> Les différents types de variables </h2> </a>
+
+						
+						    <p>
+						        Nous allons commencer par découvrir comment créer des variables dans la mémoire. Pour cela, il faut les déclarer. Une déclaration de variable se fait comme ceci :
+						    </p>
+							
+								<!-- INSERRER IMAGE -->
+						
+						        <img src="../../../images/java/image2.jpg" alt="aucune image" />
+						
+						    <p>
+							Cette opération se termine toujours par un point-virgule « ; » (comme toutes les instructions de ce langage). Ensuite, on l'initialise en entrant une valeur.
+					        </p>
+							
+							<p>
+							      En Java, nous avons deux types de variables :
+							</p>
+							
+							
+							  <ol>
+							     <li> des variables de type simple ou « primitif » ; </li>
+                                 <li> des variables de type simple ou « primitif » ; </li>
+						      </ol>
+							
+							
+							<p>
+							    Ce qu'on appelle des types simples ou types primitifs, en Java, ce sont tout bonnement des nombres entiers, des nombres réels, des booléens ou encore des caractères, et vous allez voir qu'il y a plusieurs façons de déclarer certains de ces types.
+							</p>
+							
+							<OL id="titre_part1">
+						      <LI> 
+
+					
+						            <a id ="part11"> <h2>  Les variables de type numérique    </h2></a>
+									
+									<p>
+									Le typebyte(1 octet) peut contenir les entiers entre -128 et +127. 
+									</p>
+									<img src="../../../images/java/image3.jpg" alt="aucune image" />
+							
+									<p>							<p>
+									Le typeshort(2 octets) contient les entiers compris entre -32768 et +32767.
+									</p>
+									
+									<img src="../../../images/java/image4.jpg" alt="aucune image" />
+									
+									<p>
+									Le typeint(4 octets) va de -2*109 à 2*109 (2 et 9 zéros derrière… ce qui fait déjà un joli nombre).
+									</p>
+									
+									<img src="../../../images/java/image5.jpg" alt="aucune image" />
+									
+									<p> Le type long (8 octets) peut aller de −9×1018  à 9×1018 (encore plus gros…). </p>
+									
+									<img src="../../../images/java/image6.jpg" alt="aucune image" />
+									
+								<div id= "remarque">
+								    <p> <strong> Remarque : </strong> </p>
+									<p>
+									Afin d'informer la JVM que le type utilisé est long, vous DEVEZ ajouter un "L" à la fin de votre nombre, sinon le compilateur essaiera d'allouer ce dernier dans une taille d'espace mémoire de type entier et votre code ne compilera pas si votre nombre est trop grand...
+									</p>
+								</div>
+
+
+							  </LI>
+							  
+							  <LI> 
+	
+					
+						            <a id ="part12"> <h2> Des variables stockant un caractère  </h2></a>
+									
+									<p>
+									Le typecharcontient un caractère stocké entre apostrophes (« ' ' »), comme ceci :
+									<p>
+									
+	                                <img src="../../../images/java/image7.jpg" alt="aucune image" />
+									
+							  
+							  </LI>
+							  
+							 <LI> 
+						         
+						            <a id ="part13"> <h2> Des variables de type booléen </h2></a>
+									
+									<p>
+									Le typeboolean, lui, ne peut contenir que deux valeurs  :true(vrai) oufalse(faux), sans guillemets (ces valeurs sont natives dans le langage, il les comprend directement et sait les interpréter).
+									<p>
+									
+	                                <img src="../../../images/java/image8.jpg" alt="aucune image" />
+									
+
+							  </LI>
+							  
+							  <LI> 
+
+					
+						            <a id ="part14"> <h2> Des variables de type String </h2></a>
+									
+									<p>
+									Le typeStringpermet de gérer les chaînes de caractères, c'est-à-dire le stockage de texte.
+									</p>
+									
+									<p>
+									Il s'agit d'une variable d'un type plus complexe que l'on appelle objet. Vous verrez que celle-ci s'utilise un peu différemment des variables précédentes :
+									</p>
+									
+	                                <img src="../../../images/java/image9.jpg" alt="aucune image" />
+									
+								<div id="att">
+									<p>
+									    <strong> Attention : </strong>
+									</p>
+									
+									<p>
+									Stringcommence par une majuscule ! Et lors de l'initialisation, on utilise des guillemets doubles (« " " »).
+									</p>
+									
+								</div>
+								
+								<p>
+								Cela a été mentionné plus haut :Stringn'est pas un type de variable, mais un objet. Notre variable est un objet, on parle aussi d'une instance : ici, une instance de la classeString. Nous y reviendrons lorsque nous aborderons les objets.
+								</p>
+								
+								<p>
+								C'est simple : il s'agit d'une convention de nommage. En fait, c'est une façon d'appeler nos classes, nos variables, etc. Il faut que vous essayiez de la respecter au maximum. Cette convention, la voici :
+								</p>
+								
+								<ul>
+								      <li> tous vos noms de classes doivent commencer par une majuscule ;
+									  <li> tous vos noms de variables doivent commencer par une minuscule ;
+									  <li>si le nom d'une variable est composé de plusieurs mots, le premier commence par une minuscule, le ou les autres par une majuscule, et ce, sans séparation ;
+									  <li>tout ceci sans accentuation !
+								</ul>
+								
+								<p>
+								Je sais que la première classe que je vous ai demandé de créer ne respecte pas cette convention, mais je ne voulais pas vous en parler à ce moment-là… Donc, à présent, je vous demanderai de ne pas oublier ces règles !
+								</p>
+								
+								<p>
+								Voici quelques exemples de noms de classes et de variables :
+								</p>
+								
+								   <img src="../../../images/java/image10.jpg" alt="aucune image" />
+								   
+								   <p>
+								   Donc, pour en revenir au pourquoi du comment, je vous ai dit que les variables de typeStringsont des objets. Les objets sont définis par une ossature (un squelette) qui est en fait une classe. Ici, nous utilisons un objetStringdéfini par une classe qui s'appelle « String » ; c'est pourquoiStringa une majuscule et pasint,float, etc., qui eux ne sont pas définis par une classe.
+								   </p>
+								   
+								   <p>
+								   Avant de nous lancer dans la programmation, nous allons faire un peu de mathématiques avec nos variables.
+								   </p>
+
+							  </LI>
+							  
+						 </OL>
+					
+				   </LI>
+				   
+				   				   
+			       <LI>
+				    
+                           <a id ="part2"> <h2> Les opérateurs arithmétiques </h2></a>
+
+						    <p>
+						    Les opérateurs arithmétiques sont ceux que l'on apprend à l'école primaire… ou presque :
+							</p>
+							
+							<ul>
+							
+							  <li>« + » : permet d'additionner deux variables numériques (mais aussi de concaténer des chaînes de caractères ; ne vous inquiétez pas, on aura l'occasion d'y revenir).
+							  <li>« - » : permet de soustraire deux variables numériques.
+							  <li>« * » : permet de multiplier deux variables numériques.
+							  <li>« / » : permet de diviser deux variables numériques (mais je crois que vous aviez deviné).
+							  <li>« % » : permet de renvoyer le reste de la division entière de deux variables de type numérique ; cet opérateur s'appelle le modulo.
+							</ul>
+							
+							<p> <strong> Quelques exemples de calcul </strong> </p>
+						  
+						    <img src="../../../images/java/image11.jpg" alt="aucune image" />
+							
+							<p>
+							Ici, nous voyons bien que nous pouvons affecter des résultats d'opérations sur des nombres à nos variables, mais aussi affecter des résultats d'opérations sur des variables de même type.
+							</p>
+							
+						<div id="remarque2">
+							
+                            <p> <strong> Remarque : </strong> </p>
+							<p>
+							Je me doute bien que le modulo est assez difficile à assimiler. Voici une utilisation assez simple : pour vérifier qu'un entier est pair, il suffit de vérifier que son modulo 2 renvoie 0.
+                            </p>
+						</div>
+						
+						<p>
+						Maintenant, voici quelque chose que les personnes qui n'ont jamais programmé ont du mal à intégrer. Je garde la même déclaration de variables que ci-dessus.
+						</p>
+						
+						<img src="../../../images/java/image12.jpg" alt="aucune image" />
+						
+						<p>
+						Et là aussi, il existe une syntaxe qui raccourcit l'écriture de ce genre d'opérations. Regardez bien :
+						</p>
+						
+						<img src="../../../images/java/image13.jpg" alt="aucune image" />
+						
+						<p>
+						Les trois premières syntaxes correspondent exactement à la même opération. La troisième sera certainement celle que vous utiliserez le plus, mais elle ne fonctionne que pour augmenter d'une unité la valeur denbre1! Si vous voulez augmenter de 2 la valeur d'une variable, utilisez les deux syntaxes précédentes. On appelle cela l'incrémentation. La dernière fait la même chose que la troisième, mais il y a une subtilité dont nous reparlerons dans le chapitre sur les boucles.
+						</p>
+						
+						<p>
+						
+						Pour la soustraction, la syntaxe est identique :
+						</p>
+						
+						<img src="../../../images/java/image14.jpg" alt="aucune image" />
+						
+						<p> Même commentaire que pour l'addition, sauf qu'ici, la troisième syntaxe s'appelle la décrémentation. </p>
+						
+						<p> Les raccourcis pour la multiplication fonctionnent de la même manière ; regardez plutôt : </p>
+						
+						<img src="../../../images/java/image15.jpg" alt="aucune image" />
+						
+					<div id="important">
+						<p> <strong> Très important : </strong>  </p>
+						<p>
+						on ne peut faire du traitement arithmétique que sur des variables de même type sous peine de perdre de la précision lors du calcul. On ne s'amuse pas à diviser unintpar unfloat, ou pire, par unchar! Ceci est valable pour tous les opérateurs arithmétiques et pour tous les types de variables numériques. Essayez de garder une certaine rigueur pour vos calculs arithmétiques.
+				        </p>
+					</div>
+					
+					
+					<p>
+					Voici les raisons de ma mise en garde : comme je vous l'ai dit précédemment, chaque type de variable a une capacité différente et, pour faire simple, nous allons comparer nos variables à différents récipients. Une variable de type :
+					</p>
+					
+					<ul>
+					
+					   <li>bytecorrespondrait à un dé à coudre, elle ne peut pas contenir grand-chose ;
+					   <li>intserait un verre, c'est déjà plus grand ;
+					   <li>doubleserait un baril. Pfiou, on en met là-dedans
+					</ul>
+					
+					<p>
+					À partir de là, ce n'est plus qu'une question de bon sens. Vous devez facilement constater qu'il est possible de mettre le contenu d'un dé à coudre dans un verre ou un baril. Par contre, si vous versez le contenu d'un baril dans un verre… il y en a plein par terre !Ainsi, si nous affectons le résultat d'une opération sur deux variables de typedoubledans une variable de typeint, le résultat sera de typeintet ne sera donc pas un réel mais un entier.
+                   </p>
+
+                    <p>
+					Pour afficher le contenu d'une variable dans la console, appelez l'instructionSystem.out.println(maVariable);, ou encoreSystem.out.print(maVariable);.
+					</p>
+					
+					<p>
+					Je suppose que vous voudriez aussi mettre du texte en même temps que vos variables… Eh bien sachez que l'opérateur « + » sert aussi d'opérateur de concaténation, c'est-à-dire qu'il permet de mélanger du texte brut et des variables. Voici un exemple d'affichage avec une perte de précision :
+					</p>
+					
+					<img src="../../../images/java/image16.jpg" alt="aucune image" />
+					 
+
+					 <p>
+					 Sachez aussi que vous pouvez tout à fait mettre des opérations dans un affichage, comme ceci :System.out.print("Résultat = " + nbre1/nbre2);(le « + » joue ici le rôle d'opérateur de concaténation) ; ceci vous permet d'économiser une variable et par conséquent de la mémoire.
+					 <p>
+
+			    </LI>
+		</OL> 
+		
+		<footer id="f1">
+			Post&eacute; le 
+			<time>
+				16 Novembre 2018
+			</time>
+			Par 
+			<a href="../../info.html">Bensalah kawthar,Zerrouki im&egrave;ne,Assem Sarah</a>
+		</footer>
+   </div>
+</section> <!-- FIN CHAPITRE 2 -->
+	</section>
+	 
+</main>
+
+	 <footer >
+	 
+	 	     Copyright &copy; 2018 <a href="../../monsite.html"><span>LetUsCode.com</span></a>
+	
+	</footer>
+	
+	
+</body> 
+</html>

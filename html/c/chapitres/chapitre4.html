@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+
+     <head>
+         <meta charset="utf-8">
+         <title> Let Us Code </title>
+		 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		 <link rel= "stylesheet" href="../../../css/style.css"  />
+     </head>
+	 
+  <body>
+  
+       <!-- HEADER DE LA PAGE -->
+	   
+      <header>
+  	                   <h1 id="titre_site"> <a href="#">Let Us Code </a></h1>
+	 </header>
+	  
+	  		 <!-- liste des chapitre -->	   
+		   <nav id="nav1">
+				<ul>
+					<li >
+						<a href="../../monsite.html" class="bouton"><span>Home</span></a>
+					</li>
+					<li >
+						<a href="#" class="bouton"><span>Cours</span></a>
+						<ul>
+							<li><a href="../../c/chapitres/chapitre1.html">langage C</a>	</li>
+							 
+							<li ><a href="../../java/chapitres/chapitre1.html">Java</a></li>
+
+							<li><a href="../../javascript/chapitres/chapitre1.html">JavaScript</a></li>
+
+							<li><a href="../../python/chapitres/chapitre1.html">Python</a></li>
+							<li><a href="../../quiz.html">Quiz</a></li>
+						</ul>
+					</li>
+					<li >
+						<a href="../../about.html" class="bouton"><span>About</span></a>
+						
+					</li>
+					<li >
+						<a href="../../contact.html" class="bouton"><span>Contact</span></a>
+					</li>
+				</ul>
+			</nav>
+		
+		<!-- liste des chapitre (menu vertical-->
+		
+		<main>
+			<section>
+				<nav id="nav2">			
+			<div id="div1">
+			 <a href = "chapitre1.html" ><button>Chapitre 1</button></a>
+			 <!-- afficher les sous-titres du chapitre actuel -->
+			  
+			   </div>
+			  <div id="div2">
+			  	
+			  <a href = "chapitre2.html" ><button>Chapitre 2</button></a>
+			</div>
+			  <div id="div3">
+			   <a href = "chapitre3.html" ><button>chapitre 3</button></a>
+			</div>
+			<div id="div4">
+			   <a href = "chapitre4.html" ><button>chapitre 4</button></a>
+			   <div id="div44">
+			  <a href = "#part1" > &#9830; La condition if... else </a>
+			  <a href = "#part2" > &#9830; Les booléens, le coeur des conditions</a>
+			  <a href = "#part3" > &#9830; La condition Switch </a>
+			  
+			  </div>
+			</div>
+			<div id="div5">
+			   <a href = "../quiz.html" ><button>Quiz</button></a>
+			</div>
+		</nav>
+<section id="section1"><!-- DEBUT CHAPITRE 1 -->
+		
+      <div id="chapitre1">		
+	  
+	  
+	         <!-- HEADER CHAPITRE 1-->
+	   
+	          <header>
+ 			              <a id="chapitre1"> <h1> Chapitre 4 : Les conditions </h1> </a> 
+			 </header>
+	 
+	 		     <ul id="titre_chap"> 
+
+	 		     	
+	 		     	<li><a id = "part1" > <h2>La condition if... else</h2></a>
+
+						<p>Les conditions permettent de tester des variables. On peut par exemple dire « si la variable machin est égale à 50, fais ceci »… Mais ce serait dommage de ne pouvoir tester que l'égalité ! Il faudrait aussi pouvoir tester si la variable est inférieure à 50, inférieure ou égale à 50, supérieure, supérieure ou égale… Ne vous inquiétez pas, le C a tout prévu !</p>
+						<p>Avant de voir comment on écrit une condition de type <em>if... else </em> en C, il faut donc que vous connaissiez deux ou trois symboles de base. Ces symboles sont indispensables pour réaliser des conditions.</p>
+						<ul>
+							<li><h3>Quelques symboles à connaître</h3>
+								<p>Voici un petit tableau de symboles du langage C <strong>à connaître par coeur</strong> :</p>
+								<table id="table1">
+								
+								         <caption><strong> Tableau 1. Les symboles </strong></caption>
+ 										 <tr> <th><strong>Symbole</strong></th><th><strong>Signfication</strong></th></tr>
+    
+ 										 <tr> <td>==</td>    <td>est égal à</td>     		</tr>
+ 										 <tr> <td>></td>    <td>est supérieur à</td>    	</tr>
+ 										 <tr> <td><</td>    <td>est supérieur ou égal à</td>  </td>  </tr>
+ 										 <tr> <td>>=</td>    <td>est inférieur à</td> 		 	</tr>
+ 										 <tr> <td><=</td>    <td>est inférieur ou égal à</td> 		 </tr>
+ 										 <tr> <td>!=</td>    <td>est different de</td> 		 		</tr>
+								</table>
+							</li>
+							<li><h3>Un if simple</h3>
+								<p>En anglais, le mot « si » se traduit par <em>if</em>. C'est celui qu'on utilise en langage C pour introduire une condition.</p>
+								<p>Écrivez donc un <em>if</em>. Ouvrez ensuite des parenthèses : à l'intérieur de ces parenthèses vous devrez écrire votre condition.</p>
+
+								<p>Ensuite, ouvrez une accolade <strong>{</strong> et fermez-la un peu plus loin <strong>}</strong>. Tout ce qui se trouve à l'intérieur des accolades sera exécuté uniquement si la condition est vérifiée.</p>
+
+								<p>Cela nous donne donc à écrire :</p>
+								<img src="../../../images/c/image12.png">
+								<p>À la place de mon commentaire « Votre condition », on va écrire une condition pour tester une variable.</p>
+								<p>Par exemple, on pourrait tester une variableagequi contient votre âge. Tenez pour s'entraîner, on va tester si vous êtes majeur, c'est-à-dire si votre âge est supérieur ou égal à 18 :</p>
+								<img src="../../../images/c/image13.png">
+								<p>Le symbole <strong>>=</strong> signifie <em> « supérieur ou égal »</em>, comme on l'a vu dans le tableau tout à l'heure.</p>
+							</li>
+							<li><h3>Le else pour dire « sinon »</h3>
+								<p>Maintenant que nous savons faire un test simple, allons un peu plus loin : si le test n'a pas marché (il est faux), on va dire à l'ordinateur d'exécuter d'autres instructions.</p>
+								<p>Il suffit de rajouter le mot <em>else</em> après l'accolade fermante du <em>if</em>.</p>
+								<p>Petit exemple :</p>
+								<img src="../../../images/c/image14.png">
+								<p>Les choses sont assez simples : si la variable <em> age</em> est supérieure ou égale à 18, on affiche le message <em>« Vous êtes majeur ! », sinon on affiche « Vous êtes mineur »</em>.</p>
+							</li>
+							<li><h3>Le else if pour dire « sinon si »</h3>
+								<p>On a vu comment faire un « si » et un « sinon ». Il est possible aussi de faire un « sinon si » pour faire un autre test si le premier test n'a pas marché. Le « sinon si » se place entre le <em>if</em> et le <em>else</em>.</p>
+								<p>Petit exemple :</p>
+								<img src="../../../images/c/image15.png">
+							</li>
+						</ul>
+	 		     	</li>
+	 		     	<li><a id = "part2" > <h2>Les booléens, le coeur des conditions</h2></a>
+	 		     		<p>Nous allons maintenant entrer plus en détails dans le fonctionnement d'une condition de type <em>if... else</em>.</p>
+						<p>En effet, les conditions font intervenir quelque chose qu'on appelle les booléens en informatique.</p>
+						<ul>
+							<li><h3>Quelques petits tests pour bien comprendre</h3>
+								<p>Nous allons commencer par faire quelques petites expériences avant d'introduire cette nouvelle notion. Voici un code source très simple que je vous propose de tester :</p>
+								<img src="../../../images/c/image16.png">
+								<p>Resultat:</p>
+								<img src="../../../images/c/image17.png">
+								<p>Si, ça en a, vous allez comprendre. Faites un autre test en remplaçant 1 par 0 :</p>
+								<img src="../../../images/c/image18.png">
+								<p>Resultat:</p>
+								<img src="../../../images/c/image19.png">
+								<p>Faites maintenant d'autres tests en remplaçant le 0 par n'importe quel autre nombre entier, comme 4, 15, 226, -10, -36, etc.</p>
+								<p>Qu'est-ce qu'on vous répond à chaque fois ? On vous répond : « C'est vrai ».</p>
+
+								<p>Résumé de nos tests : si on met un 0, le test est considéré comme faux, et si on met un 1 ou n'importe quel autre nombre, le test est vrai.</p>
+
+								<p>Des explications s'imposentEn fait, à chaque fois que vous faites un test dans unif, ce test renvoie la valeur 1 s'il est vrai, et 0 s'il est faux.</p>
+
+								<p>Par exemple :</p>
+								<img src="../../../images/c/image20.png">
+							</li>
+							<li><h3>Un test avec une variable</h3>
+								<p>Testez maintenant un autre truc : envoyez le résultat de votre condition dans une variable, comme si c'était une opération (car pour l'ordinateur, c'est une opération !).</p>
+								<img src="../../../images/c/image21.png">
+								<p>Comme vous le voyez, la conditionage >= 18a renvoyé le nombre 1 car elle est vraie. Du coup, notre variablemajeurvaut 1, on vérifie d'ailleurs cela grâce à unprintfqui montre bien qu'elle a changé de valeur.</p>
+
+								<p>Faites le même test en mettantage == 10par exemple. Cette fois,majeurvaudra 0.</p>
+							</li>
+							<li><h3>Les booléens dans les conditions</h3>
+								<p>Souvent, on fera un test if sur une variable booléenne </p>
+								<img src="../../../images/c/image22.png">
+								<p>Comme majeur vaut 1, la condition est vraie, donc on affiche « Tu es majeur ! ».</p>
+								<p>Ce qui est très pratique, c'est que la condition peut être lue facilement par un être humain. On voit if (majeur), ce qui peut se traduire par « si tu es majeur ». Les tests sur des booléens sont donc faciles à lire et à comprendre, pour peu que vous ayez donné des noms clairs à vos variables comme je vous ai dit de le faire dès le début.</p>
+							</li>
+						</ul>
+	 		     	</li>
+	 		     	<li><a id = "part3" > <h2>La condition Switch</h2></a>
+	 		     		<p>La condition <em>if... else</em> que l'on vient de voir est le type de condition le plus souvent utilisé.</p>
+						<p>En fait, il n'y a pas 36 façons de faire une condition en C. Leif... elsepermet de gérer tous les cas.</p>
+
+						<p>Toutefois, leif... elsepeut s'avérer quelque peu… répétitif. Prenons cet exemple :</p>
+						<img src="../../../images/c/image23.png">
+						<ul>
+							<li><h3>Construire un switch</h3>
+								<p>Les informaticiens détestent faire des choses répétitives, on a eu l'occasion de le vérifier plus tôt.</p>
+
+								<p>Alors, pour éviter d'avoir à faire des répétitions comme ça quand on teste la valeur d'une seule et même variable, ils ont inventé une autre structure que le <em>if... else</em>. Cette structure particulière s'appelle <em>switch.</em> Voici un <em>switch</em> basé sur l'exemple qu'on vient de voir :</p>
+								<img src="../../../images/c/image24.png">
+							</li>
+						</ul>
+	 		     	</li>
+	 		     	
+			</ul>
+
+				
+						   
+		<footer id="f1">
+		
+		         Post&eacute; le <time>16 Novembre 2018</time>
+			     Par <a href="../../info.html">Bensalah kawthar,Zerrouki im&egrave;ne,Assem Sarah</a>
+		</footer>
+   </div>
+</section> <!-- FIN CHAPITRE 1 -->
+	</section>
+	 
+</main>
+
+	 <footer >
+	 
+	 	     Copyright &copy; 2018 <a href="../../monsite.html"><span>LetUsCode.com</span></a>
+	
+	</footer>	
+	
+	
+</body> 
+</html>
