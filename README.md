@@ -1,6 +1,6 @@
 # LetUsCode
 
-![alt text](https://raw.githubusercontent.com/kawthar-bensalah/KontRol/master/rsz_11logo.png)
+![alt text](https://raw.githubusercontent.com/kawthar-bensalah/Let_Us_Code/master/logo.PNG)
 
 
 HTML based online courses website.
@@ -25,11 +25,11 @@ Full website providing online courses about famous programming languages such as
   
 ## Screenshots
 
-![alt text](https://raw.githubusercontent.com/kawthar-bensalah/KontRol/master/screen3.PNG)
+![alt text](https://raw.githubusercontent.com/kawthar-bensalah/Let_Us_Code/master/screen6.PNG)
 
-![alt text](https://raw.githubusercontent.com/kawthar-bensalah/KontRol/master/screen4.PNG)
+![alt text](https://raw.githubusercontent.com/kawthar-bensalah/Let_Us_Code/master/screen7.PNG)
 
-![alt text](https://raw.githubusercontent.com/kawthar-bensalah/KontRol/master/screen5.PNG)
+![alt text](https://raw.githubusercontent.com/kawthar-bensalah/Let_Us_Code/master/screen8.PNG)
 
 
 ## Authors
