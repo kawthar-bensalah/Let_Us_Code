@@ -26,7 +26,7 @@ Full website providing online courses about famous programming languages such as
 ## Screenshots
 
 <p float="left">
-<img src="https://raw.githubusercontent.com/kawthar-bensalah/Let_Us_Code/master/screen6.PNG" width="310" /> <img src="https://raw.githubusercontent.com/kawthar-bensalah/Let_Us_Code/master/screen7.PNG" width="310" /> <img src="https://raw.githubusercontent.com/kawthar-bensalah/Let_Us_Code/master/screen8.PNG" width="310" />
+<img src="https://raw.githubusercontent.com/kawthar-bensalah/Let_Us_Code/master/screen6.PNG" width="300" /> <img src="https://raw.githubusercontent.com/kawthar-bensalah/Let_Us_Code/master/screen7.PNG" width="300" /> <img src="https://raw.githubusercontent.com/kawthar-bensalah/Let_Us_Code/master/screen8.PNG" width="300" />
  </p>
  
 
